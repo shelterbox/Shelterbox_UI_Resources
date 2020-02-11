@@ -1,0 +1,137 @@
+/* ==========================================================================
+   Modals
+
+   Default Mendix Modals. Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults
+========================================================================== */
+.modal-dialog {
+	/* Styles here */
+	.modal-content {
+		/* Styles here */
+
+		.modal-header {
+			background-color: $brand-primary;
+			border-style: none;
+			color: #ffffff;;
+			h4 {
+				color: #fff;
+			}
+			.close {
+				color: #fff;
+			}
+		}
+		.modal-body {
+			.modal-dialog-form {
+				width: 100%;
+				max-width: 60em;
+				margin: 2em auto 0;
+				.CriteriaText {
+					margin-top: -20px;
+					margin-bottom: 20px;
+				}
+			}
+
+		}
+		.modal-footer {
+			/* Styles here */
+		}
+		.modal-dialog-faux-titlebar {
+			background-color: $brand-primary;
+			width: calc( 100% + 40px );
+			height: 30px;
+			margin: -35px -20px 0;
+			padding: 0 20px;
+			border-style: none;
+			h4 {
+				color: #fff;
+				font-size: 16px;
+				font-weight: bold;
+			}
+		}
+
+	}
+}
+
+/* Default Mendix Window Modal */
+.mx-window {
+	// If popup direct child is a dataview it gets the class mx-window-view
+	&.mx-window-view .mx-window-body {
+
+		// Dataview in popup
+		> .mx-dataview > .mx-dataview-content, 
+		> .mx-placeholder > .mx-dataview > .mx-dataview-content {
+
+		}
+		> .mx-dataview > .mx-dataview-controls, 
+		> .mx-placeholder > .mx-dataview > .mx-dataview-controls {
+
+		}
+	}
+}
+
+
+/* Default Mendix Login Modal */
+.mx-login {
+	/* Styles here */
+	.modal-body {
+		/* Styles here */
+	}
+	.modal-content {
+		/* Styles here */
+		input {
+
+			&:focus {
+
+			}
+		}
+	}
+	.modal-header,
+	.modal-footer {
+		/* Styles here */
+	}
+	button {
+		/* Styles here */
+	}
+	h4 {
+		/* Styles here */
+	}
+}
+
+.modal-body.mx-window-body .mx-placeholder {
+	height: 100%;
+	.layoutGridHeader {
+		margin: -15px -20px;
+		overflow: auto;
+		height: calc( 100% - 35px );
+		display: block;
+		padding: 20px;
+	}
+	.footerButton { margin-top: 35px; }
+}
+
+// Use .fake-modal-view/.fake-footer-view
+
+// .modal-wrapper {
+// 	height: calc(100% + 40px);
+//     margin: -20px;
+//     margin-top: -40px;
+//     position: relative;
+//     bottom: -20px;
+// 	> .mx-layoutgrid, &.mx-layoutgrid {
+// 		display: flex;
+// 		flex-direction: column;
+// 		height: 100%;
+// 		min-height: 140px;
+// 		width: 100%;
+// 		padding: 0 15px;
+// 		> div.row {
+// 			&:first-child {
+// 				overflow: auto;
+// 				flex-shrink: 1;
+// 				height: 100%;
+// 				padding: 15px;
+// 				+ div.row { padding: 20px; border-top: 1px solid #d4d4d4; }
+// 			}
+// 			> div { padding: 0 !important; }
+// 		}
+// 	}
+// }

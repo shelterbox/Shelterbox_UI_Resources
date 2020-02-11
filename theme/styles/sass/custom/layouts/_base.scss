@@ -1,0 +1,83 @@
+/* ==========================================================================
+   Regions
+
+   Used for navigation layouts
+========================================================================== */
+.region-topbar {
+	/* Styles here */
+	> .mx-layoutcontainer-wrapper {
+		/* Styles here */
+	}
+	.toggle-btn {
+		/* Styles here */
+	}
+	.navbar-right {
+		/* SSO widgets */
+		.mx-appswitcher-button-placeholder,
+		.mx-profilemenu-button-placeholder {
+			/* Styles here */
+			iframe {
+			/* Styles here */
+			}
+		}
+		.mx-profilemenu-button-placeholder {
+			/* Styles here */
+		}
+	}
+}
+.region-sidebar {
+	/* Styles here */
+	> .mx-layoutcontainer-wrapper {
+		/* Styles here */
+	}
+}
+.region-content {
+	/* Styles here */
+	> .mx-layoutcontainer-wrapper {
+		/* Styles here */
+	}
+}
+.layout-sidebar-responsive {
+
+}
+
+/* ==========================================================================
+   Navbar Brand
+
+   Used to style your app brand and logo
+========================================================================== */
+.navbar-brand {
+	/* Styles here */
+	img {
+		/* Styles here */
+	}
+	a {
+		/* Styles here */
+		&:hover,
+		&:focus {
+			/* Styles here */
+		}
+	}
+}
+.layout-atlas .region-topbar {
+	background-color: #07b18d;
+}
+
+.details-area {
+    
+    background-color: #d3d3d3;
+    color: #000000;
+    padding: 20px;
+}
+
+.events-header-layout{
+    
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #08AC8C;
+    
+    > .event-header{
+        
+        color: #FFF !important;    
+    }
+ }

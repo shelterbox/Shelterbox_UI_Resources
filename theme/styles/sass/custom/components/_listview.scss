@@ -1,0 +1,398 @@
+/* ==========================================================================
+   Listview
+
+   Default Mendix Listview Widget. The list view shows a list of objects arranged vertically. Each object is shown using a template
+========================================================================== */
+
+.shelterbox-tiles.mx-listview{
+    display: inline-block;
+   li.mx-listview-item{
+       width: 400px;
+       display: inline-block;
+       vertical-align: top;
+       height: auto;
+       font-size: 10px;
+       padding: 0px;
+       margin: 5px;
+       
+       .tile{
+           height: auto;
+           padding: 5px;
+           
+           p {
+               font-size: 10px !important;
+           }
+           
+           h6 {
+               padding: 7px;
+               padding-left: 0;
+               padding-top: 0;
+           }
+           
+           > button{
+               font-size: 10px;
+               padding: 2px 0px;
+           }
+           
+           .btn-view-task[cssselectorhelper=Deadlines_Missed],
+           .btn-view-task[cssselectorhelper=Deadlines_Achieved],
+           .btn-view-task[cssselectorhelper=In_Progress] {
+               @extend .btn-info;
+           }
+           .btn-view-task[cssselectorhelper=Yet_to_Start],
+           .btn-view-task[cssselectorhelper=Not_Applicable] {
+               @extend .btn-default;
+           }
+       }
+    }
+    
+    li.mx-listview-item:hover{
+    }
+}
+
+.mx-listview {
+	/* Styles here */
+	// Clear search button (overrides load more button stying)
+	.mx-button.mx-listview-clear-button {
+		/* Styles here */
+        color: gray;
+	}
+	> .mx-button {
+		/* Load more button */
+	}
+	.mx-listview-list {
+		
+	}
+	.mx-listview-item {
+		/* Styles here */
+		&:hover {
+			/* Styles here */
+		}
+		&.selected {
+			/* Styles here */
+			&:hover {
+				/* Styles here */
+			}
+		}
+		&:nth-child(2n+1) {
+			/* Styles here */
+		}
+	}
+}
+.listview-grid-editlines {
+	margin-right: 5em;
+	.editLink { margin: 0 -5em 0 0; }
+}
+
+
+// ==========================================================================
+// Listview Hover
+//   
+// Default Mendix Listview Widget with hover
+// ==========================================================================
+.listview-hover.mx-listview {
+	.mx-listview-item {
+		&:hover,
+		&:active {
+			
+		}
+	}
+}
+
+
+// ==========================================================================
+// Listview Lined
+//
+// Default Mendix Listview Widget with only border bottom in listview item
+// ==========================================================================
+.listview-lined.mx-listview {
+	.mx-listview-item {
+		
+		&:first-child {
+			
+		}
+		&:last-child {
+	
+		}
+	}
+}
+
+
+// ==========================================================================
+// Listview Striped
+//
+// Default Mendix Listview Widget with striped listview items
+// ==========================================================================
+.listview-striped.mx-listview {
+	.mx-listview-item:nth-child(2n+1) {
+		
+	}
+}
+
+
+// ==========================================================================
+// Listview Seperated
+//
+// Default Mendix Listview Widget with listview items seperated
+// ==========================================================================
+.listview-seperated.mx-listview {
+	.mx-listview-item {
+
+	}
+}
+
+
+// ==========================================================================
+// Listview Stylingless
+//
+// Default Mendix Listview Widget with listview items seperated
+// ==========================================================================
+.listview-stylingless.mx-listview {
+	.mx-listview-item {
+		
+		&:hover {
+			
+		}
+		&.selected {
+
+			&:hover {
+				
+			}
+		}
+	}
+}	
+
+// ==========================================================================
+// Listview Stylingless  Not Heritable
+//
+// Use instead of Listview Stylingless if you do not want it to propogate down to child listviews
+// ==========================================================================
+.listview-stylingless-notheritable.mx-listview {
+	> .mx-listview-list > .mx-listview-item {
+		padding: 0;
+		cursor: default;
+		border: 0;
+		background-color: transparent;
+		&:hover,
+		&:focus,
+		&:active {
+			background-color: transparent;
+		}
+		&.selected {
+			background-color: transparent !important;
+			&:hover,
+			&:focus,
+			&:active {
+				background-color: transparent !important;
+			}
+		}
+	}
+}
+
+// ==========================================================================
+// Listview (Un)Ordered list
+//
+// Display listview items as an ordered or unordered list
+// ==========================================================================
+.listview-orderedlist, .listview-orderedlist-armenian, .listview-orderedlist-cjk-ideographic, .listview-orderedlist-decimal, .listview-orderedlist-decimal-leading-zero,
+.listview-orderedlist-georgian, .listview-orderedlist-hebrew, .listview-orderedlist-hiragana, .listview-orderedlist-hiragana-iroha, .listview-orderedlist-katakana, 
+.listview-orderedlist-katakana-iroha, .listview-orderedlist-lower-alpha, .listview-orderedlist-lower-greek, .listview-orderedlist-lower-latin, 
+.listview-orderedlist-lower-roman, .listview-orderedlist-upper-alpha, .listview-orderedlist-upper-greek, .listview-orderedlist-upper-latin , 
+.listview-orderedlist-upper-roman, .listview-unorderedlist, .listview-unorderedlist-disc, .listview-unorderedlist-circle, .listview-unorderedlist-square {
+	> .mx-list {
+		padding-left: 40px; 
+		> li {
+			&.mx-listview-empty {
+				list-style-type: none;
+			}
+			p {
+				//margin: 0;
+			}
+		}
+	} 
+}
+
+.listview-orderedlist,
+.listview-orderedlist-decimal					{ > .mx-list { list-style: decimal;				} }
+.listview-orderedlist-armenian				{ > .mx-list { list-style: armenian;			} }
+.listview-orderedlist-cjk-ideographic			{ > .mx-list { list-style: cjk-ideographic;		} }
+.listview-orderedlist-decimal-leading-zero	{ > .mx-list { list-style: decimal-leading-zero;	} }
+.listview-orderedlist-georgian				{ > .mx-list { list-style: georgian; 			} }
+.listview-orderedlist-hebrew					{ > .mx-list { list-style: hebrew; 				} }
+.listview-orderedlist-hiragana				{ > .mx-list { list-style: hiragana; 				} }
+.listview-orderedlist-hiragana-iroha			{ > .mx-list { list-style: hiragana-iroha; 		} }
+.listview-orderedlist-katakana				{ > .mx-list { list-style: katakana; 			} }
+.listview-orderedlist-katakana-iroha			{ > .mx-list { list-style: katakana-iroha; 		} }
+.listview-orderedlist-lower-alpha			{ > .mx-list { list-style: lower-alpha; 			} }
+.listview-orderedlist-lower-greek			{ > .mx-list { list-style: lower-greek;			} }
+.listview-orderedlist-lower-latin				{ > .mx-list { list-style: lower-latin;			} }
+.listview-orderedlist-lower-roman			{ > .mx-list { list-style: lower-roman;			} }
+.listview-orderedlist-upper-alpha			{ > .mx-list { list-style: upper-alpha;			} }
+.listview-orderedlist-upper-greek			{ > .mx-list { list-style: upper-greek;			} }
+.listview-orderedlist-upper-latin				{ > .mx-list { list-style: upper-latin ;			} }
+.listview-orderedlist-upper-roman			{ > .mx-list { list-style: upper-roman;			} }
+.listview-unorderedlist,
+.listview-unorderedlist-disc					{ > .mx-list { list-style: disc;					} }
+.listview-unorderedlist-circle					{ > .mx-list { list-style: circle;					} }
+.listview-unorderedlist-square				{ > .mx-list { list-style: square;				} }
+
+// ==========================================================================
+// Listview No More
+//
+// Suppress the "Load more..." button at the bottom
+// ==========================================================================
+.mx-listview.listview-nomore {
+	> button.mx-listview-loadMore {
+		display: none;
+	}
+}
+
+// ==========================================================================
+// Listview Narrative
+//
+// Listview to support up/down and edit/delete controls for the entities specialised from Narrative.Narrative
+// ==========================================================================
+.mx-listview.listview-narrative > .mx-list > .mx-listview-item {
+	padding: 8px 15px 3px;
+	> .mx-dataview > .mx-dataview-content {
+		> .narrative-buttons-updown {
+			float: left;
+			> .mx-button, > .mx-link {
+				margin-right: 1em;
+			}
+		}
+		> .narrative-buttons-editdelete {
+			float: right;
+			> .mx-button, > .mx-link {
+				margin-left: 1em;
+			}
+		}
+		> .mx-dataview,
+		> .narrative-buttons-updown > .mx-link,
+		> .narrative-buttons-editdelete > .mx-link {
+			padding-top: 0.6em;
+		}
+		> .mx-dataview {
+		    margin-left: 4em;
+		    margin-right: 13em;
+		}
+	}
+}
+
+// ==========================================================================
+// Listview Narrative Group
+//
+// Listview to support groups of Listview Narrative
+// ==========================================================================
+.narrativegroup-buttons {
+	text-align: right;
+	margin-right: 1em;
+	margin-bottom: 0.6em;
+	> .mx-button, > .mx-link {
+		margin-left: 1em;
+	}
+}
+
+.mx-listview.listview-narrativegroup {
+	.narrativegroup-buttons {
+		margin-bottom: 0;
+		float: right;
+	}
+	
+}
+
+// ==========================================================================
+// Listview Narrative Group Vertical
+//
+// More vertically stacked version of Listview Narrative Group
+// ==========================================================================
+.mx-listview.listview-narrative.listview-narrative-vertical > .mx-list > .mx-listview-item > .mx-dataview > .mx-dataview-content > .mx-dataview {
+    clear: both;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+// ==========================================================================
+// Listview Empty Message
+//
+// Displays text to indicate the current listview is empty
+// ==========================================================================
+.listview-generic 					> ul > li.mx-listview-empty { display: block; &::before { content: "No data found"; } }
+.listview-NoTeamsFound 				> ul > li.mx-listview-empty,
+.listview-NoDeploymentsFound 		> ul > li.mx-listview-empty { display: block; &::before { content: "No teams found"; } }
+.listview-NoAssignmentsFound 		> ul > li.mx-listview-empty { display: block; &::before { content: "No assignments found"; } }
+.listview-NoKeyPlayersFound 		> ul > li.mx-listview-empty { display: block; &::before { content: "No key players found"; } }
+.listview-NoDecisionsFound 			> ul > li.mx-listview-empty { display: block; &::before { content: "No decisions found"; } }
+.listview-NoObjectivesFound 		> ul > li.mx-listview-empty { display: block; &::before { content: "No objectives found"; } }
+.listview-NoOutcomesFound 			> ul > li.mx-listview-empty { display: block; &::before { content: "No outcomes found"; } }
+.listview-NoOutputsFound 			> ul > li.mx-listview-empty { display: block; &::before { content: "No outputs found"; } }
+.listview-NoPlansFound 				> ul > li.mx-listview-empty { display: block; &::before { content: "No plans found"; } }
+.listview-NoCountriesFound 			> ul > li.mx-listview-empty { display: block; &::before { content: "No countries found"; } }
+.listview-NoEventBackgroundFound 	> ul > li.mx-listview-empty { display: block; &::before { content: "No event background found"; } }
+.listview-NoResponseSummaryFound 	> ul > li.mx-listview-empty { display: block; &::before { content: "No response background found"; } }
+.listview-NoEventImagesFound 		> ul > li.mx-listview-empty { display: block; &::before { content: "No images found"; } }
+.listview-NoResponsesFound 			> ul > li.mx-listview-empty { display: block; &::before { content: "No responses found"; } }
+.listview-NoRiskAssessmentsFound 	> ul > li.mx-listview-empty { display: block; &::before { content: "No risk assessments found"; } }
+.listview-NoTeamTasksFound 			> ul > li.mx-listview-empty { display: block; &::before { content: "No team tasks found"; } }
+.listview-NoPeopleFound 			> ul > li.mx-listview-empty { display: block; &::before { content: "No people found"; } }
+.listview-NoCurrentPeopleFound 		> ul > li.mx-listview-empty { display: block; &::before { content: "No current people found"; } }
+.listview-NoCommunicationsFound 	> ul > li.mx-listview-empty { display: block; &::before { content: "No communication records found"; } }
+.listview-NoLogisticsFPFound		> ul > li.mx-listview-empty { font-size: 16px; padding-top: 8px; color: #fff; text-transform: none; font-weight: bold; display: block; &::before { content: "Logistics Focal Point: N/A"; } }
+.listview-NoProcurementFPFound		> ul > li.mx-listview-empty { font-size: 16px; padding-top: 8px; color: #fff; text-transform: none; font-weight: bold; display: block; &::before { content: "Procurement Focal Point: N/A"; } }
+.listview-NoMealFPFound				> ul > li.mx-listview-empty { font-size: 16px; padding-top: 8px; color: #fff; text-transform: none; font-weight: bold; display: block; &::before { content: "MEAL Focal Point: N/A"; } } 
+.listview-NA						> ul > li.mx-listview-empty { text-align: center; padding-left: 0; color: black; text-transform: none; display: block; &::before { content: "N/A"; } }
+
+
+
+// ==========================================================================
+// Listview Title
+//
+// Displays text to indicate the current listview is empty
+// ==========================================================================
+.listview-title {
+	padding: 0 15px !important;
+}
+
+// ==========================================================================
+// Listview Images
+//
+// Displays event images in a responsive way
+// ==========================================================================
+.listview-images {
+	& > .mx-listview-list {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 5px;
+		justify-items: center;
+		// align-items: center;
+		& > .mx-listview-item > .mx-dataview > .mx-dataview-content > div {
+			border: 1px solid #d7d7d7;
+			box-shadow: 0 0 10px 0 #e4e4e4;
+			& > img { margin: auto; }
+			& > span:first-of-type { padding: 5px; display: inline-block; font-weight: bold; }
+			& > span:not(:first-of-type) { padding: 5px; display: inline-block; word-break: break-word; }
+		}
+		& > .mx-listview-empty { grid-column-start: 2; }
+	}
+}
+
+// ==========================================================================
+// Listview remove background
+//
+// Removes the listview background for transparency
+// ==========================================================================
+.listview-removebackground {
+	& > ul > li { background: none !important; }
+}
+
+// ==========================================================================
+// Listview add bottom border
+//
+// Adds a bottom border with default grey colour
+// ==========================================================================
+.listview-addbottomborder {
+	margin-bottom: 60px;
+	border-bottom: solid 1px $gray-primary;
+	& > ul > li { border-top: 1px solid $gray-primary !important; }
+	& > button { position: absolute; z-index: 1; }
+}

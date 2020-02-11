@@ -1,0 +1,356 @@
+// ==========================================================================
+// Resource planner
+//
+// Resource planner page (Under 'People > Resource Planner')
+// ==========================================================================
+.customCheckBox > div.checkbox {
+	background: $gray-primary;
+	border-radius: 5px;
+	padding: 4px;
+    height: 30px;
+	margin-left: 45px;
+	& > label {
+		background: rgba(0,0,0,0.3);
+		color: #ffffff;
+		font-weight: 500;
+		border-radius: 5px;
+		position: relative;
+		padding: 1px 8px;
+		transition: 0.3s all ease;
+		&:hover { background: rgba(0,0,0,0.7); }
+		& > input { position: absolute; left: -3px; }
+	}
+}
+.availabilityCheck > div.checkbox 		{ background: $brand-primary; }
+.unavailableCheck > div.checkbox	 	{ background: #ed1c24; }
+.possiblyCheck > div.checkbox 			{ background: #f99b1d; }
+.deploymentCheck > div.checkbox 		{ background: #48b0f7; }
+.provisionCheck > div.checkbox 			{ background: #555555; }
+.DOCCheck > div.checkbox 				{ background: #3a87ad; }
+.ICECheck > div.checkbox 				{ background: #3a87ad; }
+
+.customCheckBox-container {
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-between;
+	& > .customCheckBox { width: 300px;	}
+}
+
+.icon-right span { float: right; top: 2px; margin-left: 3px; }
+
+.barSpace { width: 100%; height: 30px; }
+
+.progressBar {
+	background: $brand-primary;
+	height: 100%;
+	width: 0;
+	border-radius: 3px;
+	padding: 4px;
+	overflow: hidden;
+	&:hover { overflow: visible; }
+	.progressInnerLabel {
+		position: relative;
+		padding: 1px 6px;
+		border-radius: 3px;
+		width: fit-content;
+		overflow: hidden;
+		height: 22px;
+		background: rgba(0, 0, 0, 0.3);
+		color: #ffffff;
+		margin-right: 8px;
+		transition: 0.2s background ease;
+	}
+	&:hover .progressInnerLabel { background: rgba(0, 0, 0, 0.7); width: max-content; }
+}
+
+.topBarSpace, .monthSpace { display: flex; width: 100%; }
+
+.mainScrollBar {
+	overflow-x: scroll;
+	overflow-y: hidden;
+	:first-child { width: 100%; height: 1px; }
+}
+
+.monthLabel { width: 150px; overflow: hidden; }
+
+.dateLabel {
+	padding-top: 8px;
+    padding-bottom: 8px;
+	line-height: 1.428571429;
+	font-weight: 700;
+	text-align: center;
+	& > .sep {
+		content: " ";
+		width: 1px;
+		background: #d7d7d7;
+		height: 100%;
+		display: block;
+		position: absolute;
+		top: 0;
+	}
+}
+
+// ==========================================================================
+// Team member card
+//
+// Used as a snippit for the 'people' cards
+// ==========================================================================
+.TeamMemberCard {
+	h3, .h3 { float:left; margin-top: 0; }
+	.TeamMemberPhoto {
+		float: left;
+		clear:left;
+		margin-right: 1em;
+		+ div { 
+			float: left;
+			width: calc( 100% - 7em );
+		}
+	}
+	h3:first-child { margin: 0 0 5px; }
+	p { margin-bottom: 0; }
+	.form-group {
+		margin-bottom: 0;
+		.form-control-static {
+			border-bottom: none;
+			.form-control-static, .control-label { padding-top: 0; padding-bottom: 0.2em; }
+		}
+	}
+}
+.mx-listview li:not( :last-child ) .TeamMemberAssignmentCard { border-bottom: $default-border-color 1px solid; margin-bottom: 1em; }
+.TeamMemberAssignmentCard {
+	margin-top: 1em;
+	p { margin-bottom: 0; }
+	.form-control-static {
+		border-bottom: none;
+		.form-control-static, .control-label { padding-top: 0; padding-bottom: 0.2em; }
+	}
+}
+
+// ----------------{ OLD CSS STYLING }----------------
+// .TeamMemberProfile {
+// 	margin-top:10px;
+// 	.PhotoContainer {
+// 		margin: auto;
+// 		width: 100%;
+// 		padding-left: 10px;
+// 		.PhotoTextStaff {
+// 			white-space: pre-line;
+// 			width: 65px;
+// 			border-top-left-radius: 0px;
+// 			border-top-right-radius: 0px;
+// 			font-size: 11px;
+// 			line-height: unset;
+// 			padding-top: 5px;
+// 			padding-bottom: 2px;
+// 			background-color: rgb(8, 172, 140);
+// 		}
+// 		.PhotoTextVolunteer {
+// 			white-space: pre-line;
+// 			width: 65px;
+// 			border-top-left-radius: 0px;
+// 			border-top-right-radius: 0px;
+// 			font-size: 11px;
+// 			line-height: unset;
+// 			padding-top: 5px;
+// 			padding-bottom: 2px;
+// 			background-color: #ffd42a;
+// 		}
+// 		.PhotoTextOther {
+// 			white-space: pre-line;
+// 			width: 65px;
+// 			border-top-left-radius: 0px;
+// 			border-top-right-radius: 0px;
+// 			font-size: 11px;
+// 			line-height: unset;
+// 			padding-top: 5px;
+// 			padding-bottom: 2px;
+// 			background-color: #c9302c;
+// 		}
+// 		.TeamMemberPhotoStaff {
+// 		    width:65px;
+// 			border-width: 1px;
+// 			border-style: solid;
+// 			padding: 2px;
+// 			border-color: rgb(0, 168, 141);
+// 			border-top-left-radius: 10px;
+// 			border-top-right-radius: 10px;
+// 			height:85px;
+// 		}
+// 		.TeamMemberPhotoVolunteer {
+// 			width:65px;
+// 			border-width: 1px;
+// 			border-style: solid;
+// 			padding: 2px;
+// 			border-color: #ffd42a;
+// 			border-top-left-radius: 10px;
+// 			border-top-right-radius: 10px;
+// 			height:85px;
+// 		}
+// 		.TeamMemberPhotoOther {
+// 		    width:65px;
+// 			border-width: 1px;
+// 			border-style: solid;
+// 			padding: 2px;
+// 			border-color: #c9302c;
+// 			border-top-left-radius: 10px;
+// 			border-top-right-radius: 10px;
+// 			height:85px;
+// 		}
+// 	}
+// }
+// ---------------------------------------------------
+
+// ==========================================================================
+// Team member card
+//
+// Used as a snippit for the 'people' cards
+// ==========================================================================
+.SyncText {
+	text-align: right;
+	// font-size: 10px;
+	color: #888888;
+	margin-top: -10px;
+	margin-bottom: -1em;
+}
+
+.TeamMemberProfileFooter { height: 45px; }
+.TeamMemberDetails { margin-top: -4em; } 
+.TeamMemberDetails2 { margin-top: -4.5em; } 
+.TeamMemberBlock { margin-left: 1.1em; }
+
+.DirectoryLayout { margin-left: auto; margin-right: auto; max-width: 1200px; }
+
+.onHold {
+	margin-top: 1em;
+	border-radius:10px; 
+	background-color: red; 
+	text-align: center;
+	.Status { color: $brand-default-contrast; }
+}
+
+// Deployable people (Availability calendar)
+.fc tr.TeamMemberOnHold { color: white; font-weight: bold; background-color: #ED1C24; }
+
+// ----------------{ OLD CSS STYLING }----------------
+// .stickProfileCard {
+// 	margin-left:5vh; 
+// 	margin-top:-2.5vh;
+// 	h1 { margin-top: 1.5vh; }
+// 	.TeamMemberRole 			{ float:left; margin-right:8px;	}
+// 	.TeamMemberRoleStaff 		{ background-color: #08AC8C; float: left; margin-right: 8px; }
+// 	.TeamMemberRoleVolunteer 	{ background-color: #ffd42a; float: left; margin-right: 8px; }
+// 	.TeamMemberRoleOther 		{ background-color: #c9302c; float: left; margin-right: 8px; }
+// 	.CanBeDOC 					{ background-color: #08AC8C; float: left; margin-right: 8px; }
+// 	.NationalityContainer {
+// 		margin-top:1.5vh;
+// 		.NatListview {
+// 			text-align: center;
+// 			padding:0;
+// 			margin:0;
+// 			cellpadding:0;
+// 			cellspacing:0;
+// 			.Item {
+// 				float:left; 
+// 				margin-right: 10px; 
+// 				margin-bottom: 2vh;
+// 				margin-top: 0; 
+// 				margin-bottom: 0; 
+// 				padding: 0;
+// 			}
+// 		}
+// 	}
+// 	.AddressListview {
+// 		text-align: center;
+// 		padding: 0;
+// 		margin: 0;
+// 		cellpadding: 0;
+// 		cellspacing: 0;
+// 		.Item {
+// 			float: left; 
+// 			margin-right: 10px;
+// 			margin-bottom: 2vh;
+// 			margin-top: 0; 
+// 			margin-bottom: 0; 
+// 			padding: 0;
+// 		}
+// 	}
+// }
+
+// .hideOnStickProfileCard {
+// 	margin-left: 4vh; 
+// 	margin-right: 13vh;
+// 	.RoleContainer1 {
+// 		margin-top: 13vh;  
+// 		margin-bottom: 0; 
+// 		padding:0;
+// 		.Staff 		{ background-color: #08AC8C; float:left; margin-right:8px; }
+// 		.Volunteer 	{ background-color: #ffd42a; float:left; margin-right:8px; }
+// 		.Other 		{ background-color: #c9302c; float:left; margin-right:8px; }
+// 		.CanBeDOC 	{ background-color: #08AC8C; float:left; margin-right:8px; }
+// 	}
+
+// 	.Container {
+// 		text-align: center;
+// 		padding:0;
+// 		margin:0;
+// 		cellpadding:0;
+// 		cellspacing:0;
+// 		.Item {
+// 			float:left; 
+// 			margin-right:10px; 
+// 			margin-bottom:2vh; 
+// 			margin-top:0; 
+// 			margin-bottom:0; 
+// 			padding:0;
+// 		}
+
+// 	}
+// 	.PhotoContainer {
+// 		margin-left:9vh; 
+// 		margin-top:6vh;
+// 		.TeamMemberPhoto {
+// 			padding: 4px;
+// 			border-style: solid;
+// 			border-width: 1px;
+// 			margin-bottom: 5px;
+// 			border-radius: 10px;
+// 			width: 115px;
+// 			height: 144px;
+// 		}
+// 	}
+// }
+
+// .mx-name-listViewTeamMember {
+// 	margin: 10px 0 0 0;
+// 	.mx-dataview-content {
+// 		height: auto;
+// 		display: flex;
+// 		justify-content: center;
+// 		align-items: center;
+// 		button { margin: 0 0 0 auto; }
+// 	}
+// }
+
+// .AvailabilityTeamMemberCard {
+// 	border-top-style: solid;
+// 	border-right-style: solid;
+// 	border-left-style: solid;
+// 	border-bottom-style:solid;
+// 	border-width: 1px;
+// 	border-radius:10px;
+// 	padding-top: 3px;
+// 	padding-left: 3px;
+// 	padding-right: 3px;
+// 	margin-top:-4vh;
+// 	width: 80px;
+// 	height:90px;
+// }
+
+// .ContactDetailsTeamMemberCard {
+// 	margin-top:10vh;
+// 	border-style:solid;
+// 	border-width: 1px; 
+// 	border-color:#D3D3D3; 
+// 	border-radius:10px;
+// }
+// ---------------------------------------------------

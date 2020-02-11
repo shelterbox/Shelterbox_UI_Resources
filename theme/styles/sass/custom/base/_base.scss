@@ -1,0 +1,35 @@
+/* ==========================================================================
+   Base
+
+   Default settings
+========================================================================== */
+body {
+	/* Styles here */
+}
+a {
+	/* Styles here */
+}
+a:hover {
+	/* Styles here */
+}
+a:focus {
+	/* Styles here */
+}
+a:active, 
+a:hover {
+	/* Styles here */
+}
+input:focus, 
+button:focus,
+.mx-link:focus {
+	
+}
+.layout-atlas .region-topbar {
+	background-color: $brand-primary;
+}
+.topbar-content .mx-link {
+    color:  $brand-primary-contrast;
+}
+.navbar-nav>li:first-child {
+    margin-left: 165px;
+}

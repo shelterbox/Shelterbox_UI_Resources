@@ -1,0 +1,413 @@
+/* ==========================================================================
+   Groupbox
+
+   Default Mendix Groupboxes
+========================================================================== */
+.mx-groupbox {
+	/* Styles here */
+	> .mx-groupbox-header {
+		/* Styles here */
+		background: $brand-primary;
+		color: $brand-primary-contrast;
+		font-weight: bold;
+		> .groupboxIcon {
+				margin-left: 1em;
+		}
+		text-transform: uppercase;
+	}
+	> .mx-groupbox-body {
+		/* Styles here */
+  	}
+  	.mx-groupbox-header + .mx-groupbox-body {
+  		/* Styles here */
+	}
+	&.collapsed > .mx-groupbox-header {
+		/* Styles here */
+	}
+}
+
+.groupBoxHeaderSummary > .mx-groupbox-header { background: $gray-primary; color: $black-ish; }
+
+.groupbox-deploymenthistory > .mx-groupbox-header {
+	background: none;
+	color: #040404;
+	font-weight: normal;
+	text-transform: none;
+	border: none;
+	position: relative;
+	& > .groupboxText {	position: absolute; }
+}
+  .groupbox-deploymenthistory > .mx-groupbox-body { border: none; }
+  .groupbox-deploymenthistory-header {
+	position: relative;
+	font-weight: bold;
+	padding: 15px;
+	border-bottom: 1px solid #D7D7D7;
+	& > span + span { position: absolute; }
+	& + .mx-listview .mx-listview-item { border-bottom: 1px solid #D7D7D7; padding: 5px 0; }
+}
+
+// ==========================================================================
+// Groupbox Callouts
+//
+// Default Mendix Groupboxes rendered as (Bootstrap) callouts
+// ==========================================================================
+.mx-groupbox {
+	&.groupbox-callout {
+		> .mx-groupbox-header, 
+		> .mx-groupbox-body {
+	  	}
+	  	.mx-groupbox-header + .mx-groupbox-body {
+
+	  	}
+	}
+	&.groupbox-callout-info {
+		> .mx-groupbox-header, 
+		> .mx-groupbox-body {
+
+		}
+		> .mx-groupbox-header {
+
+		}
+	}
+	&.groupbox-callout-success {
+		> .mx-groupbox-header, 
+		> .mx-groupbox-body {
+
+		}
+		> .mx-groupbox-header {
+
+		}
+	}
+	&.groupbox-callout-warning {
+		> .mx-groupbox-header, 
+		> .mx-groupbox-body {
+			
+		}
+		> .mx-groupbox-header {
+			
+		}
+	}
+	&.groupbox-callout-danger {
+		> .mx-groupbox-header, 
+		> .mx-groupbox-body {
+
+		}
+		> .mx-groupbox-header {
+			
+		}
+	}
+}
+
+// ==========================================================================
+// Groupbox Collapse Icons
+//
+// Alternative collapse icons to replace the default plus and minus ones
+// ==========================================================================
+
+.mx-groupbox {
+	&.groupBoxArrow,
+	&.groupbox-collapseicon-arrow {
+		> .mx-groupbox-header .mx-groupbox-collapse-icon {
+			border: 8px solid transparent;
+			border-top: none;
+			border-bottom: 8px solid #ffffff;
+			transform: rotate(0deg);
+			transition: 0.3s all ease;
+			margin-top: 5px;
+			&::before {
+				content: '';
+			}
+		}
+		&.collapsed > .mx-groupbox-header > .mx-groupbox-collapse-icon {
+			transform: rotate(180deg);
+			margin-top: 5px;
+		}
+	}
+	&.groupbox-collapseicon-none {
+		> .mx-groupbox-header {
+			> .mx-groupbox-collapse-icon {
+				display: none;
+			}
+		}
+	}
+	&.groupbox-collapseicon-ellipsis {
+		> .mx-groupbox-header {
+			> .mx-groupbox-collapse-icon {
+				display: none;
+			}
+		}
+	}
+}
+
+// ==========================================================================
+// Groupbox Extra Icons
+//
+// Additional icons added to the right of the text in the groupbox header
+// ==========================================================================
+.mx-groupbox {
+	> .mx-groupbox-header > .groupboxIcon.groupboxIconRight {
+		margin-left: 0;
+		margin-right: 1em;
+		float: right;
+		&.mx-link {
+		    color: inherit;
+		}
+	}
+}
+
+// ==========================================================================
+// Groupbox Grid (AKA Groupbox Decision Log)
+//
+// Subtle groupbox to allow for an expandable line item.
+// ==========================================================================
+.groupbox-decisionlog,
+.groupbox-grid {
+	> .mx-groupbox-header {
+		background: none;
+		color: $black-ish;
+		font-weight: normal;
+		text-transform: none;
+		border: none;
+		position: relative;
+		> .groupboxText
+		{
+			&:not( .groupboxIconRight ) {
+				position: absolute;
+			}
+			&.groupboxIconRight {
+				margin-left: 0;
+				margin-right: 1em;
+				float: right;
+			}
+		}
+		.groupboxIconRight.btn {
+			margin: -0.6em 1em;
+		}
+	}
+	> .mx-groupbox-body {
+		border: none;
+	}
+	&.groupbox-collapseicon-arrow,
+	&.groupBoxArrow {
+		> .mx-groupbox-header .mx-groupbox-collapse-icon {
+			border-bottom: 8px solid $black-ish;
+		}
+	}
+}
+
+.groupbox-decisionlog-header,
+.groupbox-grid-header {
+	position: relative;
+	font-weight:  bold;
+	padding: 15px;
+	border-bottom: 1px solid $default-border-color;
+	> span + span {
+		position: absolute;
+	}
+	+ .mx-listview .mx-listview-item {
+		border-bottom: 1px solid $default-border-color;
+		padding: 5px 0;
+	}
+}
+
+// Column widths
+.groupbox-grid-header > span,
+.groupbox-decisionlog-header > span,
+.groupbox-grid > .mx-groupbox-header > .groupboxText:not( .groupboxIconRight ),
+.groupbox-decisionlog > .mx-groupbox-header > .groupboxText:not( .groupboxIconRight ) {
+	&.left-0 	{ left: 0; }
+	&.left-25 	{ left: 25px; }
+	&.left-50 	{ left: 50px; }
+	&.left-75 	{ left: 75px; }
+	&.left-100 	{ left: 100px; }
+	&.left-125 	{ left: 125px; }
+	&.left-150 	{ left: 150px; }
+	&.left-175 	{ left: 175px; }
+	&.left-200 	{ left: 200px; }
+	&.left-225 	{ left: 225px; }
+	&.left-250 	{ left: 250px; }
+	&.left-275 	{ left: 275px; }
+	&.left-300 	{ left: 300px; }
+	&.left-325 	{ left: 325px; }
+	&.left-350 	{ left: 350px; }
+	&.left-375 	{ left: 375px; }
+	&.left-400 	{ left: 400px; }
+	&.left-425 	{ left: 425px; }
+	&.left-450 	{ left: 450px; }
+	&.left-475 	{ left: 475px; }
+	&.left-500 	{ left: 500px; }
+	&.right-0 	{ right: 0; }
+	&.right-25 	{ right: 25px; }
+	&.right-50 	{ right: 50px; }
+	&.right-75 	{ right: 75px; }
+	&.right-100	{ right: 100px; }
+	&.right-125	{ right: 125px; }
+	&.right-150	{ right: 150px; }
+	&.right-175	{ right: 175px; }
+	&.right-200	{ right: 200px; }
+	&.right-225	{ right: 225px; }
+	&.right-250	{ right: 250px; }
+	&.right-275	{ right: 275px; }
+	&.right-300	{ right: 300px; }
+	&.right-325	{ right: 325px; }
+	&.right-350	{ right: 350px; }
+	&.right-375	{ right: 375px; }
+	&.right-400	{ right: 400px; }
+	&.right-425	{ right: 425px; }
+	&.right-450	{ right: 450px; }
+	&.right-475	{ right: 475px; }
+	&.right-500	{ right: 500px; }
+}
+
+// ==========================================================================
+// Groupbox Searchbox
+//
+// Groupbox with a contained listview. Set the search to:
+// - Always expanded
+// ==========================================================================
+.groupSearchbox-listView { padding-bottom: 905px; } //When number of rows on 'listView' = 15
+.groupSearchbox-listView, .groupSearchbox-gridView {
+	.mx-groupbox-header { font-weight: bold; }
+	.arrow {
+		float: right;
+		margin: -40px 0 0 0;
+		transform: rotate(180deg);
+		color: #ffffff;
+		transition: 0.3s transform ease;
+	}
+	.mx-datagrid, .mx-templategrid {
+		.mx-grid-search-item {
+			margin: 1em 0.5em !important;
+			.mx-grid-search-label { width: 155px !important; }
+			.mx-grid-search-input { width: 215px !important; }
+		}
+		.mx-grid-controlbar { position: absolute; margin: 15px 0px 0 -15px;	width: calc(100% - 108px); }
+		.mx-grid-content { position: absolute; margin: 110px 0px 0 -15px; width: calc(100% - 108px); }
+		.mx-grid-searchbar {
+			box-shadow: none !important;
+			border-radius: 0 !important;
+			background-color: #ffffff;
+			margin: 0;
+			border-style: none;
+			.mx-grid-search-controls button {
+				&:first-child {
+					border-radius: 4px 0 0 4px;
+					border-right: 0;
+					&:before {
+						content: "\e003";
+						font-family: 'Glyphicons Halflings';
+						display: inline-block;
+						padding-right: 2px;
+						position: relative;
+						top: 1px;
+						font-style: normal;
+						font-weight: 400;
+						line-height: 1;
+						-webkit-font-smoothing: antialiased;
+					}
+				}
+				&:last-child {
+					border-radius: 0 4px 4px 0;
+					&:before {
+						content: "\e031";
+						font-family: 'Glyphicons Halflings';
+						display: inline-block;
+						padding-right: 2px;
+						position: relative;
+						top: 1px;
+						font-style: normal;
+						font-weight: 400;
+						line-height: 1;
+						-webkit-font-smoothing: antialiased;
+					}
+				}
+				margin: 1em 0 !important;
+			}
+			.mx-grid-search-inputs .mx-grid-search-item {
+				.mx-grid-search-label {
+					padding-top: 3px !important;
+					label { color: #666; font-size: 14px; font-weight: 600;	}
+				}
+				input { height: auto !important; font-size: 14px !important; }
+				button { padding: 0.6em 1em !important; height: auto !important; }
+				select { padding: 8px 30px 8px 10px !important; height: auto; font-size: 14px; }
+			}
+		}
+	}
+	&.collapsed {
+		.arrow { margin: -30px 0 0 0; transform: rotate(0deg); }
+		.mx-groupbox-body { padding: 0 15px; display: block; border-style: none; }
+		.mx-grid-searchbar { display: none; }
+		.mx-grid-controlbar { display: block; position: absolute; margin: 0px 0px 0px -15px; }
+		.mx-grid-content { display: block; position: absolute; margin: 100px 0px 0px -15px; }
+	}
+}
+
+.groupSearchbox-gridView { padding-bottom: 1430px; } //When number of rows on 'gridView' = 3 (Max size is from 'countries' page in view 172 - 180)
+
+@media only screen and (max-width: 1670px) {
+	.groupSearchbox-gridView .mx-templategrid .mx-grid-content {
+		position: absolute;
+		margin: 200px 0px 0 -15px;
+		width: calc(100% - 108px);
+	}
+}
+@media only screen and (max-width: 900px) {
+	.groupSearchbox-gridView .mx-templategrid .mx-grid-content {
+		position: absolute;
+		margin: 300px 0px 0 -15px;
+		width: calc(100% - 108px);
+	}
+}
+
+// ==========================================================================
+// Groupbox Hide/Show all button
+//
+// Collapse/Expand all groupboxes on the page button styling.
+// ==========================================================================
+.groupbox-hideshowall {
+    text-align: right;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0.5em auto -0.5em;
+}
+
+// ==========================================================================
+// Groupbox control
+//
+// Used in the Risk management section to colour the traffic light like
+// system (badge ball) and the header
+// ==========================================================================
+.groupBox-control {
+	& > .mx-groupbox-header {
+		text-transform: none;
+		&[rating='SuperRed'] .badge-ball, &[cssselectorhelper='SuperRed'] 							{ background: $brand-danger; color: $brand-danger-contrast; }
+		&[rating='Red'] .badge-ball, &[cssselectorhelper='Red'], &[status=' Denied']				{ background: rgb(216, 104, 108); color: #ffffff; }
+		&[rating='Amber'] .badge-ball, &[cssselectorhelper='Amber'], &[status=' Awaiting Approval'] { background: $brand-warning; color: #ffffff; }
+		&[rating='Green'] .badge-ball, &[cssselectorhelper='Green'], &[status=' Approved'] 			{ background: $brand-primary; color: $brand-primary-contrast; }
+		&[rating='SubGreen'] .badge-ball, &[cssselectorhelper='SubGreen'] 							{ background: $brand-success; }
+	}
+}
+.badge-ball {
+	width: 14px;
+    height: 14px;
+    top: 2px;
+    position: relative;
+	left: 5px;
+	&[cssselectorhelper='SubGreen'] { background: $brand-success; }
+	&[cssselectorhelper='Green']	{ background: $brand-primary; color: $brand-primary-contrast; }
+	&[cssselectorhelper='Amber'] 	{ background: $brand-warning; color: #ffffff; }
+	&[cssselectorhelper='Red'] 		{ background: rgb(216, 104, 108); color: #ffffff; }
+	&[cssselectorhelper='SuperRed'] { background: $brand-danger; color: $brand-danger-contrast; }
+}
+
+.groupboxButtons {
+	position: relative;
+	top: -7px;
+	button {
+		font-size: 12px;
+		margin-right: 10px;
+		&:last-child { margin-right: 0; }
+	}
+}

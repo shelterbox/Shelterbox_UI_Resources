@@ -1,0 +1,77 @@
+/* ==========================================================================
+   Dataview
+
+   Default Mendix Dataview Widget. The data view is used for showing the contents of exactly one object
+========================================================================== */
+.mx-dataview {
+	&.footerIsModalFooter {
+		position: static;
+		display: flex;
+		flex-direction: column;
+		> .mx-dataview-content {
+			margin-bottom: 80px;
+		}
+		> .mx-dataview-controls {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			margin: 0.5em -20px 5px;
+			background-color: #FFFFFF;
+			.btn {
+				margin: 5px 15px 10px;
+			}
+			.btn-cancel {
+				font-weight: bold;
+			}
+		}
+	}
+		
+	// Control bar
+	.mx-dataview-controls {
+		/* Styles here */
+		// Buttons
+		.mx-button {
+
+		}
+	}
+}
+
+// .mx-dataview {
+	// &.footerIsModalFooterCriteria {
+		// position: static;
+		// .mx-dataview-content {
+			// margin-bottom: 40px;
+		// }
+		// .mx-dataview-controls {
+			// position: absolute;
+			// bottom: 0;
+			// width: 100%;
+			// margin: 0.5em -20px 5px;
+			// background-color: #FFFFFF;
+			// .btn {
+				// margin: 5px 15px 10px;
+			// }
+			// .btn-cancel {
+				// font-weight: bold;
+			// }
+		// }
+	// }
+		
+	// Control bar
+	// .mx-dataview-controls {
+		// /* Styles here */
+		// Buttons
+		// .mx-button {
+
+		// }
+	// }
+// }
+
+/* ==========================================================================
+   Dataview inline
+
+   Fix for children of a d-inline dataview
+========================================================================== */
+.mx-dataview.d-inline > .mx-dataview-content {
+	display: inline;
+}

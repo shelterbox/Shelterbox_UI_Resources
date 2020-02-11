@@ -1,0 +1,1015 @@
+@import "custom-variables";
+
+// Base
+@import "base/base";
+
+// Components
+@import "components/inputs";
+@import "components/alerts";
+@import "components/buttons";
+@import "components/grid";
+@import "components/datagrids";
+@import "components/dataview";
+@import "components/groupbox";
+@import "components/listview";
+@import "components/modals";
+@import "components/navigationlist";
+@import "components/tabcontainer";
+@import "components/tables";
+@import "components/templategrids";
+@import "components/typography";
+
+// Building Blocks
+@import "buildingblocks/card";
+@import "buildingblocks/pageheader";
+@import "buildingblocks/formblock";
+@import "buildingblocks/wizard";
+
+.fc tr.TeamMemberOnHold {
+    color: white;
+    font-weight: bold;
+    background-color: #ED1C24;
+}
+
+.mx-profilemenu-button-placeholder { margin: 6px 6px 0; }
+
+.SummaryProfile {
+	text-align:center; 
+	margin-right:2vh;
+	margin-bottom:1vh;
+	border-style: none;
+	background-color: #ffffff;
+	padding:0;
+	margin-top:5px;
+	z-index: 103;
+	> .row {
+		&:first-child > div > :first-child { margin-top: 0; }
+		> :last-child:not( :first-child ) { text-align: right; }
+	}
+	.showOnStick { display: none; }
+	.showOnStick { display: none; }
+}
+
+.SummaryProfile-sticky {
+	background-color: #ffffff !important;
+	padding: 0 !important;
+	position: absolute;
+	width: 100%;
+	.showOnStick { display: block; }
+	.hideOnStick { display: none; }
+	> * { margin:  0 auto; }
+	> .row > .col-md-6 {
+		&:last-child { float: right; }
+	}
+	h1 {
+	    margin: 2em 2em 2em 2em;
+	    padding: 5px 0;
+	    float: left;
+	    font-size: 24px;
+	}
+	.SummaryProfileItem {
+		float: left;
+		margin-right: 0;
+		padding-top: 0;
+		margin-top: 0;
+		margin-left:2vh
+		h1 {
+			margin-left: 0.2vh;
+			margin-top:3vh;
+		}
+	}
+	.SummaryProfileItem2 {
+		float: left;
+		margin-right: 2em;
+		padding-top: 0;
+		margin-top: 1.8vh;
+	}
+}
+
+.SummaryHeaderItem {
+	font-size: 113%;
+	font-weight: bold;
+}
+
+.SummaryHeader {
+	background-color: #ffffff;
+	border-bottom: $default-border-color solid 1px;
+	max-width: 1000px;
+	z-index: 1;
+	> .row > :last-child:not( :first-child ) { text-align: right; }
+	> .row:first-child > div > :first-child { margin-top: 0; }
+	.showOnStick { display: none; }
+	.PrimaryEvent, .SecondaryEvents {
+		&, * { display: inline; }
+	}
+	.SecondaryEvents > ul > li > .mx-dataview > .mx-dataview-content:first-child::before { content: ', '; }
+	.response-status-group {
+		> h3 {
+			float: left;
+			margin-right: 3em;
+		}
+		.ResponseStatusButtons { margin:  15px 0; }
+	}
+}
+
+.SummaryHeader, .SummaryBody {	
+	.DeploymentLink, .ResponseLink, .EventLink, .CountryLink {
+		color: $link-color;
+	}
+}
+.SummaryHeader-sticky {
+	padding: 0 !important;
+	max-width: 100%;
+	position: fixed;
+	width: 100%;
+	.showOnStick { display: block; }
+	.hideOnStick { display: none; }
+	> * {
+		max-width:  1000px;
+		margin:  0 auto;
+	}
+	> .row > .col-md-6 {
+		width: auto;
+		&:last-child { float: right; }
+	}
+	h1, .h1 {
+		margin: 0 2em 0 0;
+		padding: 5px 0;
+		float: left;
+		&, & > * {
+			font-size: 24px;
+		}
+	}
+	.SummaryHeaderItem {
+		float: left;
+		margin-right: 2em;
+		padding-top: 11px;
+	}
+
+	:last-child > .SummaryHeaderItem {
+		float: right;
+		margin-left: 0;
+		margin-right:  0;
+		&:not(:last-child) {
+			margin-left: 2em;
+		}
+	}
+	.col-md-8 {
+		width: auto;
+	}
+	.col-md-4 {
+		width: auto;
+		float: right;
+	}
+}
+
+.SummaryBody {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	.editLink {
+		float: right;
+		margin-left: 1em;
+		margin-bottom: 1em;
+	}
+	> .row > div > .editLink {
+		margin-top: 15px;
+	}
+	.mx-listview-item .editLink:last-child {
+		margin-left: 0;
+	}
+	.mx-listview-empty { display: none; }
+	.DeploymentHeader {
+		margin: 15px 0 20px;
+		h3, .h3 {
+			margin: 0;
+			display: block;
+		}
+		> h3, > .h3 { text-align: center; }
+	}
+	.DeploymentHeaderLeft { float: left; width: 18em; }
+	.DeploymentHeaderRight { float: right; }
+	.activeAssignment .row {
+		border-left: solid $brand-primary 4px;
+		margin-left: -19px;
+	}
+	.inactiveAssignment  .mx-text { font-weight: lighter; }
+}
+.ResponseCriteriaHeading {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	.mx-text:not( .glyphicon )::before {
+		content: "-";
+		margin-right: 0.5em;
+	}
+	.h2, h2 {
+		display:  inline;
+		margin-right: 0.5em;
+		&:last-child { margin-right: 0; }
+	}
+}
+.ResponseCriteriaBody {
+	margin-top: 15px;
+	> ul > li.mx-listview-item {
+		padding: 0 15px;
+		border-top: 1px solid #d7d7d7 !important;
+	}
+	.criterionHeading {
+		h3 {
+			margin-bottom: 0.5em;
+			&.glyphicon {
+				float: left;
+				width: 3em;
+				margin: 0;
+			}
+		}
+	}
+	.criterionForm { margin-top: 20px; }
+}
+
+.delete-button { float: right; }
+.listview-NoDeploymentsFound > ul > li.mx-listview-empty {
+	display: block;
+	&::before { content: "No deployments found"; }
+}
+.listview-NoAssignmentsFound > ul > li.mx-listview-empty {
+	display: block;
+	&::before { content: "No assignments found"; }
+}
+.listview-NoKeyPlayersFound > ul > li.mx-listview-empty {
+	display: block;
+	&::before { content: "No key players found"; }
+}
+.listview-horizontal > ul > li { float: left; }
+.overlay {
+	border: 4px red solid;
+	position: relative;
+}
+
+.overlay .mx-text {
+	position: absolute;
+	top:  50%;
+	width: 100%;
+	text-align: center;
+	background: red;
+	color: white;
+	font-weight: bold;
+	transform: rotate(45deg);
+}
+.slideout-button {
+	padding: 6px 1em;
+	color: #FFF; /* Swap for color variable */
+	border: 1px solid transparent;
+	border-radius: 4px 4px 0 0;
+	background-color: #1b3149; /* Swap for color variable */
+	font-size: 15px;
+}
+
+.slideout-control { transform: rotate(-90deg) translate(50%, -50%); }
+
+//===============================================//
+
+.mx-name-listViewTeamMember {
+	margin: 10px 0 0 0;
+	.mx-dataview-content {
+		height: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		button {
+			margin: 0 0 0 auto;
+		}
+	}
+}
+
+.listViewFake-search {
+	transform: translate(0, -45px);
+	.mx-listview-searchbar { margin-bottom: 49px !important; }
+}
+
+.listViewFake { margin: 42px 0 0 0; }
+
+.layoutGridFakeListTitle {
+    transform: translate( 0px, 45px );
+    font-weight: bold;
+	.row { padding: 15px; }
+}
+
+.right { float: right; }
+
+.modal-body.mx-window-body .mx-placeholder {
+	height: 100%;
+	.layoutGridHeader {
+		margin: -15px -20px;
+		overflow: auto;
+		height: calc( 100% - 35px );
+		display: block;
+		padding: 20px;
+	}
+	.footerButton { margin-top: 35px; }
+}
+
+//===============================================//
+
+.TeamMemberPhoto {
+	width: 6em;
+	height: 8em;
+	border: 1px solid $gray-primary;;
+	border-radius: 10px;
+	overflow:  hidden;
+	position: relative;
+	margin-top: 1em;
+	> img {
+		display: block;
+		width:  100%;
+	}
+	> span {
+		position:absolute;
+		bottom: 0;
+		font-size: 11px;
+		background: $gray-primary;
+		color: white;
+		padding: 5px;
+		width: 100%;
+		display: block;
+		text-align: center;
+	}
+	// Different coloured bar for different Team Member types
+	&[cssselectorhelper="Staff"] > span {
+		background: $role-staff;
+		color: $role-staff-contrast;
+	}
+	&[cssselectorhelper="Volunteer"] > span {
+		background: $role-volunteer;
+		color: $role-volunteer-contrast;
+	}
+}
+.SelectPhoto {
+	float: left;
+	margin-top:20em;
+}
+
+.TeamMemberCard {
+	h3, .h3 {
+		float:left;
+		margin-top: 0;
+	}
+	.TeamMemberPhoto {
+		float: left;
+		clear:left;
+		margin-right: 1em;
+		+ div { 
+			float: left;
+			width: calc( 100% - 7em );
+		}
+	}
+	h3:first-child { margin: 0 0 5px; }
+	p { margin-bottom: 0; }
+	.form-group {
+		margin-bottom: 0;
+		.form-control-static {
+			border-bottom: none;
+			.form-control-static, .control-label {
+				padding-top: 0;
+				padding-bottom: 0.2em;
+			}
+		}
+	}
+}
+ .mx-listview li:not( :last-child ) .TeamMemberAssignmentCard {
+	border-bottom: $default-border-color 1px solid;
+	margin-bottom: 1em;
+ }
+.TeamMemberAssignmentCard {
+	margin-top: 1em;
+	p { margin-bottom: 0; }
+	.form-control-static {
+		border-bottom: none;
+		.form-control-static, .control-label {
+			padding-top: 0;
+			padding-bottom: 0.2em;
+		}
+	}
+}
+
+//Overview Pages
+
+.OverviewPageHeader {
+	 box-shadow: 0 4px 4px 0 rgba(83, 83, 83, 0.2); 
+	 display: inline-block;
+	 width:100%;
+	 height: 130px;
+	 margin:0;
+	 padding:0;
+
+	h2 {
+		//margin-top: em;
+	}
+	.Info{
+		margin-top: 1.7em;
+		text-align: left;
+		color: #FFF;
+	}	
+	background-color: #ffffff;
+	border-bottom: $default-border-color solid 1px;
+	z-index: 1;
+	> .row > :last-child:not( :first-child ) { text-align: right; }
+	> .row:first-child > div > :first-child { margin-top: 0; }
+	.showOnStick { display: none; }
+	.PrimaryEvent, .SecondaryEvents {
+		&, * { display: inline; }
+	}
+	.SecondaryEvents > ul > li > .mx-dataview > .mx-dataview-content:first-child::before { content: ', '; }
+	.response-status-group {
+		> h3 {
+			float: left;
+			margin-right: 3em;
+		}
+		.ResponseStatusButtons { margin:  15px 0; }
+	}
+}
+
+
+.OverviewPageHeader-sticky {
+	padding: 0 !important;
+	max-width: 100%;
+	position: fixed;
+	width: 100%;
+	height: auto;
+	.showOnStick { display: block; }
+	.hideOnStick { display: none; }
+	> * {
+		//max-width: 1000px;
+		margin:  0 auto;
+	}
+	> .row > .col-md-6 {
+		width: auto;
+		&:last-child { float: right; }
+	}
+	h1, .h1 {
+		margin: 0 2em 0 2em;
+		padding: 5px 0;
+		float: left;
+		&, & > * {
+			font-size: 24px;
+		}
+	}
+	.SummaryHeaderItem {
+		float: left;
+		margin-right: 2em;
+		padding-top: 11px;
+	}
+
+	:last-child > .SummaryHeaderItem {
+		float: right;
+		margin-left: 0;
+		margin-right:  0;
+		&:not(:last-child) {
+			margin-left: 2em;
+		}
+	}
+	.col-md-8 {
+		width: auto;
+	}
+	.col-md-4 {
+		width: auto;
+		float: right;
+	}
+}
+
+.OverviewPage {
+	background-color: #eff4f7;
+	.OverviewDataGrid {
+		margin: 0.5em;
+	}
+}
+
+.OverviewPageKit {
+	background-color: #eff4f7;
+	border-radius: 10px;
+	.OverviewDataGrid {
+		margin: 0.5em;
+		border-radius: 10px;
+	}
+}
+
+//Buttons
+
+.btn-add {
+	background-color: $brand-primary;
+	color: $brand-default-contrast;
+	font-weight: bold;
+}
+
+.btn-delete {
+	background-color: $brand-danger;
+	color: $brand-danger-contrast;
+	font-weight: bold;
+}
+
+.btn-admin {
+	color: $brand-primary;
+	font-weight: bold;
+}
+
+.btn-save {
+	float: right;
+	background-color: $brand-primary;
+	color: $brand-default-contrast;
+	font-weight: bold;
+	border-style: none;
+}
+
+.btn-sync {
+	margin-right:10px;
+	float:right;
+}
+
+.btn-search {
+	background-color: $brand-default-contrast;
+	color: $brand-primary;
+}
+
+.btn-general {
+	background-color: $brand-primary;
+	color: $brand-default-contrast;
+	font-weight: bold;
+}
+
+.Link {
+		color: $link-color;
+		font-size: 26px;
+	}
+	
+//Menu Topbar
+
+.menuTopBar {
+	box-shadow: 0 2px 2px 0 rgba(83, 83, 83, 0.2); 
+	display: inline-block;
+	width:100%;
+	color: $brand-primary-contrast;
+	background-color: $brand-primary;
+	border-style:solid; 
+	border-width:1px; 
+	border-color: $default-border-color; 
+	.menuItemBar{
+		float:right; 
+		margin-top:0.8vh; 
+		text-align:right; 
+		margin-right:1vh;
+	}
+}
+
+.region-topbar .mx-navbar ul.nav > li.mx-navbar-item > a {
+	background-color: $brand-primary;
+	color: $brand-default-contrast;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.region-topbar .mx-navbar ul.nav > li.mx-navbar-item > a .caret {
+    border-top-color: $brand-primary;
+    border-bottom-color: $brand-default-contrast;
+}
+
+.ShelterboxLogo {
+	border: red dashed thin;
+	margin:2.8vh;
+}
+
+
+//Search bar
+
+.mx-grid .mx-grid-searchbar{
+	margin: 5px 0;
+	border-style:solid;
+	border-width: 1px;
+	border-color: $brand-primary;
+	border-radius:10px;
+	background-color: $brand-primary;
+	box-shadow: 0 4px 4px 0 rgba(83, 83, 83, 0.2); 
+	color: $brand-default-contrast;
+}
+ 
+.mx-grid-search-item {
+	display: inline-block;
+    vertical-align: top;
+    margin-top: 2em;
+	margin-left: 2em;
+	margin-bottom: 1em;
+	margin-right: 2em;
+}
+
+.mx-grid .mx-grid-searchbar .mx-grid-search-item .mx-grid-search-label {
+	vertical-align: middle;
+	width: 140px;
+    padding: 0 5px;
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+}
+ 
+.mx-grid .mx-grid-searchbar .mx-grid-search-item .mx-grid-search-label label {
+	padding-top:5px;
+	font-weight: bold;
+}
+ 
+.mx-grid-controlbar .mx-button, .mx-grid-search-controls .mx-button {
+	margin-left: 0;
+	margin-right: 1em;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	font-weight: bold;
+}
+
+
+.mx-link + .badge {
+	margin-left: 1em;
+	padding-bottom: 0.25em;
+}
+
+a.noLink, .noLink a, .mx-link.noLink {
+	&, &:hover, &:active, &:visited, &:focus {
+		text-decoration: none;
+		cursor: text;
+	}
+}
+
+
+
+.mx-window {
+    // If popup direct child is a dataview it gets the class mx-window-view
+    &.mx-window-view .mx-window-body {
+        padding: 0;
+        // Dataview in popup
+        > .mx-dataview > .mx-dataview-content,
+        > .mx-placeholder > .mx-dataview > .mx-dataview-content {
+            padding: 20px;
+        }
+        > .mx-dataview > .mx-dataview-controls,
+        > .mx-placeholder > .mx-dataview > .mx-dataview-controls {
+            display: inline;
+            justify-content: unset;
+            margin: 0;
+            padding: 20px;
+            text-align: left;
+            //border-top: 1px solid $modal-header-border-color;
+        }
+    }
+}
+
+
+//Team Member profile snippet
+.TeamMemberProfile {
+	margin-top:10px;
+	.PhotoContainer {
+		margin: auto;
+		width: 100%;
+		padding-left: 10px;
+	
+		.PhotoTextStaff {
+			white-space: pre-line;
+			width: 65px;
+			border-top-left-radius: 0px;
+			border-top-right-radius: 0px;
+			font-size: 11px;
+			line-height: unset;
+			padding-top: 5px;
+			padding-bottom: 2px;
+			background-color: rgb(8, 172, 140);
+		}
+		.PhotoTextVolunteer {
+			white-space: pre-line;
+			width: 65px;
+			border-top-left-radius: 0px;
+			border-top-right-radius: 0px;
+			font-size: 11px;
+			line-height: unset;
+			padding-top: 5px;
+			padding-bottom: 2px;
+			background-color: #ffd42a;
+		}
+		.PhotoTextOther {
+			white-space: pre-line;
+			width: 65px;
+			border-top-left-radius: 0px;
+			border-top-right-radius: 0px;
+			font-size: 11px;
+			line-height: unset;
+			padding-top: 5px;
+			padding-bottom: 2px;
+			background-color: #c9302c;
+		}
+		.TeamMemberPhotoStaff {
+		    width:65px;
+			border-width: 1px;
+			border-style: solid;
+			padding: 2px;
+			border-color: rgb(0, 168, 141);
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+			height:85px;
+		}
+		.TeamMemberPhotoVolunteer {
+			width:65px;
+			border-width: 1px;
+			border-style: solid;
+			padding: 2px;
+			border-color: #ffd42a;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+			height:85px;
+		}
+		.TeamMemberPhotoOther {
+		    width:65px;
+			border-width: 1px;
+			border-style: solid;
+			padding: 2px;
+			border-color: #c9302c;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+			height:85px;
+		}
+	}
+}
+.SyncText {
+	text-align: right;
+	//font-size: 10px;
+	color: #888888;
+	margin-top: -10px;
+	margin-bottom: -1em;
+}
+
+.SyncStatus {
+	float: right;
+}
+
+//Team Member Profile
+.TeamMemberProfileFooter {
+	height: 45px;
+}
+
+.stickProfileCard {
+	margin-left:5vh; 
+	margin-top:-2.5vh;
+	h1 {
+		margin-top:1.5vh;
+	}
+	.TeamMemberRole {
+		float:left;
+		margin-right:8px;
+	}
+	.TeamMemberRoleStaff {
+		background-color: #08AC8C; 
+		float:left;
+		margin-right:8px;
+	}
+	.TeamMemberRoleVolunteer {
+		background-color: #ffd42a;
+		float:left;
+		margin-right:8px;
+	}
+	.TeamMemberRoleOther {
+		background-color: #c9302c; 
+		float:left;
+		margin-right:8px;
+	}
+	.CanBeDOC {
+		background-color: #08AC8C; 
+		float:left;
+		margin-right:8px;
+	}
+	.NationalityContainer {
+		margin-top:1.5vh;
+		.NatListview {
+			text-align: center;
+			padding:0;
+			margin:0;
+			cellpadding:0;
+			cellspacing:0;
+			.Item {
+				float:left; 
+				margin-right:10px; 
+				margin-bottom:2vh;
+				margin-top:0; 
+				margin-bottom:0; 
+				padding:0;
+			}
+		}
+	}
+	.AddressListview {
+		text-align: center;
+		padding:0;
+		margin:0;
+		cellpadding:0;
+		cellspacing:0;
+		.Item {
+			float:left; 
+			margin-right:10px;
+			margin-bottom:2vh;
+			margin-top:0; 
+			margin-bottom:0; 
+			padding:0;
+		}
+	}
+}
+
+.hideOnStickProfileCard {
+	margin-left:4vh; 
+	margin-right:13vh;
+	.RoleContainer1 {
+		margin-top:13vh;  
+		margin-bottom:0; 
+		padding:0;
+		.Staff {
+			background-color: #08AC8C; 
+			float:left;
+			margin-right:8px;
+		}
+		.Volunteer {
+			background-color: #ffd42a; 
+			float:left;
+			margin-right:8px;
+		}
+		.Other {
+			background-color: #c9302c; 
+			float:left;
+			margin-right:8px;
+		}
+		.CanBeDOC {
+			background-color: #08AC8C; 
+			float:left;
+			margin-right:8px;
+		}
+	}
+
+	.Container {
+		text-align: center;
+		padding:0;
+		margin:0;
+		cellpadding:0;
+		cellspacing:0;
+		.Item {
+			float:left; 
+			margin-right:10px; 
+			margin-bottom:2vh; 
+			margin-top:0; 
+			margin-bottom:0; 
+			padding:0;
+		}
+
+	}
+	.PhotoContainer {
+		margin-left:9vh; 
+		margin-top:6vh;
+		.TeamMemberPhoto {
+			padding: 4px;
+			border-style: solid;
+			border-width: 1px;
+			margin-bottom: 5px;
+			border-radius: 10px;
+			width: 115px;
+			height: 144px;
+		}
+	}
+}
+
+	
+.onHold {
+	margin-top: 1em;
+	border-radius:10px; 
+	background-color: red; 
+	text-align: center;
+	.Status {
+		color: $brand-default-contrast;
+	}
+}
+
+
+.ERA {
+	float:right;
+}
+.PlanTabs {
+	margin-left: 3vh;
+}
+
+.Calendar {
+	height: 600px;
+}
+
+.ContactDetailsTeamMemberCard {
+	margin-top:10vh;
+	border-style:solid;
+	border-width: 1px; 
+	border-color:#D3D3D3; 
+	border-radius:10px;
+}
+
+.customSearch {
+	background-color: $brand-primary;
+	border-radius: 10px;
+	margin-top: 1em;
+	margin-bottom: 4em;
+	.SearchLabel {
+		margin-left: 1em;
+		margin-top: 1em;
+		margin-bottom: 1em;
+		margin-right: 0;
+		color: $brand-default-contrast;
+	}
+	.SearchBox {
+		margin-top: 0.4em;
+	}
+}
+
+.mx-tabcontainer .mx-tabcontainer-tabs > li.active > a, .mx-tabcontainer .mx-tabcontainer-tabs > li.active > a:hover, .mx-tabcontainer .mx-tabcontainer-tabs > li.active > a:focus {
+	font-weight: bold;
+    border: 1px solid #D7D7D7;
+    border-bottom-color: transparent;
+    background-color: #FFF;
+}
+
+
+.listviewItem {
+	margin-top:2em;
+	margin-bottom: 2em;
+}
+
+
+.CurrentlyDeployed {
+	.Photo {
+		width: 80px;
+		border-top-style: solid;
+		border-right-style: solid;
+		border-left-style: solid;
+		border-width: 1px;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		padding-top: 3px;
+		padding-left: 3px;
+		padding-right: 3px;
+	}
+	.AssignmentStatus1 {
+		font-size: 11px;
+		background: cornflowerblue;
+		color: $brand-default-contrast;
+		padding: 5px;
+		border-bottom-left-radius: 12px;
+		border-bottom-right-radius: 12px;
+		width: 80px;
+		display: block;
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		text-align: center;
+	}
+	.AssignmentStatus2 {
+		font-size: 11px;
+		background:#08ac8c;
+		color: white;
+		padding: 5px;
+		border-bottom-left-radius: 12px;
+		border-bottom-right-radius: 12px;
+		width: 80px;
+		display: block;
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		text-align: center;
+	}
+}
+
+.DeploymentCard {
+	margin-top: 4em;
+	.cardLink {
+		margin-top: 2em;
+		margin-left: 2em;
+		margin-right: 0;
+		margin-bottom: 1em;
+		border-radius: 10px;
+	}
+}
+
+.AvailabilityTeamMemberCard {
+	border-top-style: solid;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-bottom-style:solid;
+	border-width: 1px;
+	border-radius:10px;
+	padding-top: 3px;
+	padding-left: 3px;
+	padding-right: 3px;
+	margin-top:-4vh;
+	width: 80px;
+	height:90px;
+}
+
+.TeamMemberDetails {
+	margin-top:-4vh;
+}
+
+.hideOverflow {
+	overflow: hidden;
+}
+
+

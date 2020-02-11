@@ -1,0 +1,53 @@
+// ==========================================================================
+// Response criteria
+//
+// Section labeled 'Criteria' (under 'Responses > Response summary')
+// ==========================================================================
+.copyText { /* Applied directly to the 'copy text' dataview */
+	margin: 0 20px 0 0;
+	top: 7px;
+	float: right;
+	.emailText {                                            /* Textbox which the text is copied (This will hide it off the screen) */
+		position: absolute;
+		visibility: collapse;
+		width: 10px;
+		height: 10px;
+		top: -120px;
+	}
+    .Info { position: absolute; right: 115px; top: 10px; }  /* Info/Help icon */
+	.linkContainer { margin: 8px 0; }                       /* 'copy text' button container/parent */
+	.link { padding-right: 2px; }                           /* 'copy text' button */
+	.clipboardCopy { display: inline-block; }               /* Clipboard copy widget */
+}
+.criteriaItem { /* Criteria page elements for the new/edit pages */
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+// ----------------{ OLD CSS STYLING }----------------
+// .criteriaHeader { font-size: 14px; }
+
+// .ResponseCriteriaHeading { 
+// 	margin-top: 20px;
+// 	margin-bottom: 10px;
+// 	.mx-text:not( .glyphicon )::before { content: "-"; margin-right: 0.5em; }
+// 	.h2, h2 {
+// 		display:  inline;
+// 		margin-right: 0.5em;
+// 		&:last-child { margin-right: 0; }
+// 	}
+// }
+
+// .ResponseCriteriaBody {
+// 	margin-top: 15px;
+// 	> ul > li.mx-listview-item { padding: 0 15px; border-top: 1px solid #d7d7d7 !important; }
+// 	.criterionHeading {
+// 		h3 {
+// 			margin-bottom: 0.5em;
+// 			&.glyphicon { float: left; width: 3em; margin: 0; }
+// 		}
+// 	}
+// 	.criterionForm { margin-top: 20px; }
+// }
+// ---------------------------------------------------

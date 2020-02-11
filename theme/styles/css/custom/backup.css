@@ -1,0 +1,2172 @@
+/* ==========================================================================
+   Base
+
+   Default settings
+========================================================================== */
+body {
+  /* Styles here */ }
+
+a {
+  /* Styles here */ }
+
+a:hover {
+  /* Styles here */ }
+
+a:focus {
+  /* Styles here */ }
+
+a:active,
+a:hover {
+  /* Styles here */ }
+
+.layout-atlas .region-topbar {
+  background-color: #34B78F; }
+
+.topbar-content .mx-link {
+  color: #FFFFFF; }
+
+.navbar-nav > li:first-child {
+  margin-left: 165px; }
+
+/* ==========================================================================
+   Inputs
+========================================================================== */
+.form-control {
+  /* Styles here */ }
+
+.form-control:focus {
+  /* Styles here */ }
+
+.form-group .control-label {
+  /* Styles here */ }
+
+/* ==========================================================================
+   Buttons
+
+   Default Bootstrap and Mendix Buttons
+========================================================================== */
+.btn,
+.mx-button {
+  /* Styles here */ }
+  .btn:hover, .btn:focus, .btn:active,
+  .mx-button:hover,
+  .mx-button:focus,
+  .mx-button:active {
+    /* Styles here */ }
+
+.mx-link {
+  /* Styles here */ }
+
+.btn-default, .shelterbox-tiles.mx-listview li.mx-listview-item .tile .btn-view-task[cssselectorhelper=Yet_to_Start],
+.shelterbox-tiles.mx-listview li.mx-listview-item .tile .btn-view-task[cssselectorhelper=Not_Applicable] {
+  /* Styles here */ }
+
+.btn-primary {
+  /* Styles here */ }
+
+.btn-inverse {
+  /* Styles here */ }
+
+.btn-success {
+  /* Styles here */
+  color: blue; }
+
+.btn-info, .shelterbox-tiles.mx-listview li.mx-listview-item .tile .btn-view-task[cssselectorhelper=Deadlines_Missed],
+.shelterbox-tiles.mx-listview li.mx-listview-item .tile .btn-view-task[cssselectorhelper=Deadlines_Achieved],
+.shelterbox-tiles.mx-listview li.mx-listview-item .tile .btn-view-task[cssselectorhelper=In_Progress] {
+  /* Styles here */ }
+
+.btn-warning {
+  /* Styles here */ }
+
+.btn-danger {
+  /* Styles here */ }
+
+.btn-add {
+  background-color: #34B78F;
+  color: #FFFFFF;
+  font-weight: bold; }
+
+.btn-delete {
+  background-color: #ED1C24;
+  color: #FFFFFF;
+  font-weight: bold; }
+
+.btn-save {
+  float: right;
+  background-color: #34B78F;
+  color: #FFFFFF;
+  font-weight: bold;
+  border-style: none; }
+
+.btn-edit:not(.mx-link) {
+  background-color: #F99B1D;
+  color: #FFFFFF;
+  font-weight: bold; }
+
+.btn-admin {
+  color: #34B78F;
+  font-weight: bold; }
+
+.btn-sync {
+  margin-right: 10px;
+  float: right; }
+
+.btn-search {
+  background-color: #FFFFFF;
+  color: #34B78F; }
+
+.btn-general {
+  background-color: #34B78F;
+  color: #FFFFFF;
+  font-weight: bold; }
+
+.Link {
+  color: #34B78F;
+  font-size: 26px; }
+
+.delete-button {
+  float: right; }
+
+.btn-toggle {
+  align-self: center;
+  justify-self: center;
+  margin-right: 15px;
+  background: unset;
+  color: #fff;
+  border-color: #fff;
+  border-radius: 0;
+  text-transform: uppercase;
+  padding: 12px 10px;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 300;
+  min-width: unset; }
+  .btn-toggle:hover, .btn-toggle:focus {
+    background: unset; }
+  .btn-toggle:active {
+    transform: translateY(1px); }
+  .btn-toggle > span.glyphicon {
+    font-size: 24px; }
+  .btn-toggle.btn-tiny {
+    line-height: 23px; }
+
+/* ==========================================================================
+   Grid
+
+   Default Mendix Grid
+========================================================================== */
+.mx-grid {
+  /* Styles here */ }
+  .mx-grid .mx-grid-controlbar {
+    /* Styles here */ }
+    .mx-grid .mx-grid-controlbar .mx-grid-pagingbar {
+      /* Styles here */ }
+      .mx-grid .mx-grid-controlbar .mx-grid-pagingbar .mx-button {
+        /* Styles here */ }
+        .mx-grid .mx-grid-controlbar .mx-grid-pagingbar .mx-button:hover {
+          /* Styles here */ }
+      .mx-grid .mx-grid-controlbar .mx-grid-pagingbar .mx-grid-paging-status {
+        /* Styles here */ }
+    .mx-grid .mx-grid-controlbar .mx-grid-searchbar {
+      /* Styles here */ }
+      .mx-grid .mx-grid-controlbar .mx-grid-searchbar .mx-grid-search-item {
+        /* Styles here */ }
+        .mx-grid .mx-grid-controlbar .mx-grid-searchbar .mx-grid-search-item .mx-grid-search-label {
+          /* Styles here */ }
+      .mx-grid .mx-grid-controlbar .mx-grid-searchbar .mx-grid-search-input {
+        /* Styles here */ }
+        .mx-grid .mx-grid-controlbar .mx-grid-searchbar .mx-grid-search-input .form-control {
+          /* Styles here */ }
+        .mx-grid .mx-grid-controlbar .mx-grid-searchbar .mx-grid-search-input .mx-button {
+          /* Styles here */ }
+
+/* ==========================================================================
+   Datagrid Default
+
+   Default Mendix Datagrid Widget. The datagrid shows a list of objects in a grid
+========================================================================== */
+.mx-datagrid {
+  /* Styles here */ }
+  .mx-datagrid .mx-datagrid-head-table {
+    /* Styles here */ }
+    .mx-datagrid .mx-datagrid-head-table .mx-datagrid-head-wrapper {
+      /* Styles here */ }
+  .mx-datagrid .mx-datagrid-body-table {
+    /* Styles here */ }
+    .mx-datagrid .mx-datagrid-body-table .mx-datagrid-body tr {
+      /* Styles here */ }
+      .mx-datagrid .mx-datagrid-body-table .mx-datagrid-body tr td {
+        /* Styles here */ }
+
+.mx-datagrid.show-overflow .mx-datagrid-head-table .mx-datagrid-head-wrapper .mx-datagrid-head-caption {
+  overflow: visible; }
+
+.mx-datagrid.wrap-text .mx-datagrid-data-wrapper {
+  white-space: normal; }
+
+/* ==========================================================================
+   Dataview
+
+   Default Mendix Dataview Widget. The data view is used for showing the contents of exactly one object
+========================================================================== */
+.mx-dataview.footerIsModalFooter {
+  position: static;
+  display: flex;
+  flex-direction: column; }
+  .mx-dataview.footerIsModalFooter > .mx-dataview-content {
+    margin-bottom: 80px; }
+  .mx-dataview.footerIsModalFooter > .mx-dataview-controls {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0.5em -20px 5px;
+    background-color: #FFFFFF; }
+    .mx-dataview.footerIsModalFooter > .mx-dataview-controls .btn {
+      margin: 5px 15px 10px; }
+    .mx-dataview.footerIsModalFooter > .mx-dataview-controls .btn-cancel {
+      font-weight: bold; }
+.mx-dataview .mx-dataview-controls {
+  /* Styles here */ }
+
+/* ==========================================================================
+   Dataview inline
+
+   Fix for children of a d-inline dataview
+========================================================================== */
+.mx-dataview.d-inline > .mx-dataview-content {
+  display: inline; }
+
+/* ==========================================================================
+   Groupbox
+
+   Default Mendix Groupboxes
+========================================================================== */
+.mx-groupbox {
+  /* Styles here */ }
+  .mx-groupbox > .mx-groupbox-header {
+    /* Styles here */
+    background: #34B78F;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-transform: uppercase; }
+    .mx-groupbox > .mx-groupbox-header > .groupboxIcon {
+      margin-left: 1em; }
+  .mx-groupbox > .mx-groupbox-body {
+    /* Styles here */ }
+  .mx-groupbox .mx-groupbox-header + .mx-groupbox-body {
+    /* Styles here */ }
+  .mx-groupbox.collapsed > .mx-groupbox-header {
+    /* Styles here */ }
+
+.groupBoxHeaderSummary > .mx-groupbox-header {
+  background: #D7D7D7;
+  color: #040404; }
+
+.groupbox-deploymenthistory > .mx-groupbox-header {
+  background: none;
+  color: #040404;
+  font-weight: normal;
+  text-transform: none;
+  border: none;
+  position: relative; }
+  .groupbox-deploymenthistory > .mx-groupbox-header > .groupboxText {
+    position: absolute; }
+
+.groupbox-deploymenthistory > .mx-groupbox-body {
+  border: none; }
+
+.groupbox-deploymenthistory-header {
+  position: relative;
+  font-weight: bold;
+  padding: 15px;
+  border-bottom: 1px solid #D7D7D7; }
+  .groupbox-deploymenthistory-header > span + span {
+    position: absolute; }
+  .groupbox-deploymenthistory-header + .mx-listview .mx-listview-item {
+    border-bottom: 1px solid #D7D7D7;
+    padding: 5px 0; }
+
+.mx-groupbox.groupBoxArrow > .mx-groupbox-header .mx-groupbox-collapse-icon, .mx-groupbox.groupbox-collapseicon-arrow > .mx-groupbox-header .mx-groupbox-collapse-icon {
+  border: 8px solid transparent;
+  border-top: none;
+  border-bottom: 8px solid #ffffff;
+  transform: rotate(0deg);
+  transition: 0.3s all ease;
+  margin-top: 5px; }
+  .mx-groupbox.groupBoxArrow > .mx-groupbox-header .mx-groupbox-collapse-icon::before, .mx-groupbox.groupbox-collapseicon-arrow > .mx-groupbox-header .mx-groupbox-collapse-icon::before {
+    content: ''; }
+.mx-groupbox.groupBoxArrow.collapsed > .mx-groupbox-header > .mx-groupbox-collapse-icon, .mx-groupbox.groupbox-collapseicon-arrow.collapsed > .mx-groupbox-header > .mx-groupbox-collapse-icon {
+  transform: rotate(180deg);
+  margin-top: 5px; }
+.mx-groupbox.groupbox-collapseicon-none > .mx-groupbox-header > .mx-groupbox-collapse-icon {
+  display: none; }
+.mx-groupbox.groupbox-collapseicon-ellipsis > .mx-groupbox-header > .mx-groupbox-collapse-icon {
+  display: none; }
+
+.mx-groupbox > .mx-groupbox-header > .groupboxIcon.groupboxIconRight {
+  margin-left: 0;
+  margin-right: 1em;
+  float: right; }
+  .mx-groupbox > .mx-groupbox-header > .groupboxIcon.groupboxIconRight.mx-link {
+    color: inherit; }
+
+.groupbox-decisionlog > .mx-groupbox-header,
+.groupbox-grid > .mx-groupbox-header {
+  background: none;
+  color: #040404;
+  font-weight: normal;
+  text-transform: none;
+  border: none;
+  position: relative; }
+  .groupbox-decisionlog > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight),
+  .groupbox-grid > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight) {
+    position: absolute; }
+  .groupbox-decisionlog > .mx-groupbox-header > .groupboxText.groupboxIconRight,
+  .groupbox-grid > .mx-groupbox-header > .groupboxText.groupboxIconRight {
+    margin-left: 0;
+    margin-right: 1em;
+    float: right; }
+  .groupbox-decisionlog > .mx-groupbox-header .groupboxIconRight.btn,
+  .groupbox-grid > .mx-groupbox-header .groupboxIconRight.btn {
+    margin: -0.6em 1em; }
+.groupbox-decisionlog > .mx-groupbox-body,
+.groupbox-grid > .mx-groupbox-body {
+  border: none; }
+.groupbox-decisionlog.groupbox-collapseicon-arrow > .mx-groupbox-header .mx-groupbox-collapse-icon, .groupbox-decisionlog.groupBoxArrow > .mx-groupbox-header .mx-groupbox-collapse-icon,
+.groupbox-grid.groupbox-collapseicon-arrow > .mx-groupbox-header .mx-groupbox-collapse-icon,
+.groupbox-grid.groupBoxArrow > .mx-groupbox-header .mx-groupbox-collapse-icon {
+  border-bottom: 8px solid #040404; }
+
+.groupbox-decisionlog-header,
+.groupbox-grid-header {
+  position: relative;
+  font-weight: bold;
+  padding: 15px;
+  border-bottom: 1px solid #D7D7D7; }
+  .groupbox-decisionlog-header > span + span,
+  .groupbox-grid-header > span + span {
+    position: absolute; }
+  .groupbox-decisionlog-header + .mx-listview .mx-listview-item,
+  .groupbox-grid-header + .mx-listview .mx-listview-item {
+    border-bottom: 1px solid #D7D7D7;
+    padding: 5px 0; }
+
+.groupbox-grid-header > span.left-0,
+.groupbox-decisionlog-header > span.left-0,
+.groupbox-grid > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).left-0,
+.groupbox-decisionlog > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).left-0 {
+  left: 0; }
+.groupbox-grid-header > span.left-25,
+.groupbox-decisionlog-header > span.left-25,
+.groupbox-grid > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).left-25,
+.groupbox-decisionlog > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).left-25 {
+  left: 25px; }
+.groupbox-grid-header > span.left-50,
+.groupbox-decisionlog-header > span.left-50,
+.groupbox-grid > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).left-50,
+.groupbox-decisionlog > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).left-50 {
+  left: 50px; }
+.groupbox-grid-header > span.left-75,
+.groupbox-decisionlog-header > span.left-75,
+.groupbox-grid > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).left-75,
+.groupbox-decisionlog > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).left-75 {
+  left: 75px; }
+.groupbox-grid-header > span.left-100,
+.groupbox-decisionlog-header > span.left-100,
+.groupbox-grid > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).left-100,
+.groupbox-decisionlog > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).left-100 {
+  left: 100px; }
+.groupbox-grid-header > span.left-125,
+.groupbox-decisionlog-header > span.left-125,
+.groupbox-grid > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).left-125,
+.groupbox-decisionlog > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).left-125 {
+  left: 125px; }
+.groupbox-grid-header > span.left-150,
+.groupbox-decisionlog-header > span.left-150,
+.groupbox-grid > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).left-150,
+.groupbox-decisionlog > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).left-150 {
+  left: 150px; }
+.groupbox-grid-header > span.left-175,
+.groupbox-decisionlog-header > span.left-175,
+.groupbox-grid > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).left-175,
+.groupbox-decisionlog > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).left-175 {
+  left: 175px; }
+.groupbox-grid-header > span.left-200,
+.groupbox-decisionlog-header > span.left-200,
+.groupbox-grid > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).left-200,
+.groupbox-decisionlog > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).left-200 {
+  left: 200px; }
+.groupbox-grid-header > span.left-225,
+.groupbox-decisionlog-header > span.left-225,
+.groupbox-grid > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).left-225,
+.groupbox-decisionlog > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).left-225 {
+  left: 225px; }
+.groupbox-grid-header > span.left-250,
+.groupbox-decisionlog-header > span.left-250,
+.groupbox-grid > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).left-250,
+.groupbox-decisionlog > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).left-250 {
+  left: 250px; }
+.groupbox-grid-header > span.left-275,
+.groupbox-decisionlog-header > span.left-275,
+.groupbox-grid > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).left-275,
+.groupbox-decisionlog > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).left-275 {
+  left: 275px; }
+.groupbox-grid-header > span.left-300,
+.groupbox-decisionlog-header > span.left-300,
+.groupbox-grid > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).left-300,
+.groupbox-decisionlog > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).left-300 {
+  left: 300px; }
+.groupbox-grid-header > span.left-325,
+.groupbox-decisionlog-header > span.left-325,
+.groupbox-grid > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).left-325,
+.groupbox-decisionlog > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).left-325 {
+  left: 325px; }
+.groupbox-grid-header > span.left-350,
+.groupbox-decisionlog-header > span.left-350,
+.groupbox-grid > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).left-350,
+.groupbox-decisionlog > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).left-350 {
+  left: 350px; }
+.groupbox-grid-header > span.left-375,
+.groupbox-decisionlog-header > span.left-375,
+.groupbox-grid > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).left-375,
+.groupbox-decisionlog > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).left-375 {
+  left: 375px; }
+.groupbox-grid-header > span.left-400,
+.groupbox-decisionlog-header > span.left-400,
+.groupbox-grid > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).left-400,
+.groupbox-decisionlog > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).left-400 {
+  left: 400px; }
+.groupbox-grid-header > span.left-425,
+.groupbox-decisionlog-header > span.left-425,
+.groupbox-grid > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).left-425,
+.groupbox-decisionlog > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).left-425 {
+  left: 425px; }
+.groupbox-grid-header > span.left-450,
+.groupbox-decisionlog-header > span.left-450,
+.groupbox-grid > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).left-450,
+.groupbox-decisionlog > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).left-450 {
+  left: 450px; }
+.groupbox-grid-header > span.left-475,
+.groupbox-decisionlog-header > span.left-475,
+.groupbox-grid > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).left-475,
+.groupbox-decisionlog > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).left-475 {
+  left: 475px; }
+.groupbox-grid-header > span.left-500,
+.groupbox-decisionlog-header > span.left-500,
+.groupbox-grid > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).left-500,
+.groupbox-decisionlog > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).left-500 {
+  left: 500px; }
+.groupbox-grid-header > span.right-0,
+.groupbox-decisionlog-header > span.right-0,
+.groupbox-grid > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).right-0,
+.groupbox-decisionlog > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).right-0 {
+  right: 0; }
+.groupbox-grid-header > span.right-25,
+.groupbox-decisionlog-header > span.right-25,
+.groupbox-grid > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).right-25,
+.groupbox-decisionlog > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).right-25 {
+  right: 25px; }
+.groupbox-grid-header > span.right-50,
+.groupbox-decisionlog-header > span.right-50,
+.groupbox-grid > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).right-50,
+.groupbox-decisionlog > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).right-50 {
+  right: 50px; }
+.groupbox-grid-header > span.right-75,
+.groupbox-decisionlog-header > span.right-75,
+.groupbox-grid > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).right-75,
+.groupbox-decisionlog > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).right-75 {
+  right: 75px; }
+.groupbox-grid-header > span.right-100,
+.groupbox-decisionlog-header > span.right-100,
+.groupbox-grid > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).right-100,
+.groupbox-decisionlog > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).right-100 {
+  right: 100px; }
+.groupbox-grid-header > span.right-125,
+.groupbox-decisionlog-header > span.right-125,
+.groupbox-grid > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).right-125,
+.groupbox-decisionlog > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).right-125 {
+  right: 125px; }
+.groupbox-grid-header > span.right-150,
+.groupbox-decisionlog-header > span.right-150,
+.groupbox-grid > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).right-150,
+.groupbox-decisionlog > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).right-150 {
+  right: 150px; }
+.groupbox-grid-header > span.right-175,
+.groupbox-decisionlog-header > span.right-175,
+.groupbox-grid > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).right-175,
+.groupbox-decisionlog > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).right-175 {
+  right: 175px; }
+.groupbox-grid-header > span.right-200,
+.groupbox-decisionlog-header > span.right-200,
+.groupbox-grid > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).right-200,
+.groupbox-decisionlog > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).right-200 {
+  right: 200px; }
+.groupbox-grid-header > span.right-225,
+.groupbox-decisionlog-header > span.right-225,
+.groupbox-grid > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).right-225,
+.groupbox-decisionlog > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).right-225 {
+  right: 225px; }
+.groupbox-grid-header > span.right-250,
+.groupbox-decisionlog-header > span.right-250,
+.groupbox-grid > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).right-250,
+.groupbox-decisionlog > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).right-250 {
+  right: 250px; }
+.groupbox-grid-header > span.right-275,
+.groupbox-decisionlog-header > span.right-275,
+.groupbox-grid > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).right-275,
+.groupbox-decisionlog > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).right-275 {
+  right: 275px; }
+.groupbox-grid-header > span.right-300,
+.groupbox-decisionlog-header > span.right-300,
+.groupbox-grid > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).right-300,
+.groupbox-decisionlog > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).right-300 {
+  right: 300px; }
+.groupbox-grid-header > span.right-325,
+.groupbox-decisionlog-header > span.right-325,
+.groupbox-grid > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).right-325,
+.groupbox-decisionlog > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).right-325 {
+  right: 325px; }
+.groupbox-grid-header > span.right-350,
+.groupbox-decisionlog-header > span.right-350,
+.groupbox-grid > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).right-350,
+.groupbox-decisionlog > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).right-350 {
+  right: 350px; }
+.groupbox-grid-header > span.right-375,
+.groupbox-decisionlog-header > span.right-375,
+.groupbox-grid > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).right-375,
+.groupbox-decisionlog > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).right-375 {
+  right: 375px; }
+.groupbox-grid-header > span.right-400,
+.groupbox-decisionlog-header > span.right-400,
+.groupbox-grid > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).right-400,
+.groupbox-decisionlog > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).right-400 {
+  right: 400px; }
+.groupbox-grid-header > span.right-425,
+.groupbox-decisionlog-header > span.right-425,
+.groupbox-grid > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).right-425,
+.groupbox-decisionlog > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).right-425 {
+  right: 425px; }
+.groupbox-grid-header > span.right-450,
+.groupbox-decisionlog-header > span.right-450,
+.groupbox-grid > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).right-450,
+.groupbox-decisionlog > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).right-450 {
+  right: 450px; }
+.groupbox-grid-header > span.right-475,
+.groupbox-decisionlog-header > span.right-475,
+.groupbox-grid > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).right-475,
+.groupbox-decisionlog > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).right-475 {
+  right: 475px; }
+.groupbox-grid-header > span.right-500,
+.groupbox-decisionlog-header > span.right-500,
+.groupbox-grid > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).right-500,
+.groupbox-decisionlog > .mx-groupbox-header > .groupboxText:not(.groupboxIconRight).right-500 {
+  right: 500px; }
+
+.groupSearchbox-listView {
+  padding-bottom: 905px; }
+
+.groupSearchbox-listView .mx-groupbox-header, .groupSearchbox-gridView .mx-groupbox-header {
+  font-weight: bold; }
+.groupSearchbox-listView .arrow, .groupSearchbox-gridView .arrow {
+  float: right;
+  margin: -40px 0 0 0;
+  transform: rotate(180deg);
+  color: #ffffff;
+  transition: 0.3s transform ease; }
+.groupSearchbox-listView .mx-datagrid .mx-grid-search-item, .groupSearchbox-listView .mx-templategrid .mx-grid-search-item, .groupSearchbox-gridView .mx-datagrid .mx-grid-search-item, .groupSearchbox-gridView .mx-templategrid .mx-grid-search-item {
+  margin: 1em 0.5em !important; }
+  .groupSearchbox-listView .mx-datagrid .mx-grid-search-item .mx-grid-search-label, .groupSearchbox-listView .mx-templategrid .mx-grid-search-item .mx-grid-search-label, .groupSearchbox-gridView .mx-datagrid .mx-grid-search-item .mx-grid-search-label, .groupSearchbox-gridView .mx-templategrid .mx-grid-search-item .mx-grid-search-label {
+    width: 155px !important; }
+  .groupSearchbox-listView .mx-datagrid .mx-grid-search-item .mx-grid-search-input, .groupSearchbox-listView .mx-templategrid .mx-grid-search-item .mx-grid-search-input, .groupSearchbox-gridView .mx-datagrid .mx-grid-search-item .mx-grid-search-input, .groupSearchbox-gridView .mx-templategrid .mx-grid-search-item .mx-grid-search-input {
+    width: 215px !important; }
+.groupSearchbox-listView .mx-datagrid .mx-grid-controlbar, .groupSearchbox-listView .mx-templategrid .mx-grid-controlbar, .groupSearchbox-gridView .mx-datagrid .mx-grid-controlbar, .groupSearchbox-gridView .mx-templategrid .mx-grid-controlbar {
+  position: absolute;
+  margin: 15px 0px 0 -15px;
+  width: calc(100% - 108px); }
+.groupSearchbox-listView .mx-datagrid .mx-grid-content, .groupSearchbox-listView .mx-templategrid .mx-grid-content, .groupSearchbox-gridView .mx-datagrid .mx-grid-content, .groupSearchbox-gridView .mx-templategrid .mx-grid-content {
+  position: absolute;
+  margin: 110px 0px 0 -15px;
+  width: calc(100% - 108px); }
+.groupSearchbox-listView .mx-datagrid .mx-grid-searchbar, .groupSearchbox-listView .mx-templategrid .mx-grid-searchbar, .groupSearchbox-gridView .mx-datagrid .mx-grid-searchbar, .groupSearchbox-gridView .mx-templategrid .mx-grid-searchbar {
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  background-color: #ffffff;
+  margin: 0;
+  border-style: none; }
+  .groupSearchbox-listView .mx-datagrid .mx-grid-searchbar .mx-grid-search-controls button, .groupSearchbox-listView .mx-templategrid .mx-grid-searchbar .mx-grid-search-controls button, .groupSearchbox-gridView .mx-datagrid .mx-grid-searchbar .mx-grid-search-controls button, .groupSearchbox-gridView .mx-templategrid .mx-grid-searchbar .mx-grid-search-controls button {
+    margin: 1em 0 !important; }
+    .groupSearchbox-listView .mx-datagrid .mx-grid-searchbar .mx-grid-search-controls button:first-child, .groupSearchbox-listView .mx-templategrid .mx-grid-searchbar .mx-grid-search-controls button:first-child, .groupSearchbox-gridView .mx-datagrid .mx-grid-searchbar .mx-grid-search-controls button:first-child, .groupSearchbox-gridView .mx-templategrid .mx-grid-searchbar .mx-grid-search-controls button:first-child {
+      border-radius: 4px 0 0 4px;
+      border-right: 0; }
+      .groupSearchbox-listView .mx-datagrid .mx-grid-searchbar .mx-grid-search-controls button:first-child:before, .groupSearchbox-listView .mx-templategrid .mx-grid-searchbar .mx-grid-search-controls button:first-child:before, .groupSearchbox-gridView .mx-datagrid .mx-grid-searchbar .mx-grid-search-controls button:first-child:before, .groupSearchbox-gridView .mx-templategrid .mx-grid-searchbar .mx-grid-search-controls button:first-child:before {
+        content: "\e003";
+        font-family: 'Glyphicons Halflings';
+        display: inline-block;
+        padding-right: 2px;
+        position: relative;
+        top: 1px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased; }
+    .groupSearchbox-listView .mx-datagrid .mx-grid-searchbar .mx-grid-search-controls button:last-child, .groupSearchbox-listView .mx-templategrid .mx-grid-searchbar .mx-grid-search-controls button:last-child, .groupSearchbox-gridView .mx-datagrid .mx-grid-searchbar .mx-grid-search-controls button:last-child, .groupSearchbox-gridView .mx-templategrid .mx-grid-searchbar .mx-grid-search-controls button:last-child {
+      border-radius: 0 4px 4px 0; }
+      .groupSearchbox-listView .mx-datagrid .mx-grid-searchbar .mx-grid-search-controls button:last-child:before, .groupSearchbox-listView .mx-templategrid .mx-grid-searchbar .mx-grid-search-controls button:last-child:before, .groupSearchbox-gridView .mx-datagrid .mx-grid-searchbar .mx-grid-search-controls button:last-child:before, .groupSearchbox-gridView .mx-templategrid .mx-grid-searchbar .mx-grid-search-controls button:last-child:before {
+        content: "\e031";
+        font-family: 'Glyphicons Halflings';
+        display: inline-block;
+        padding-right: 2px;
+        position: relative;
+        top: 1px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased; }
+  .groupSearchbox-listView .mx-datagrid .mx-grid-searchbar .mx-grid-search-inputs .mx-grid-search-item .mx-grid-search-label, .groupSearchbox-listView .mx-templategrid .mx-grid-searchbar .mx-grid-search-inputs .mx-grid-search-item .mx-grid-search-label, .groupSearchbox-gridView .mx-datagrid .mx-grid-searchbar .mx-grid-search-inputs .mx-grid-search-item .mx-grid-search-label, .groupSearchbox-gridView .mx-templategrid .mx-grid-searchbar .mx-grid-search-inputs .mx-grid-search-item .mx-grid-search-label {
+    padding-top: 3px !important; }
+    .groupSearchbox-listView .mx-datagrid .mx-grid-searchbar .mx-grid-search-inputs .mx-grid-search-item .mx-grid-search-label label, .groupSearchbox-listView .mx-templategrid .mx-grid-searchbar .mx-grid-search-inputs .mx-grid-search-item .mx-grid-search-label label, .groupSearchbox-gridView .mx-datagrid .mx-grid-searchbar .mx-grid-search-inputs .mx-grid-search-item .mx-grid-search-label label, .groupSearchbox-gridView .mx-templategrid .mx-grid-searchbar .mx-grid-search-inputs .mx-grid-search-item .mx-grid-search-label label {
+      color: #666;
+      font-size: 14px;
+      font-weight: 600; }
+  .groupSearchbox-listView .mx-datagrid .mx-grid-searchbar .mx-grid-search-inputs .mx-grid-search-item input, .groupSearchbox-listView .mx-templategrid .mx-grid-searchbar .mx-grid-search-inputs .mx-grid-search-item input, .groupSearchbox-gridView .mx-datagrid .mx-grid-searchbar .mx-grid-search-inputs .mx-grid-search-item input, .groupSearchbox-gridView .mx-templategrid .mx-grid-searchbar .mx-grid-search-inputs .mx-grid-search-item input {
+    height: auto !important;
+    font-size: 14px !important; }
+  .groupSearchbox-listView .mx-datagrid .mx-grid-searchbar .mx-grid-search-inputs .mx-grid-search-item button, .groupSearchbox-listView .mx-templategrid .mx-grid-searchbar .mx-grid-search-inputs .mx-grid-search-item button, .groupSearchbox-gridView .mx-datagrid .mx-grid-searchbar .mx-grid-search-inputs .mx-grid-search-item button, .groupSearchbox-gridView .mx-templategrid .mx-grid-searchbar .mx-grid-search-inputs .mx-grid-search-item button {
+    padding: 0.6em 1em !important;
+    height: auto !important; }
+  .groupSearchbox-listView .mx-datagrid .mx-grid-searchbar .mx-grid-search-inputs .mx-grid-search-item select, .groupSearchbox-listView .mx-templategrid .mx-grid-searchbar .mx-grid-search-inputs .mx-grid-search-item select, .groupSearchbox-gridView .mx-datagrid .mx-grid-searchbar .mx-grid-search-inputs .mx-grid-search-item select, .groupSearchbox-gridView .mx-templategrid .mx-grid-searchbar .mx-grid-search-inputs .mx-grid-search-item select {
+    padding: 8px 30px 8px 10px !important;
+    height: auto;
+    font-size: 14px; }
+.groupSearchbox-listView.collapsed .arrow, .groupSearchbox-gridView.collapsed .arrow {
+  margin: -30px 0 0 0;
+  transform: rotate(0deg); }
+.groupSearchbox-listView.collapsed .mx-groupbox-body, .groupSearchbox-gridView.collapsed .mx-groupbox-body {
+  padding: 0 15px;
+  display: block;
+  border-style: none; }
+.groupSearchbox-listView.collapsed .mx-grid-searchbar, .groupSearchbox-gridView.collapsed .mx-grid-searchbar {
+  display: none; }
+.groupSearchbox-listView.collapsed .mx-grid-controlbar, .groupSearchbox-gridView.collapsed .mx-grid-controlbar {
+  display: block;
+  position: absolute;
+  margin: 0px 0px 0px -15px; }
+.groupSearchbox-listView.collapsed .mx-grid-content, .groupSearchbox-gridView.collapsed .mx-grid-content {
+  display: block;
+  position: absolute;
+  margin: 100px 0px 0px -15px; }
+
+.groupSearchbox-gridView {
+  padding-bottom: 1430px; }
+
+@media only screen and (max-width: 1670px) {
+  .groupSearchbox-gridView .mx-templategrid .mx-grid-content {
+    position: absolute;
+    margin: 200px 0px 0 -15px;
+    width: calc(100% - 108px); } }
+@media only screen and (max-width: 900px) {
+  .groupSearchbox-gridView .mx-templategrid .mx-grid-content {
+    position: absolute;
+    margin: 300px 0px 0 -15px;
+    width: calc(100% - 108px); } }
+.groupbox-hideshowall {
+  text-align: right;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0.5em auto -0.5em; }
+
+.groupBox-control > .mx-groupbox-header {
+  text-transform: none; }
+  .groupBox-control > .mx-groupbox-header[rating='SuperRed'] .badge-ball, .groupBox-control > .mx-groupbox-header[cssselectorhelper='SuperRed'] {
+    background: #ED1C24;
+    color: #FFFFFF; }
+  .groupBox-control > .mx-groupbox-header[rating='Red'] .badge-ball, .groupBox-control > .mx-groupbox-header[cssselectorhelper='Red'], .groupBox-control > .mx-groupbox-header[status=' Denied'] {
+    background: #d8686c;
+    color: #ffffff; }
+  .groupBox-control > .mx-groupbox-header[rating='Amber'] .badge-ball, .groupBox-control > .mx-groupbox-header[cssselectorhelper='Amber'], .groupBox-control > .mx-groupbox-header[status=' Awaiting Approval'] {
+    background: #F99B1D;
+    color: #ffffff; }
+  .groupBox-control > .mx-groupbox-header[rating='Green'] .badge-ball, .groupBox-control > .mx-groupbox-header[cssselectorhelper='Green'], .groupBox-control > .mx-groupbox-header[status=' Approved'] {
+    background: #34B78F;
+    color: #FFFFFF; }
+  .groupBox-control > .mx-groupbox-header[rating='SubGreen'] .badge-ball, .groupBox-control > .mx-groupbox-header[cssselectorhelper='SubGreen'] {
+    background: #76CA02; }
+
+.badge-ball {
+  width: 14px;
+  height: 14px;
+  top: 2px;
+  position: relative;
+  left: 5px; }
+  .badge-ball[cssselectorhelper='SubGreen'] {
+    background: #76CA02; }
+  .badge-ball[cssselectorhelper='Green'] {
+    background: #34B78F;
+    color: #FFFFFF; }
+  .badge-ball[cssselectorhelper='Amber'] {
+    background: #F99B1D;
+    color: #ffffff; }
+  .badge-ball[cssselectorhelper='Red'] {
+    background: #d8686c;
+    color: #ffffff; }
+  .badge-ball[cssselectorhelper='SuperRed'] {
+    background: #ED1C24;
+    color: #FFFFFF; }
+
+.groupboxButtons {
+  position: relative;
+  top: -7px; }
+  .groupboxButtons button {
+    font-size: 12px;
+    margin-right: 10px; }
+    .groupboxButtons button:last-child {
+      margin-right: 0; }
+
+/* ==========================================================================
+   Listview
+
+   Default Mendix Listview Widget. The list view shows a list of objects arranged vertically. Each object is shown using a template
+========================================================================== */
+.shelterbox-tiles.mx-listview {
+  display: inline-block; }
+  .shelterbox-tiles.mx-listview li.mx-listview-item {
+    width: 400px;
+    display: inline-block;
+    vertical-align: top;
+    height: auto;
+    font-size: 10px;
+    padding: 0px;
+    margin: 5px; }
+    .shelterbox-tiles.mx-listview li.mx-listview-item .tile {
+      height: auto;
+      padding: 5px; }
+      .shelterbox-tiles.mx-listview li.mx-listview-item .tile p {
+        font-size: 10px !important; }
+      .shelterbox-tiles.mx-listview li.mx-listview-item .tile h6 {
+        padding: 7px;
+        padding-left: 0;
+        padding-top: 0; }
+      .shelterbox-tiles.mx-listview li.mx-listview-item .tile > button {
+        font-size: 10px;
+        padding: 2px 0px; }
+
+.mx-listview {
+  /* Styles here */ }
+  .mx-listview .mx-button.mx-listview-clear-button {
+    /* Styles here */
+    color: gray; }
+  .mx-listview > .mx-button {
+    /* Load more button */ }
+  .mx-listview .mx-listview-item {
+    /* Styles here */ }
+    .mx-listview .mx-listview-item:hover {
+      /* Styles here */ }
+    .mx-listview .mx-listview-item.selected {
+      /* Styles here */ }
+      .mx-listview .mx-listview-item.selected:hover {
+        /* Styles here */ }
+    .mx-listview .mx-listview-item:nth-child(2n+1) {
+      /* Styles here */ }
+
+.listview-grid-editlines {
+  margin-right: 5em; }
+  .listview-grid-editlines .editLink {
+    margin: 0 -5em 0 0; }
+
+.listview-stylingless-notheritable.mx-listview > .mx-listview-list > .mx-listview-item {
+  padding: 0;
+  cursor: default;
+  border: 0;
+  background-color: transparent; }
+  .listview-stylingless-notheritable.mx-listview > .mx-listview-list > .mx-listview-item:hover, .listview-stylingless-notheritable.mx-listview > .mx-listview-list > .mx-listview-item:focus, .listview-stylingless-notheritable.mx-listview > .mx-listview-list > .mx-listview-item:active {
+    background-color: transparent; }
+  .listview-stylingless-notheritable.mx-listview > .mx-listview-list > .mx-listview-item.selected {
+    background-color: transparent !important; }
+    .listview-stylingless-notheritable.mx-listview > .mx-listview-list > .mx-listview-item.selected:hover, .listview-stylingless-notheritable.mx-listview > .mx-listview-list > .mx-listview-item.selected:focus, .listview-stylingless-notheritable.mx-listview > .mx-listview-list > .mx-listview-item.selected:active {
+      background-color: transparent !important; }
+
+.listview-orderedlist > .mx-list, .listview-orderedlist-armenian > .mx-list, .listview-orderedlist-cjk-ideographic > .mx-list, .listview-orderedlist-decimal > .mx-list, .listview-orderedlist-decimal-leading-zero > .mx-list,
+.listview-orderedlist-georgian > .mx-list, .listview-orderedlist-hebrew > .mx-list, .listview-orderedlist-hiragana > .mx-list, .listview-orderedlist-hiragana-iroha > .mx-list, .listview-orderedlist-katakana > .mx-list,
+.listview-orderedlist-katakana-iroha > .mx-list, .listview-orderedlist-lower-alpha > .mx-list, .listview-orderedlist-lower-greek > .mx-list, .listview-orderedlist-lower-latin > .mx-list,
+.listview-orderedlist-lower-roman > .mx-list, .listview-orderedlist-upper-alpha > .mx-list, .listview-orderedlist-upper-greek > .mx-list, .listview-orderedlist-upper-latin > .mx-list,
+.listview-orderedlist-upper-roman > .mx-list, .listview-unorderedlist > .mx-list, .listview-unorderedlist-disc > .mx-list, .listview-unorderedlist-circle > .mx-list, .listview-unorderedlist-square > .mx-list {
+  padding-left: 40px; }
+  .listview-orderedlist > .mx-list > li.mx-listview-empty, .listview-orderedlist-armenian > .mx-list > li.mx-listview-empty, .listview-orderedlist-cjk-ideographic > .mx-list > li.mx-listview-empty, .listview-orderedlist-decimal > .mx-list > li.mx-listview-empty, .listview-orderedlist-decimal-leading-zero > .mx-list > li.mx-listview-empty,
+  .listview-orderedlist-georgian > .mx-list > li.mx-listview-empty, .listview-orderedlist-hebrew > .mx-list > li.mx-listview-empty, .listview-orderedlist-hiragana > .mx-list > li.mx-listview-empty, .listview-orderedlist-hiragana-iroha > .mx-list > li.mx-listview-empty, .listview-orderedlist-katakana > .mx-list > li.mx-listview-empty,
+  .listview-orderedlist-katakana-iroha > .mx-list > li.mx-listview-empty, .listview-orderedlist-lower-alpha > .mx-list > li.mx-listview-empty, .listview-orderedlist-lower-greek > .mx-list > li.mx-listview-empty, .listview-orderedlist-lower-latin > .mx-list > li.mx-listview-empty,
+  .listview-orderedlist-lower-roman > .mx-list > li.mx-listview-empty, .listview-orderedlist-upper-alpha > .mx-list > li.mx-listview-empty, .listview-orderedlist-upper-greek > .mx-list > li.mx-listview-empty, .listview-orderedlist-upper-latin > .mx-list > li.mx-listview-empty,
+  .listview-orderedlist-upper-roman > .mx-list > li.mx-listview-empty, .listview-unorderedlist > .mx-list > li.mx-listview-empty, .listview-unorderedlist-disc > .mx-list > li.mx-listview-empty, .listview-unorderedlist-circle > .mx-list > li.mx-listview-empty, .listview-unorderedlist-square > .mx-list > li.mx-listview-empty {
+    list-style-type: none; }
+
+.listview-orderedlist > .mx-list,
+.listview-orderedlist-decimal > .mx-list {
+  list-style: decimal; }
+
+.listview-orderedlist-armenian > .mx-list {
+  list-style: armenian; }
+
+.listview-orderedlist-cjk-ideographic > .mx-list {
+  list-style: cjk-ideographic; }
+
+.listview-orderedlist-decimal-leading-zero > .mx-list {
+  list-style: decimal-leading-zero; }
+
+.listview-orderedlist-georgian > .mx-list {
+  list-style: georgian; }
+
+.listview-orderedlist-hebrew > .mx-list {
+  list-style: hebrew; }
+
+.listview-orderedlist-hiragana > .mx-list {
+  list-style: hiragana; }
+
+.listview-orderedlist-hiragana-iroha > .mx-list {
+  list-style: hiragana-iroha; }
+
+.listview-orderedlist-katakana > .mx-list {
+  list-style: katakana; }
+
+.listview-orderedlist-katakana-iroha > .mx-list {
+  list-style: katakana-iroha; }
+
+.listview-orderedlist-lower-alpha > .mx-list {
+  list-style: lower-alpha; }
+
+.listview-orderedlist-lower-greek > .mx-list {
+  list-style: lower-greek; }
+
+.listview-orderedlist-lower-latin > .mx-list {
+  list-style: lower-latin; }
+
+.listview-orderedlist-lower-roman > .mx-list {
+  list-style: lower-roman; }
+
+.listview-orderedlist-upper-alpha > .mx-list {
+  list-style: upper-alpha; }
+
+.listview-orderedlist-upper-greek > .mx-list {
+  list-style: upper-greek; }
+
+.listview-orderedlist-upper-latin > .mx-list {
+  list-style: upper-latin; }
+
+.listview-orderedlist-upper-roman > .mx-list {
+  list-style: upper-roman; }
+
+.listview-unorderedlist > .mx-list,
+.listview-unorderedlist-disc > .mx-list {
+  list-style: disc; }
+
+.listview-unorderedlist-circle > .mx-list {
+  list-style: circle; }
+
+.listview-unorderedlist-square > .mx-list {
+  list-style: square; }
+
+.mx-listview.listview-nomore > button.mx-listview-loadMore {
+  display: none; }
+
+.mx-listview.listview-narrative > .mx-list > .mx-listview-item {
+  padding: 8px 15px 3px; }
+  .mx-listview.listview-narrative > .mx-list > .mx-listview-item > .mx-dataview > .mx-dataview-content > .narrative-buttons-updown {
+    float: left; }
+    .mx-listview.listview-narrative > .mx-list > .mx-listview-item > .mx-dataview > .mx-dataview-content > .narrative-buttons-updown > .mx-button, .mx-listview.listview-narrative > .mx-list > .mx-listview-item > .mx-dataview > .mx-dataview-content > .narrative-buttons-updown > .mx-link {
+      margin-right: 1em; }
+  .mx-listview.listview-narrative > .mx-list > .mx-listview-item > .mx-dataview > .mx-dataview-content > .narrative-buttons-editdelete {
+    float: right; }
+    .mx-listview.listview-narrative > .mx-list > .mx-listview-item > .mx-dataview > .mx-dataview-content > .narrative-buttons-editdelete > .mx-button, .mx-listview.listview-narrative > .mx-list > .mx-listview-item > .mx-dataview > .mx-dataview-content > .narrative-buttons-editdelete > .mx-link {
+      margin-left: 1em; }
+  .mx-listview.listview-narrative > .mx-list > .mx-listview-item > .mx-dataview > .mx-dataview-content > .mx-dataview,
+  .mx-listview.listview-narrative > .mx-list > .mx-listview-item > .mx-dataview > .mx-dataview-content > .narrative-buttons-updown > .mx-link,
+  .mx-listview.listview-narrative > .mx-list > .mx-listview-item > .mx-dataview > .mx-dataview-content > .narrative-buttons-editdelete > .mx-link {
+    padding-top: 0.6em; }
+  .mx-listview.listview-narrative > .mx-list > .mx-listview-item > .mx-dataview > .mx-dataview-content > .mx-dataview {
+    margin-left: 4em;
+    margin-right: 13em; }
+
+.narrativegroup-buttons {
+  text-align: right;
+  margin-right: 1em;
+  margin-bottom: 0.6em; }
+  .narrativegroup-buttons > .mx-button, .narrativegroup-buttons > .mx-link {
+    margin-left: 1em; }
+
+.mx-listview.listview-narrativegroup .narrativegroup-buttons {
+  margin-bottom: 0;
+  float: right; }
+
+.mx-listview.listview-narrative.listview-narrative-vertical > .mx-list > .mx-listview-item > .mx-dataview > .mx-dataview-content > .mx-dataview {
+  clear: both;
+  margin-left: 0;
+  margin-right: 0; }
+
+.listview-generic > ul > li.mx-listview-empty {
+  display: block; }
+  .listview-generic > ul > li.mx-listview-empty::before {
+    content: "No data found"; }
+
+.listview-NoTeamsFound > ul > li.mx-listview-empty,
+.listview-NoDeploymentsFound > ul > li.mx-listview-empty {
+  display: block; }
+  .listview-NoTeamsFound > ul > li.mx-listview-empty::before,
+  .listview-NoDeploymentsFound > ul > li.mx-listview-empty::before {
+    content: "No teams found"; }
+
+.listview-NoAssignmentsFound > ul > li.mx-listview-empty {
+  display: block; }
+  .listview-NoAssignmentsFound > ul > li.mx-listview-empty::before {
+    content: "No assignments found"; }
+
+.listview-NoKeyPlayersFound > ul > li.mx-listview-empty {
+  display: block; }
+  .listview-NoKeyPlayersFound > ul > li.mx-listview-empty::before {
+    content: "No key players found"; }
+
+.listview-NoDecisionsFound > ul > li.mx-listview-empty {
+  display: block; }
+  .listview-NoDecisionsFound > ul > li.mx-listview-empty::before {
+    content: "No decisions found"; }
+
+.listview-NoObjectivesFound > ul > li.mx-listview-empty {
+  display: block; }
+  .listview-NoObjectivesFound > ul > li.mx-listview-empty::before {
+    content: "No objectives found"; }
+
+.listview-NoOutcomesFound > ul > li.mx-listview-empty {
+  display: block; }
+  .listview-NoOutcomesFound > ul > li.mx-listview-empty::before {
+    content: "No outcomes found"; }
+
+.listview-NoOutputsFound > ul > li.mx-listview-empty {
+  display: block; }
+  .listview-NoOutputsFound > ul > li.mx-listview-empty::before {
+    content: "No outputs found"; }
+
+.listview-NoPlansFound > ul > li.mx-listview-empty {
+  display: block; }
+  .listview-NoPlansFound > ul > li.mx-listview-empty::before {
+    content: "No plans found"; }
+
+.listview-NoCountriesFound > ul > li.mx-listview-empty {
+  display: block; }
+  .listview-NoCountriesFound > ul > li.mx-listview-empty::before {
+    content: "No countries found"; }
+
+.listview-NoEventBackgroundFound > ul > li.mx-listview-empty {
+  display: block; }
+  .listview-NoEventBackgroundFound > ul > li.mx-listview-empty::before {
+    content: "No event background found"; }
+
+.listview-NoResponseSummaryFound > ul > li.mx-listview-empty {
+  display: block; }
+  .listview-NoResponseSummaryFound > ul > li.mx-listview-empty::before {
+    content: "No response background found"; }
+
+.listview-NoEventImagesFound > ul > li.mx-listview-empty {
+  display: block; }
+  .listview-NoEventImagesFound > ul > li.mx-listview-empty::before {
+    content: "No images found"; }
+
+.listview-NoResponsesFound > ul > li.mx-listview-empty {
+  display: block; }
+  .listview-NoResponsesFound > ul > li.mx-listview-empty::before {
+    content: "No responses found"; }
+
+.listview-NoRiskAssessmentsFound > ul > li.mx-listview-empty {
+  display: block; }
+  .listview-NoRiskAssessmentsFound > ul > li.mx-listview-empty::before {
+    content: "No risk assessments found"; }
+
+.listview-NoTeamTasksFound > ul > li.mx-listview-empty {
+  display: block; }
+  .listview-NoTeamTasksFound > ul > li.mx-listview-empty::before {
+    content: "No team tasks found"; }
+
+.listview-NoPeopleFound > ul > li.mx-listview-empty {
+  display: block; }
+  .listview-NoPeopleFound > ul > li.mx-listview-empty::before {
+    content: "No people found"; }
+
+.listview-NoCurrentPeopleFound > ul > li.mx-listview-empty {
+  display: block; }
+  .listview-NoCurrentPeopleFound > ul > li.mx-listview-empty::before {
+    content: "No current people found"; }
+
+.listview-NoCommunicationsFound > ul > li.mx-listview-empty {
+  display: block; }
+  .listview-NoCommunicationsFound > ul > li.mx-listview-empty::before {
+    content: "No communication records found"; }
+
+.listview-NoLogisticsFPFound > ul > li.mx-listview-empty {
+  font-size: 16px;
+  padding-top: 8px;
+  color: #fff;
+  text-transform: none;
+  font-weight: bold;
+  display: block; }
+  .listview-NoLogisticsFPFound > ul > li.mx-listview-empty::before {
+    content: "Logistics Focal Point: N/A"; }
+
+.listview-NoProcurementFPFound > ul > li.mx-listview-empty {
+  font-size: 16px;
+  padding-top: 8px;
+  color: #fff;
+  text-transform: none;
+  font-weight: bold;
+  display: block; }
+  .listview-NoProcurementFPFound > ul > li.mx-listview-empty::before {
+    content: "Procurement Focal Point: N/A"; }
+
+.listview-NoMealFPFound > ul > li.mx-listview-empty {
+  font-size: 16px;
+  padding-top: 8px;
+  color: #fff;
+  text-transform: none;
+  font-weight: bold;
+  display: block; }
+  .listview-NoMealFPFound > ul > li.mx-listview-empty::before {
+    content: "MEAL Focal Point: N/A"; }
+
+.listview-NA > ul > li.mx-listview-empty {
+  text-align: center;
+  padding-left: 0;
+  color: black;
+  text-transform: none;
+  display: block; }
+  .listview-NA > ul > li.mx-listview-empty::before {
+    content: "N/A"; }
+
+.listview-title {
+  padding: 0 15px !important; }
+
+.listview-images > .mx-listview-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  justify-items: center; }
+  .listview-images > .mx-listview-list > .mx-listview-item > .mx-dataview > .mx-dataview-content > div {
+    border: 1px solid #d7d7d7;
+    box-shadow: 0 0 10px 0 #e4e4e4; }
+    .listview-images > .mx-listview-list > .mx-listview-item > .mx-dataview > .mx-dataview-content > div > img {
+      margin: auto; }
+    .listview-images > .mx-listview-list > .mx-listview-item > .mx-dataview > .mx-dataview-content > div > span:first-of-type {
+      padding: 5px;
+      display: inline-block;
+      font-weight: bold; }
+    .listview-images > .mx-listview-list > .mx-listview-item > .mx-dataview > .mx-dataview-content > div > span:not(:first-of-type) {
+      padding: 5px;
+      display: inline-block;
+      word-break: break-word; }
+  .listview-images > .mx-listview-list > .mx-listview-empty {
+    grid-column-start: 2; }
+
+.listview-removebackground > ul > li {
+  background: none !important; }
+
+.listview-addbottomborder {
+  margin-bottom: 60px;
+  border-bottom: solid 1px #D7D7D7; }
+  .listview-addbottomborder > ul > li {
+    border-top: 1px solid #D7D7D7 !important; }
+  .listview-addbottomborder > button {
+    position: absolute;
+    z-index: 1; }
+
+/* ==========================================================================
+   Modals
+
+   Default Mendix Modals. Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults
+========================================================================== */
+.modal-dialog {
+  /* Styles here */ }
+  .modal-dialog .modal-content {
+    /* Styles here */ }
+    .modal-dialog .modal-content .modal-header {
+      background-color: #34B78F;
+      border-style: none;
+      color: #ffffff; }
+      .modal-dialog .modal-content .modal-header h4 {
+        color: #fff; }
+      .modal-dialog .modal-content .modal-header .close {
+        color: #fff; }
+    .modal-dialog .modal-content .modal-body .modal-dialog-form {
+      width: 100%;
+      max-width: 60em;
+      margin: 2em auto 0; }
+      .modal-dialog .modal-content .modal-body .modal-dialog-form .CriteriaText {
+        margin-top: -20px;
+        margin-bottom: 20px; }
+    .modal-dialog .modal-content .modal-footer {
+      /* Styles here */ }
+    .modal-dialog .modal-content .modal-dialog-faux-titlebar {
+      background-color: #34B78F;
+      width: calc( 100% + 40px );
+      height: 30px;
+      margin: -35px -20px 0;
+      padding: 0 20px;
+      border-style: none; }
+      .modal-dialog .modal-content .modal-dialog-faux-titlebar h4 {
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold; }
+
+/* Default Mendix Window Modal */
+/* Default Mendix Login Modal */
+.mx-login {
+  /* Styles here */ }
+  .mx-login .modal-body {
+    /* Styles here */ }
+  .mx-login .modal-content {
+    /* Styles here */ }
+  .mx-login .modal-header,
+  .mx-login .modal-footer {
+    /* Styles here */ }
+  .mx-login button {
+    /* Styles here */ }
+  .mx-login h4 {
+    /* Styles here */ }
+
+.modal-body.mx-window-body .mx-placeholder {
+  height: 100%; }
+  .modal-body.mx-window-body .mx-placeholder .layoutGridHeader {
+    margin: -15px -20px;
+    overflow: auto;
+    height: calc( 100% - 35px );
+    display: block;
+    padding: 20px; }
+  .modal-body.mx-window-body .mx-placeholder .footerButton {
+    margin-top: 35px; }
+
+/* ==========================================================================
+   Navigation List
+
+   Default Mendix Navigation List Widget. A navigation list can be used to attach an action to an entire row. Such a row is called a navigation list item
+========================================================================== */
+.mx-navigationlist {
+  /* Styles here */ }
+  .mx-navigationlist .mx-navigationlist-item {
+    /* Styles here */ }
+    .mx-navigationlist .mx-navigationlist-item:hover {
+      /* Styles here */ }
+
+/* ==========================================================================
+   Tab Container
+
+   Default Mendix Tab Container Widget. Tab containers are used to show information categorized into multiple tab pages. 
+   This can be very useful if the amount of information that has to be displayed is larger than the amount of space on the screen
+========================================================================== */
+.mx-tabcontainer {
+  /* Styles here */
+  background: #fff; }
+  .mx-tabcontainer .mx-tabcontainer-tabs {
+    /* Styles here */ }
+    .mx-tabcontainer .mx-tabcontainer-tabs > li > a {
+      /* Styles here */ }
+      .mx-tabcontainer .mx-tabcontainer-tabs > li > a:hover, .mx-tabcontainer .mx-tabcontainer-tabs > li > a:focus {
+        /* Styles here */ }
+    .mx-tabcontainer .mx-tabcontainer-tabs > li.active > a,
+    .mx-tabcontainer .mx-tabcontainer-tabs > li.active > a:hover,
+    .mx-tabcontainer .mx-tabcontainer-tabs > li.active > a:focus {
+      /* Styles here */ }
+  .mx-tabcontainer .mx-tabcontainer-content {
+    /* Styles here */
+    background: #fff; }
+
+/* ==========================================================================
+   Tables
+
+   Default Mendix Table Widget. Tables can be used to lend structure to a page. They contain a number of rows (tr) and columns, the intersection of which is called a cell (td). Each cell can contain widgets
+========================================================================== */
+table.mx-table {
+  /* Styles here */ }
+  table.mx-table > tbody > tr {
+    /* Styles here */ }
+    table.mx-table > tbody > tr > th {
+      /* Styles here */ }
+      table.mx-table > tbody > tr > th > label {
+        /* Styles here */ }
+    table.mx-table > tbody > tr > td {
+      /* Styles here */ }
+
+/* ==========================================================================
+   Templategrid
+
+   Default Mendix Templategrid Widget. The template grid shows a list of objects in a tile view. For example, a template grid can show a list of products. The template grid has a lot in common with the data grid. The main difference is that the objects are shown in templates (a sort of small data view) instead of rows
+========================================================================== */
+.mx-templategrid {
+  /* Styles here */ }
+  .mx-templategrid.nopadding .mx-templategrid-item {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0; }
+  .mx-templategrid .mx-templategrid-item {
+    /* Styles here */ }
+    .mx-templategrid .mx-templategrid-item:hover {
+      /* Styles here */ }
+    .mx-templategrid .mx-templategrid-item.selected {
+      /* Styles here */ }
+      .mx-templategrid .mx-templategrid-item.selected:hover {
+        /* Styles here */ }
+  .mx-templategrid .mx-templategrid-item.nopadding {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0; }
+
+.templategrid-selectable.mx-templategrid .mx-templategrid-item.grey {
+  background-color: grey; }
+
+.templategrid-title-wrapper {
+  position: relative; }
+  .templategrid-title-wrapper > .mx-layoutgrid {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    padding: 15px !important; }
+  .templategrid-title-wrapper > .mx-templategrid > .mx-grid-controlbar {
+    margin-bottom: 50px; }
+
+/* ==========================================================================
+   Typography
+========================================================================== */
+p {
+  /* Styles here */ }
+
+label {
+  /* Styles here */ }
+
+.mx-title {
+  /* Styles here */ }
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  /* Styles here */ }
+
+/* ==========================================================================
+   Card
+========================================================================== */
+.card {
+  /* Styles here */ }
+
+.card-header-action {
+  /* Title + button + border below title and button */ }
+  .card-header-action .card-title {
+    /* Styles here */ }
+  .card-header-action .btn {
+    /* Styles here */ }
+
+.card-details {
+  /* Styles here */ }
+
+.card-title {
+  /* Styles here */ }
+
+.card-subtitle {
+  /* Styles here */ }
+
+.card-annotation {
+  /* Styles here */ }
+
+.card-icon {
+  /* Styles here */ }
+  .card-icon .glyphicon {
+    /* Styles here */ }
+
+.card-image {
+  /* Styles here */ }
+
+.card-link {
+  /* Styles here */ }
+
+/* ==========================================================================
+   Page Header
+========================================================================== */
+.pageheader {
+  /* Styles here */ }
+
+.pageheader.section {
+  /* Styles here */ }
+
+.pageheader-title {
+  /* Styles here */ }
+
+.pageheader-subtitle {
+  /* Styles here */ }
+
+/* ==========================================================================
+   Form Block
+
+   Used in default forms
+========================================================================== */
+.formblock {
+  /* Styles here */ }
+
+.formblock-header {
+  /* Styles here */ }
+
+/* ==========================================================================
+   Wizard
+
+   Styling for Wizard (Steps/Numbers)
+========================================================================== */
+.wizard {
+  /* Wizard line between steps */ }
+  .wizard:before {
+    /* Styles here */ }
+
+.wizard-step {
+  /* Styles here */ }
+
+.wizard-step-number {
+  /* Styles here */ }
+
+.wizard-step-number-active {
+  /* Styles here */ }
+
+.wizard-step-number-visited {
+  /* Styles here */ }
+
+.wizard-step-title {
+  /* Styles here */ }
+
+/* Phone Specific Styling */
+.profile-phone .wizard:before {
+  /* Styles here */ }
+.profile-phone .wizard .wizard-step-number {
+  /* Styles here */ }
+
+.fc tr.TeamMemberOnHold {
+  color: white;
+  font-weight: bold;
+  background-color: #ED1C24; }
+
+.mx-profilemenu-button-placeholder {
+  margin: 6px 6px 0; }
+
+.SummaryProfile {
+  text-align: center;
+  margin-right: 2vh;
+  margin-bottom: 1vh;
+  border-style: none;
+  background-color: #ffffff;
+  padding: 0;
+  margin-top: 5px;
+  z-index: 103; }
+  .SummaryProfile > .row:first-child > div > :first-child {
+    margin-top: 0; }
+  .SummaryProfile > .row > :last-child:not(:first-child) {
+    text-align: right; }
+  .SummaryProfile .showOnStick {
+    display: none; }
+  .SummaryProfile .showOnStick {
+    display: none; }
+
+.SummaryProfile-sticky {
+  background-color: #ffffff !important;
+  padding: 0 !important;
+  position: absolute;
+  width: 100%; }
+  .SummaryProfile-sticky .showOnStick {
+    display: block; }
+  .SummaryProfile-sticky .hideOnStick {
+    display: none; }
+  .SummaryProfile-sticky > * {
+    margin: 0 auto; }
+  .SummaryProfile-sticky > .row > .col-md-6:last-child {
+    float: right; }
+  .SummaryProfile-sticky h1 {
+    margin: 2em 2em 2em 2em;
+    padding: 5px 0;
+    float: left;
+    font-size: 24px; }
+  .SummaryProfile-sticky .SummaryProfileItem {
+    float: left;
+    margin-right: 0;
+    padding-top: 0;
+    margin-top: 0;
+    margin-left: 2vh h1;
+      margin-left-margin-left: 0.2vh;
+      margin-left-margin-top: 3vh; }
+  .SummaryProfile-sticky .SummaryProfileItem2 {
+    float: left;
+    margin-right: 2em;
+    padding-top: 0;
+    margin-top: 1.8vh; }
+
+.SummaryHeaderItem {
+  font-size: 113%;
+  font-weight: bold; }
+
+.SummaryHeader {
+  background-color: #ffffff;
+  border-bottom: #D7D7D7 solid 1px;
+  max-width: 1000px;
+  z-index: 1; }
+  .SummaryHeader > .row > :last-child:not(:first-child) {
+    text-align: right; }
+  .SummaryHeader > .row:first-child > div > :first-child {
+    margin-top: 0; }
+  .SummaryHeader .showOnStick {
+    display: none; }
+  .SummaryHeader .PrimaryEvent, .SummaryHeader .PrimaryEvent *, .SummaryHeader .SecondaryEvents, .SummaryHeader .SecondaryEvents * {
+    display: inline; }
+  .SummaryHeader .SecondaryEvents > ul > li > .mx-dataview > .mx-dataview-content:first-child::before {
+    content: ', '; }
+  .SummaryHeader .response-status-group > h3 {
+    float: left;
+    margin-right: 3em; }
+  .SummaryHeader .response-status-group .ResponseStatusButtons {
+    margin: 15px 0; }
+
+.SummaryHeader .DeploymentLink, .SummaryHeader .ResponseLink, .SummaryHeader .EventLink, .SummaryHeader .CountryLink, .SummaryBody .DeploymentLink, .SummaryBody .ResponseLink, .SummaryBody .EventLink, .SummaryBody .CountryLink {
+  color: #34B78F; }
+
+.SummaryHeader-sticky {
+  padding: 0 !important;
+  max-width: 100%;
+  position: fixed;
+  width: 100%; }
+  .SummaryHeader-sticky .showOnStick {
+    display: block; }
+  .SummaryHeader-sticky .hideOnStick {
+    display: none; }
+  .SummaryHeader-sticky > * {
+    max-width: 1000px;
+    margin: 0 auto; }
+  .SummaryHeader-sticky > .row > .col-md-6 {
+    width: auto; }
+    .SummaryHeader-sticky > .row > .col-md-6:last-child {
+      float: right; }
+  .SummaryHeader-sticky h1, .SummaryHeader-sticky .h1 {
+    margin: 0 2em 0 0;
+    padding: 5px 0;
+    float: left; }
+    .SummaryHeader-sticky h1, .SummaryHeader-sticky h1 > *, .SummaryHeader-sticky .h1, .SummaryHeader-sticky .h1 > * {
+      font-size: 24px; }
+  .SummaryHeader-sticky .SummaryHeaderItem {
+    float: left;
+    margin-right: 2em;
+    padding-top: 11px; }
+  .SummaryHeader-sticky :last-child > .SummaryHeaderItem {
+    float: right;
+    margin-left: 0;
+    margin-right: 0; }
+    .SummaryHeader-sticky :last-child > .SummaryHeaderItem:not(:last-child) {
+      margin-left: 2em; }
+  .SummaryHeader-sticky .col-md-8 {
+    width: auto; }
+  .SummaryHeader-sticky .col-md-4 {
+    width: auto;
+    float: right; }
+
+.SummaryBody {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto; }
+  .SummaryBody .editLink {
+    float: right;
+    margin-left: 1em;
+    margin-bottom: 1em; }
+  .SummaryBody > .row > div > .editLink {
+    margin-top: 15px; }
+  .SummaryBody .mx-listview-item .editLink:last-child {
+    margin-left: 0; }
+  .SummaryBody .mx-listview-empty {
+    display: none; }
+  .SummaryBody .DeploymentHeader {
+    margin: 15px 0 20px; }
+    .SummaryBody .DeploymentHeader h3, .SummaryBody .DeploymentHeader .h3 {
+      margin: 0;
+      display: block; }
+    .SummaryBody .DeploymentHeader > h3, .SummaryBody .DeploymentHeader > .h3 {
+      text-align: center; }
+  .SummaryBody .DeploymentHeaderLeft {
+    float: left;
+    width: 18em; }
+  .SummaryBody .DeploymentHeaderRight {
+    float: right; }
+  .SummaryBody .activeAssignment .row {
+    border-left: solid #34B78F 4px;
+    margin-left: -19px; }
+  .SummaryBody .inactiveAssignment .mx-text {
+    font-weight: lighter; }
+
+.ResponseCriteriaHeading {
+  margin-top: 20px;
+  margin-bottom: 10px; }
+  .ResponseCriteriaHeading .mx-text:not(.glyphicon)::before {
+    content: "-";
+    margin-right: 0.5em; }
+  .ResponseCriteriaHeading .h2, .ResponseCriteriaHeading h2 {
+    display: inline;
+    margin-right: 0.5em; }
+    .ResponseCriteriaHeading .h2:last-child, .ResponseCriteriaHeading h2:last-child {
+      margin-right: 0; }
+
+.ResponseCriteriaBody {
+  margin-top: 15px; }
+  .ResponseCriteriaBody > ul > li.mx-listview-item {
+    padding: 0 15px;
+    border-top: 1px solid #d7d7d7 !important; }
+  .ResponseCriteriaBody .criterionHeading h3 {
+    margin-bottom: 0.5em; }
+    .ResponseCriteriaBody .criterionHeading h3.glyphicon {
+      float: left;
+      width: 3em;
+      margin: 0; }
+  .ResponseCriteriaBody .criterionForm {
+    margin-top: 20px; }
+
+.delete-button {
+  float: right; }
+
+.listview-NoDeploymentsFound > ul > li.mx-listview-empty {
+  display: block; }
+  .listview-NoDeploymentsFound > ul > li.mx-listview-empty::before {
+    content: "No deployments found"; }
+
+.listview-NoAssignmentsFound > ul > li.mx-listview-empty {
+  display: block; }
+  .listview-NoAssignmentsFound > ul > li.mx-listview-empty::before {
+    content: "No assignments found"; }
+
+.listview-NoKeyPlayersFound > ul > li.mx-listview-empty {
+  display: block; }
+  .listview-NoKeyPlayersFound > ul > li.mx-listview-empty::before {
+    content: "No key players found"; }
+
+.listview-horizontal > ul > li {
+  float: left; }
+
+.overlay {
+  border: 4px red solid;
+  position: relative; }
+
+.overlay .mx-text {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  background: red;
+  color: white;
+  font-weight: bold;
+  transform: rotate(45deg); }
+
+.slideout-button {
+  padding: 6px 1em;
+  color: #FFF;
+  /* Swap for color variable */
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+  background-color: #1b3149;
+  /* Swap for color variable */
+  font-size: 15px; }
+
+.slideout-control {
+  transform: rotate(-90deg) translate(50%, -50%); }
+
+.mx-name-listViewTeamMember {
+  margin: 10px 0 0 0; }
+  .mx-name-listViewTeamMember .mx-dataview-content {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .mx-name-listViewTeamMember .mx-dataview-content button {
+      margin: 0 0 0 auto; }
+
+.listViewFake-search {
+  transform: translate(0, -45px); }
+  .listViewFake-search .mx-listview-searchbar {
+    margin-bottom: 49px !important; }
+
+.listViewFake {
+  margin: 42px 0 0 0; }
+
+.layoutGridFakeListTitle {
+  transform: translate(0px, 45px);
+  font-weight: bold; }
+  .layoutGridFakeListTitle .row {
+    padding: 15px; }
+
+.right {
+  float: right; }
+
+.modal-body.mx-window-body .mx-placeholder {
+  height: 100%; }
+  .modal-body.mx-window-body .mx-placeholder .layoutGridHeader {
+    margin: -15px -20px;
+    overflow: auto;
+    height: calc( 100% - 35px );
+    display: block;
+    padding: 20px; }
+  .modal-body.mx-window-body .mx-placeholder .footerButton {
+    margin-top: 35px; }
+
+.TeamMemberPhoto {
+  width: 6em;
+  height: 8em;
+  border: 1px solid #D7D7D7;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  margin-top: 1em; }
+  .TeamMemberPhoto > img {
+    display: block;
+    width: 100%; }
+  .TeamMemberPhoto > span {
+    position: absolute;
+    bottom: 0;
+    font-size: 11px;
+    background: #D7D7D7;
+    color: white;
+    padding: 5px;
+    width: 100%;
+    display: block;
+    text-align: center; }
+  .TeamMemberPhoto[cssselectorhelper="Staff"] > span {
+    background: #34B78F;
+    color: #FFFFFF; }
+  .TeamMemberPhoto[cssselectorhelper="Volunteer"] > span {
+    background: #F9C91D;
+    color: #555555; }
+
+.SelectPhoto {
+  float: left;
+  margin-top: 20em; }
+
+.TeamMemberCard h3, .TeamMemberCard .h3 {
+  float: left;
+  margin-top: 0; }
+.TeamMemberCard .TeamMemberPhoto {
+  float: left;
+  clear: left;
+  margin-right: 1em; }
+  .TeamMemberCard .TeamMemberPhoto + div {
+    float: left;
+    width: calc( 100% - 7em ); }
+.TeamMemberCard h3:first-child {
+  margin: 0 0 5px; }
+.TeamMemberCard p {
+  margin-bottom: 0; }
+.TeamMemberCard .form-group {
+  margin-bottom: 0; }
+  .TeamMemberCard .form-group .form-control-static {
+    border-bottom: none; }
+    .TeamMemberCard .form-group .form-control-static .form-control-static, .TeamMemberCard .form-group .form-control-static .control-label {
+      padding-top: 0;
+      padding-bottom: 0.2em; }
+
+.mx-listview li:not(:last-child) .TeamMemberAssignmentCard {
+  border-bottom: #D7D7D7 1px solid;
+  margin-bottom: 1em; }
+
+.TeamMemberAssignmentCard {
+  margin-top: 1em; }
+  .TeamMemberAssignmentCard p {
+    margin-bottom: 0; }
+  .TeamMemberAssignmentCard .form-control-static {
+    border-bottom: none; }
+    .TeamMemberAssignmentCard .form-control-static .form-control-static, .TeamMemberAssignmentCard .form-control-static .control-label {
+      padding-top: 0;
+      padding-bottom: 0.2em; }
+
+.OverviewPageHeader {
+  box-shadow: 0 4px 4px 0 rgba(83, 83, 83, 0.2);
+  display: inline-block;
+  width: 100%;
+  height: 130px;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  border-bottom: #D7D7D7 solid 1px;
+  z-index: 1; }
+  .OverviewPageHeader .Info {
+    margin-top: 1.7em;
+    text-align: left;
+    color: #FFF; }
+  .OverviewPageHeader > .row > :last-child:not(:first-child) {
+    text-align: right; }
+  .OverviewPageHeader > .row:first-child > div > :first-child {
+    margin-top: 0; }
+  .OverviewPageHeader .showOnStick {
+    display: none; }
+  .OverviewPageHeader .PrimaryEvent, .OverviewPageHeader .PrimaryEvent *, .OverviewPageHeader .SecondaryEvents, .OverviewPageHeader .SecondaryEvents * {
+    display: inline; }
+  .OverviewPageHeader .SecondaryEvents > ul > li > .mx-dataview > .mx-dataview-content:first-child::before {
+    content: ', '; }
+  .OverviewPageHeader .response-status-group > h3 {
+    float: left;
+    margin-right: 3em; }
+  .OverviewPageHeader .response-status-group .ResponseStatusButtons {
+    margin: 15px 0; }
+
+.OverviewPageHeader-sticky {
+  padding: 0 !important;
+  max-width: 100%;
+  position: fixed;
+  width: 100%;
+  height: auto; }
+  .OverviewPageHeader-sticky .showOnStick {
+    display: block; }
+  .OverviewPageHeader-sticky .hideOnStick {
+    display: none; }
+  .OverviewPageHeader-sticky > * {
+    margin: 0 auto; }
+  .OverviewPageHeader-sticky > .row > .col-md-6 {
+    width: auto; }
+    .OverviewPageHeader-sticky > .row > .col-md-6:last-child {
+      float: right; }
+  .OverviewPageHeader-sticky h1, .OverviewPageHeader-sticky .h1 {
+    margin: 0 2em 0 2em;
+    padding: 5px 0;
+    float: left; }
+    .OverviewPageHeader-sticky h1, .OverviewPageHeader-sticky h1 > *, .OverviewPageHeader-sticky .h1, .OverviewPageHeader-sticky .h1 > * {
+      font-size: 24px; }
+  .OverviewPageHeader-sticky .SummaryHeaderItem {
+    float: left;
+    margin-right: 2em;
+    padding-top: 11px; }
+  .OverviewPageHeader-sticky :last-child > .SummaryHeaderItem {
+    float: right;
+    margin-left: 0;
+    margin-right: 0; }
+    .OverviewPageHeader-sticky :last-child > .SummaryHeaderItem:not(:last-child) {
+      margin-left: 2em; }
+  .OverviewPageHeader-sticky .col-md-8 {
+    width: auto; }
+  .OverviewPageHeader-sticky .col-md-4 {
+    width: auto;
+    float: right; }
+
+.OverviewPage {
+  background-color: #eff4f7; }
+  .OverviewPage .OverviewDataGrid {
+    margin: 0.5em; }
+
+.OverviewPageKit {
+  background-color: #eff4f7;
+  border-radius: 10px; }
+  .OverviewPageKit .OverviewDataGrid {
+    margin: 0.5em;
+    border-radius: 10px; }
+
+.btn-add {
+  background-color: #34B78F;
+  color: #FFFFFF;
+  font-weight: bold; }
+
+.btn-delete {
+  background-color: #ED1C24;
+  color: #FFFFFF;
+  font-weight: bold; }
+
+.btn-admin {
+  color: #34B78F;
+  font-weight: bold; }
+
+.btn-save {
+  float: right;
+  background-color: #34B78F;
+  color: #FFFFFF;
+  font-weight: bold;
+  border-style: none; }
+
+.btn-sync {
+  margin-right: 10px;
+  float: right; }
+
+.btn-search {
+  background-color: #FFFFFF;
+  color: #34B78F; }
+
+.btn-general {
+  background-color: #34B78F;
+  color: #FFFFFF;
+  font-weight: bold; }
+
+.Link {
+  color: #34B78F;
+  font-size: 26px; }
+
+.menuTopBar {
+  box-shadow: 0 2px 2px 0 rgba(83, 83, 83, 0.2);
+  display: inline-block;
+  width: 100%;
+  color: #FFFFFF;
+  background-color: #34B78F;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #D7D7D7; }
+  .menuTopBar .menuItemBar {
+    float: right;
+    margin-top: 0.8vh;
+    text-align: right;
+    margin-right: 1vh; }
+
+.region-topbar .mx-navbar ul.nav > li.mx-navbar-item > a {
+  background-color: #34B78F;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: bold; }
+
+.region-topbar .mx-navbar ul.nav > li.mx-navbar-item > a .caret {
+  border-top-color: #34B78F;
+  border-bottom-color: #FFFFFF; }
+
+.ShelterboxLogo {
+  border: red dashed thin;
+  margin: 2.8vh; }
+
+.mx-grid .mx-grid-searchbar {
+  margin: 5px 0;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #34B78F;
+  border-radius: 10px;
+  background-color: #34B78F;
+  box-shadow: 0 4px 4px 0 rgba(83, 83, 83, 0.2);
+  color: #FFFFFF; }
+
+.mx-grid-search-item {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 2em;
+  margin-left: 2em;
+  margin-bottom: 1em;
+  margin-right: 2em; }
+
+.mx-grid .mx-grid-searchbar .mx-grid-search-item .mx-grid-search-label {
+  vertical-align: middle;
+  width: 140px;
+  padding: 0 5px;
+  text-align: right;
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden; }
+
+.mx-grid .mx-grid-searchbar .mx-grid-search-item .mx-grid-search-label label {
+  padding-top: 5px;
+  font-weight: bold; }
+
+.mx-grid-controlbar .mx-button, .mx-grid-search-controls .mx-button {
+  margin-left: 0;
+  margin-right: 1em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-weight: bold; }
+
+.mx-link + .badge {
+  margin-left: 1em;
+  padding-bottom: 0.25em; }
+
+a.noLink, a.noLink:hover, a.noLink:active, a.noLink:visited, a.noLink:focus, .noLink a, .noLink a:hover, .noLink a:active, .noLink a:visited, .noLink a:focus, .mx-link.noLink, .mx-link.noLink:hover, .mx-link.noLink:active, .mx-link.noLink:visited, .mx-link.noLink:focus {
+  text-decoration: none;
+  cursor: text; }
+
+.mx-window.mx-window-view .mx-window-body {
+  padding: 0; }
+  .mx-window.mx-window-view .mx-window-body > .mx-dataview > .mx-dataview-content,
+  .mx-window.mx-window-view .mx-window-body > .mx-placeholder > .mx-dataview > .mx-dataview-content {
+    padding: 20px; }
+  .mx-window.mx-window-view .mx-window-body > .mx-dataview > .mx-dataview-controls,
+  .mx-window.mx-window-view .mx-window-body > .mx-placeholder > .mx-dataview > .mx-dataview-controls {
+    display: inline;
+    justify-content: unset;
+    margin: 0;
+    padding: 20px;
+    text-align: left; }
+
+.TeamMemberProfile {
+  margin-top: 10px; }
+  .TeamMemberProfile .PhotoContainer {
+    margin: auto;
+    width: 100%;
+    padding-left: 10px; }
+    .TeamMemberProfile .PhotoContainer .PhotoTextStaff {
+      white-space: pre-line;
+      width: 65px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      font-size: 11px;
+      line-height: unset;
+      padding-top: 5px;
+      padding-bottom: 2px;
+      background-color: #08ac8c; }
+    .TeamMemberProfile .PhotoContainer .PhotoTextVolunteer {
+      white-space: pre-line;
+      width: 65px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      font-size: 11px;
+      line-height: unset;
+      padding-top: 5px;
+      padding-bottom: 2px;
+      background-color: #ffd42a; }
+    .TeamMemberProfile .PhotoContainer .PhotoTextOther {
+      white-space: pre-line;
+      width: 65px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      font-size: 11px;
+      line-height: unset;
+      padding-top: 5px;
+      padding-bottom: 2px;
+      background-color: #c9302c; }
+    .TeamMemberProfile .PhotoContainer .TeamMemberPhotoStaff {
+      width: 65px;
+      border-width: 1px;
+      border-style: solid;
+      padding: 2px;
+      border-color: #00a88d;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      height: 85px; }
+    .TeamMemberProfile .PhotoContainer .TeamMemberPhotoVolunteer {
+      width: 65px;
+      border-width: 1px;
+      border-style: solid;
+      padding: 2px;
+      border-color: #ffd42a;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      height: 85px; }
+    .TeamMemberProfile .PhotoContainer .TeamMemberPhotoOther {
+      width: 65px;
+      border-width: 1px;
+      border-style: solid;
+      padding: 2px;
+      border-color: #c9302c;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      height: 85px; }
+
+.SyncText {
+  text-align: right;
+  color: #888888;
+  margin-top: -10px;
+  margin-bottom: -1em; }
+
+.SyncStatus {
+  float: right; }
+
+.TeamMemberProfileFooter {
+  height: 45px; }
+
+.stickProfileCard {
+  margin-left: 5vh;
+  margin-top: -2.5vh; }
+  .stickProfileCard h1 {
+    margin-top: 1.5vh; }
+  .stickProfileCard .TeamMemberRole {
+    float: left;
+    margin-right: 8px; }
+  .stickProfileCard .TeamMemberRoleStaff {
+    background-color: #08AC8C;
+    float: left;
+    margin-right: 8px; }
+  .stickProfileCard .TeamMemberRoleVolunteer {
+    background-color: #ffd42a;
+    float: left;
+    margin-right: 8px; }
+  .stickProfileCard .TeamMemberRoleOther {
+    background-color: #c9302c;
+    float: left;
+    margin-right: 8px; }
+  .stickProfileCard .CanBeDOC {
+    background-color: #08AC8C;
+    float: left;
+    margin-right: 8px; }
+  .stickProfileCard .NationalityContainer {
+    margin-top: 1.5vh; }
+    .stickProfileCard .NationalityContainer .NatListview {
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      cellpadding: 0;
+      cellspacing: 0; }
+      .stickProfileCard .NationalityContainer .NatListview .Item {
+        float: left;
+        margin-right: 10px;
+        margin-bottom: 2vh;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0; }
+  .stickProfileCard .AddressListview {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    cellpadding: 0;
+    cellspacing: 0; }
+    .stickProfileCard .AddressListview .Item {
+      float: left;
+      margin-right: 10px;
+      margin-bottom: 2vh;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding: 0; }
+
+.hideOnStickProfileCard {
+  margin-left: 4vh;
+  margin-right: 13vh; }
+  .hideOnStickProfileCard .RoleContainer1 {
+    margin-top: 13vh;
+    margin-bottom: 0;
+    padding: 0; }
+    .hideOnStickProfileCard .RoleContainer1 .Staff {
+      background-color: #08AC8C;
+      float: left;
+      margin-right: 8px; }
+    .hideOnStickProfileCard .RoleContainer1 .Volunteer {
+      background-color: #ffd42a;
+      float: left;
+      margin-right: 8px; }
+    .hideOnStickProfileCard .RoleContainer1 .Other {
+      background-color: #c9302c;
+      float: left;
+      margin-right: 8px; }
+    .hideOnStickProfileCard .RoleContainer1 .CanBeDOC {
+      background-color: #08AC8C;
+      float: left;
+      margin-right: 8px; }
+  .hideOnStickProfileCard .Container {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    cellpadding: 0;
+    cellspacing: 0; }
+    .hideOnStickProfileCard .Container .Item {
+      float: left;
+      margin-right: 10px;
+      margin-bottom: 2vh;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding: 0; }
+  .hideOnStickProfileCard .PhotoContainer {
+    margin-left: 9vh;
+    margin-top: 6vh; }
+    .hideOnStickProfileCard .PhotoContainer .TeamMemberPhoto {
+      padding: 4px;
+      border-style: solid;
+      border-width: 1px;
+      margin-bottom: 5px;
+      border-radius: 10px;
+      width: 115px;
+      height: 144px; }
+
+.onHold {
+  margin-top: 1em;
+  border-radius: 10px;
+  background-color: red;
+  text-align: center; }
+  .onHold .Status {
+    color: #FFFFFF; }
+
+.ERA {
+  float: right; }
+
+.PlanTabs {
+  margin-left: 3vh; }
+
+.Calendar {
+  height: 600px; }
+
+.ContactDetailsTeamMemberCard {
+  margin-top: 10vh;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #D3D3D3;
+  border-radius: 10px; }
+
+.customSearch {
+  background-color: #34B78F;
+  border-radius: 10px;
+  margin-top: 1em;
+  margin-bottom: 4em; }
+  .customSearch .SearchLabel {
+    margin-left: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-right: 0;
+    color: #FFFFFF; }
+  .customSearch .SearchBox {
+    margin-top: 0.4em; }
+
+.mx-tabcontainer .mx-tabcontainer-tabs > li.active > a, .mx-tabcontainer .mx-tabcontainer-tabs > li.active > a:hover, .mx-tabcontainer .mx-tabcontainer-tabs > li.active > a:focus {
+  font-weight: bold;
+  border: 1px solid #D7D7D7;
+  border-bottom-color: transparent;
+  background-color: #FFF; }
+
+.listviewItem {
+  margin-top: 2em;
+  margin-bottom: 2em; }
+
+.CurrentlyDeployed .Photo {
+  width: 80px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  border-width: 1px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-top: 3px;
+  padding-left: 3px;
+  padding-right: 3px; }
+.CurrentlyDeployed .AssignmentStatus1 {
+  font-size: 11px;
+  background: cornflowerblue;
+  color: #FFFFFF;
+  padding: 5px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  width: 80px;
+  display: block;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  text-align: center; }
+.CurrentlyDeployed .AssignmentStatus2 {
+  font-size: 11px;
+  background: #08ac8c;
+  color: white;
+  padding: 5px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  width: 80px;
+  display: block;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  text-align: center; }
+
+.DeploymentCard {
+  margin-top: 4em; }
+  .DeploymentCard .cardLink {
+    margin-top: 2em;
+    margin-left: 2em;
+    margin-right: 0;
+    margin-bottom: 1em;
+    border-radius: 10px; }
+
+.AvailabilityTeamMemberCard {
+  border-top-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  padding-top: 3px;
+  padding-left: 3px;
+  padding-right: 3px;
+  margin-top: -4vh;
+  width: 80px;
+  height: 90px; }
+
+.TeamMemberDetails {
+  margin-top: -4vh; }
+
+.hideOverflow {
+  overflow: hidden; }
+
+/*# sourceMappingURL=backup.css.map */

@@ -1,0 +1,201 @@
+
+.SummaryPage { background: #f0f3f8; }
+
+// ==========================================================================
+// Summary page header
+//
+// The page header for the summary of a document
+// ==========================================================================
+.summaryHeader, .SummaryHeader { 
+	background-color: #ffffff;
+	border-bottom: $default-border-color solid 1px;
+	max-width: 1000px;
+	z-index: 1;
+	padding: 40px 30px !important;
+	color: black;
+	.summaryHeader-title, .SummaryHeaderTitle { // Slimed version of writing 'h1 text-bold Content noLink' in class
+		color: black;
+		text-transform: uppercase;
+		text-decoration: none;
+		cursor: text;
+		margin: 0 0 20px 0;
+		font-weight: bold !important;
+		font-size: 31px;
+		line-height: 1.3;
+		&:focus, &:hover, > a:hover, > a:focus { text-decoration: none; }
+	}
+	.summaryHeader-section, .SummaryHeaderSection 	{ margin-left: 1em; } // Indented summary section 
+	.summaryHeader-links, .SummaryHeaderLinks 		{
+		margin-bottom: 20px;
+		font-size: 113%;
+		font-weight: bold;
+	}
+	.summaryHeader-item, .SummaryHeaderStickyItem 	{ font-size: 113%; }
+	.summaryHeader-itemBold, .SummaryHeaderItem 	{ font-size: 113%; font-weight: bold; }
+	> .row > :last-child:not( :first-child ) 	{ text-align: right; }
+	> .row:first-child > div > :first-child 	{ margin-top: 0; }
+	.showOnStick 								{ display: none; }
+	.PrimaryEvent, .SecondaryEvents { 
+		&, * { display: inline; }
+	}
+	.SecondaryEvents > ul > li > .mx-dataview > .mx-dataview-content:first-child::before { content: ', '; }
+	.response-status-group {
+		> h3 					{ float: left; margin-right: 3em; }
+		.ResponseStatusButtons 	{ margin:  15px 0; }
+	}
+}
+
+// ----------------{ OLD CSS STYLING }----------------
+// .SummaryHeader-sticky {
+//     padding: 0 !important;
+//     max-width: 100%;
+//     position: fixed;
+//     width: 100%;
+//     .showOnStick { display: block; }
+//     .hideOnStick { display: none; }
+//     > * {
+//         // max-width:  1000px;
+//         margin: 0 auto;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//     }
+//     > .row > .col-md-6 {
+//         width: auto;
+//         min-width: 670px;
+//         &:last-child { float: right; padding: 0 30px; min-width: 300px; }
+//     }
+//     h1, .h1 {
+//         margin: 0 2em 0 0;
+//         padding: 5px 0;
+//         float: left;
+//         &, & > * { font-size: 24px; }
+//     }
+//     .SummaryHeaderItem {
+//         float: left;
+//         margin-right: 2em;
+//         padding-top: 11px;
+//         height: 40px;
+//     }
+//     :last-child > .SummaryHeaderItem {
+//         float: right;
+//         margin-left: 0;
+//         margin-right:  0;
+//         &:not(:last-child) { margin-left: 2em; }
+//     }
+//     .col-md-8{
+//         .h1 { min-width: 700px; }
+//         .SummaryHeaderItem { margin-right: 0; }
+//     }
+//         .col-md-8 { width: auto; }
+//         .col-md-4 { width: auto; float: right; }
+// }
+// ---------------------------------------------------
+
+// ==========================================================================
+// Summary body groupbox 
+//
+// Summary content repositioning for summary pages
+// ==========================================================================
+/* 
+Groupbox update (Instead of using JS to move the DOM around into the groupbox headers)!
+*/
+.SummaryBody {	
+    .title {
+        position: absolute;
+        width: fit-content;
+        left: 15px;
+        top: 10px;
+        color: black;
+        .text {	text-transform: uppercase; font-weight: bold; padding-right: 10px; }
+        .tooltip { max-width: 100vw; width: 100vw; }
+    }
+    .changeLinks { 
+        position: absolute;  
+        right: 50px; 
+        top: 10px;
+        .changeText { color: black; text-transform: uppercase; font-weight: bold; }
+    }
+    .team-groupbox {
+        .idText {
+            top: 10px;
+            left:0;
+            position: absolute;
+            z-index:2;
+        }
+        .locationText { position: absolute; left: 150px; top: 10px; }
+        .dateText { position: absolute; right: 100px; top: 10px; }	
+    }
+    .DeploymentLink, .ResponseLink, .EventLink, .CountryLink { color: $link-color; }
+}
+
+.SummaryBody {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    .editLink {	float: right; margin-left: 1em;	margin-bottom: 1em;	}
+    > .row > div > .editLink { margin-top: 15px; }
+    .mx-listview-item .editLink:last-child { margin-left: 0; }
+    .mx-listview-empty { display: none; }
+    .DeploymentHeader {
+        margin: 15px 0 20px;
+        .h4 { margin: 0; padding: 0; }
+        h3, .h3 { margin: 0; display: block; }
+        > h3, > .h3 { text-align: center; }
+    }
+    .DeploymentHeaderLeft { float: left; width: 25em; } 
+    .DeploymentHeaderRight { float: right; }
+    .activeAssignment .row { border-left: solid $brand-primary 4px; margin-left: -19px; }
+    .inactiveAssignment  .mx-text { font-weight: lighter; }
+}
+
+// ----------------{ OLD CSS STYLING }----------------
+// .SummaryProfile {
+// 	text-align:center; 
+// 	margin-right:2vh;
+// 	margin-bottom:1vh;
+// 	border-style: none;
+// 	background-color: #ffffff;
+// 	padding:0;
+// 	margin-top:5px;
+// 	z-index: 1;
+// 	> .row {
+// 		&:first-child > div > :first-child { margin-top: 0; }
+// 		> :last-child:not( :first-child ) { text-align: right; }
+// 	}
+// 	.showOnStick { display: none; }
+
+// 	&.SummaryProfile-sticky {
+// 		background-color: #ffffff !important;
+// 		padding: 0 !important;
+// 		position: absolute;
+// 		width: 100%;
+// 		.showOnStick { display: block; }
+// 		.hideOnStick { display: none; }
+// 		> * { margin:  0 auto; }
+// 		> .row > .col-md-6 {
+// 			&:last-child { float: right; }
+// 		}
+// 		h1 {
+// 			margin: 2em 2em 2em 2em;
+// 			padding: 5px 0;
+// 			float: left;
+// 			font-size: 24px;
+// 		}
+// 		.SummaryProfileItem {
+// 			float: left;
+// 			margin-right: 0;
+// 			padding-top: 0;
+// 			margin-top: 0;
+// 			margin-left:2vh
+// 			h1 { margin-left: 0.2vh; margin-top:3vh; }
+// 		}
+// 		.SummaryProfileItem2 {
+// 			float: left;
+// 			margin-right: 2em;
+// 			padding-top: 0;
+// 			margin-top: 1.8vh;
+// 		}
+// 	}
+// }
+// ---------------------------------------------------

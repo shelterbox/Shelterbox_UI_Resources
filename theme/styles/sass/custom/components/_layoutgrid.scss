@@ -1,0 +1,4 @@
+.mx-layoutgrid {
+	&.slim, &.slim-bottom { padding-bottom: 0 !important; }
+	&.slim, &.slim-top { padding-top: 0 !important; }
+}

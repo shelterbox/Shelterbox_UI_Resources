@@ -1,0 +1,115 @@
+/* ==========================================================================
+   Buttons
+
+   Default Bootstrap and Mendix Buttons
+========================================================================== */
+.btn,
+.mx-button {
+	/* Styles here */
+    &:hover,
+    &:focus,
+    &:active {
+    	/* Styles here */
+    }
+}
+
+// Mendix button link
+.mx-link {
+	/* Styles here */
+}
+
+// Images in buttons
+.btn,
+.mx-button,
+.mx-link {
+    img {
+
+    }
+}
+
+// Buttons Alternate Style
+.btn-default {
+	/* Styles here */
+}
+.btn-primary {
+	/* Styles here */
+}
+.btn-inverse {
+	/* Styles here */
+}
+.btn-success {
+	/* Styles here */
+    color: blue;
+}
+.btn-info {
+	/* Styles here */
+}
+.btn-warning {
+	/* Styles here */
+}
+.btn-danger {
+	/* Styles here */
+}
+.btn-white {
+	
+}
+
+// Buttons appear disabled
+.btn-disabled {
+
+}
+// Transparent Buttons
+.btn-transparent,
+.btn-transparent:hover,
+.btn-transparent:focus {
+
+}
+
+
+// Buttons Sizes
+.btn-lg {
+
+}
+.btn-sm {
+
+}
+
+// Alternative buttons
+
+// ==========================================================================
+// Custom standardised buttons
+//
+// Use these classes to overwrite Mendix buttons
+// ==========================================================================
+.btn-add 					{ background-color: $brand-primary; color: $brand-default-contrast; font-weight: bold; }
+.btn-delete 				{ background-color: $brand-danger; color: $brand-danger-contrast; font-weight: bold; }
+.btn-save 					{ float: right; background-color: $brand-primary; color: $brand-default-contrast; font-weight: bold; border-style: none; }
+.btn-edit:not( .mx-link ) 	{ background-color: $brand-warning; color: $brand-warning-contrast; font-weight: bold; }
+.btn-admin 					{ color: $brand-primary; font-weight: bold; }
+.btn-sync 					{ margin-right: 10px; float: right; }
+.btn-search 				{ background-color: $brand-default-contrast; color: $brand-primary; }
+.btn-general 				{ background-color: $brand-primary; color: $brand-default-contrast; font-weight: bold; }
+
+.Link 						{ color: $link-color; font-size: 26px; }
+.delete-button 				{ float: right; }
+
+
+.btn-toggle {
+	align-self: center;
+    justify-self: center;
+    margin-right: 15px;
+    background: unset;
+    color: #fff;
+    border-color: #fff;
+    border-radius: 0;
+    text-transform: uppercase;
+    padding: 12px 10px;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 300;
+    min-width: unset;
+    &:hover, &:focus { background: unset; }
+    &:active { transform: translateY(1px); }
+    > span.glyphicon { font-size: 24px; }
+    &.btn-tiny { line-height: 23px; }
+}

@@ -1,0 +1,111 @@
+// ==========================================================================
+// Overview page header
+//
+// The page header for an overview of content
+// ==========================================================================
+.overviewPageHeader, .OverviewPageHeader {
+	margin-top: 159px;
+	z-index: 3;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+	padding-top: 0 !important;
+	padding-bottom: 10px !important;
+	margin: 0;
+	max-width: 100%;
+	width: 100%;
+	position: fixed;
+	height: auto;
+	box-sizing: content-box;
+	background-color: #ffffff;
+	border-bottom: $default-border-color solid 1px;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+	font-size: 113%;
+	.overviewPageHeader-info, .Info {
+		color: #FFF;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 45px;
+		width: 40px;
+		margin: 0;
+	}
+	> * {
+		//max-width: 1000px;
+		margin:  0 auto;
+	}
+	> .row > .col-md-6 {
+		width: auto;
+		&:last-child { float: right; }
+	}
+	h1, .h1 {
+		margin: 0 2em 0 2em;
+		padding: 7px 0;
+		float: left;
+		&, & > * { font-size: 24px; line-height: 24px; }
+	}
+	.overviewPageHeader-item, .SummaryHeaderItem, .SummaryHeaderStickyItem {
+		float: left;
+		margin-right: 2em;
+		padding-top: 11px;
+		text-transform: uppercase;
+		&:not(.link) > * {
+			color: black;
+			text-decoration: none;
+			cursor: text;
+			&:focus, &:hover, > a:hover, > a:focus { text-decoration: none; }
+			&.mx-link 	{ font-weight: bold; }
+		}
+		&.icon 	{ margin-top: 0.2em; }
+		&.link 	{ font-weight: bold; text-transform: none; }
+		&.title { margin-left: 2em; }
+	}
+	.col-md-8 {	width: auto; }
+	.col-md-4 {	width: auto; float: right; }
+	
+	.pageTitle{ padding-left: 11%; }
+	}
+	
+	
+// Tablet toggle menu mode
+@media only screen and (max-width: $tablet-width) {
+	.OverviewPageHeader { margin-top: 70px !important; }
+}
+
+// Phone toggle menu mode
+@media only screen and (max-width: $phone-width) {
+	.OverviewPageHeader { margin-top: 70px !important; }
+}
+
+// ----------------{ OLD CSS STYLING }----------------
+// .BoxShadow {
+// 	box-sizing: content-box;
+// 	background-color: #ffffff;
+// 	border-bottom: $default-border-color solid 1px;
+// 	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+// }
+// ---------------------------------------------------
+
+// ==========================================================================
+// Overview page header
+//
+// Pages that list an overview of content
+// ==========================================================================
+.OverviewPage {
+    
+	background-color: #eff4f7;
+	.OverviewDataGrid {	margin: 3% 10% 0 10%; }//margin: 0.5em; margin-top: 55px;  }
+	&.bigscreen { position: absolute; top: 7%; left: 2.5%; }
+}
+
+// ----------------{ OLD CSS STYLING }----------------
+// .OverviewPageTitle div {
+// 	&:not( .Info ) { float: left; margin-right: 2em; }
+// 	&.Info { margin: 0; padding: 2em 0 0 0; }
+// }
+
+// .OverviewPageKit {
+// 	background-color: #eff4f7;
+// 	border-radius: 10px;
+// 	.OverviewDataGrid { margin: 0.5em; border-radius: 10px; }
+// }
+// ---------------------------------------------------

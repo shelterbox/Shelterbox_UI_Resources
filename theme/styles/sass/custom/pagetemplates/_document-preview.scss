@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
+.modal-dialog.DocumentPreviewLayout > .modal-content {
+	border-radius: 0;
+	.modal-header {
+		display:  none;
+	}
+	.modal-body, .modal-body > .mx-placeholder > .mx-dataview > .mx-dataview-content {
+		height: 100% !important;
+	}
+
+	> .modal-body > .mx-layoutcontainer {
+		height: calc( 100% - 1px );
+		> .mx-layoutcontainer-top .mx-layoutgrid {
+			padding-bottom: 1em;
+		}
+		> .mx-layoutcontainer-middle {
+			margin: 0 -20px;
+			> .mx-layoutcontainer-wrapper > .mx-placeholder > .mx-dataview > .mx-dataview-content {
+				overflow-x: hidden !important;
+				padding: 0 3em;
+			}
+		}
+	}
+	.doc-header-first {
+		text-align: center;
+		margin-bottom: 3em;
+		img {
+			margin-top: 3em;
+			margin-bottom: 2em;
+		}
+		h1 {
+			font-family: 'Open Sans';
+			font-weight: bold;
+			font-size: 3em;
+			color: #000000;
+		}
+	}
+	.doc-ul {
+		list-style-type: disc;
+		padding-left: 40px;
+		> .doc-li {
+			display: list-item;
+		}
+	}
+	h2 {
+		color: #00b288;
+		font-family: 'Open Sans';
+		font-weight: bold;
+		font-size: 2em;
+		margin-top: 2em;
+		margin-bottom: 1em;
+	}
+	h3 {
+		color: #000000;
+		font-family: Georgia;
+		font-weight: normal;
+		font-style: italic;
+		font-size: 1.6em;
+		margin-top: 1em;
+		margin-bottom: 0.5em;
+	}
+	.mx-table > tbody > tr:not( .thead ) {
+		border-bottom: solid 1px #bfbfbf;
+		> th {
+			text-align: right;
+			&::after {
+				content: ' :';
+			}
+			&.IceHeading {
+				text-transform: uppercase;
+				color: #ff0000;
+			}
+		}
+	}
+	// Tooltips for edit links and other incidental meta information about the document being previewed
+
+	.preview-tooltip-context {
+		position: relative;
+		.preview-tooltip {
+		    display: none;
+		    position: absolute;
+		    width: 100%;
+		    top: 0;
+		    left: 0;
+		    height: 100%;
+		    border: 1px red dashed;
+
+		}
+		&:hover .preview-tooltip {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			> div {
+				width: 30em;
+				border: 1px black solid;
+				box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+				border-radius: 5px;
+				background: #ffffff;
+				text-align: center;
+				padding: 0.5em;
+			}
+			&.preview-tooltip-bottom > div {
+				top: 100%;
+				position: absolute;
+				width: auto;
+				min-width: 5em;
+				max-width: 25em;
+				z-index: 1;
+				&::before {
+					top: -1em;
+					left: calc( 50% - 0.5em );
+					content: '';
+					width: 1em;
+					height: 1em;
+					position: absolute;
+					border: solid transparent 0.5em;
+					border-top: none;
+					border-bottom: solid black 1em;
+				}
+				> :first-child::before {
+					top: calc( -1em - -2px );
+					left: calc( 50% - 0.5em );
+					content: '';
+					width: 1em;
+					height: 1em;
+					position: absolute;
+					border: solid transparent 0.5em;
+					border-top: none;
+					border-bottom: solid white 1em;
+				}
+			}
+		}
+	}
+
+	[cssselectorhelper="SubGreen"] {
+	    color: #004400;
+	    font-weight: bold;
+	}
+
+	[cssselectorhelper="Green"] {
+	    color: #008800;
+	    font-weight: bold;
+	}
+
+	[cssselectorhelper="Amber"] {
+	    color: #888800;
+	    font-weight: bold;
+	}
+
+	[cssselectorhelper="Red"] {
+	    color: #880000;
+	    font-weight: bold;
+	}
+
+	[cssselectorhelper="SuperRed"] {
+	    color: #ff0000;
+	    font-weight: bold;
+	    text-decoration: underline;
+	}
+
+	.listview_preview_validationmessages.mx-listview > .mx-list {
+		> .mx-listview-item {
+			margin-top: 0.5em;
+			margin-bottom: 0.5em;
+			border: 2px solid red;
+			border-radius: 8px;
+			div.p > img {
+			    margin-right: 1em;
+			    height: 1em;
+			    padding-bottom: 2px;
+			}
+		}
+		.mx-listview-empty {
+		    display: none;
+		}
+	}
+}

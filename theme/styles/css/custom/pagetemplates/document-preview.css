@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+.modal-dialog.DocumentPreviewLayout > .modal-content {
+  border-radius: 0; }
+  .modal-dialog.DocumentPreviewLayout > .modal-content .modal-header {
+    display: none; }
+  .modal-dialog.DocumentPreviewLayout > .modal-content .modal-body, .modal-dialog.DocumentPreviewLayout > .modal-content .modal-body > .mx-placeholder > .mx-dataview > .mx-dataview-content {
+    height: 100% !important; }
+  .modal-dialog.DocumentPreviewLayout > .modal-content > .modal-body > .mx-layoutcontainer {
+    height: calc( 100% - 1px ); }
+    .modal-dialog.DocumentPreviewLayout > .modal-content > .modal-body > .mx-layoutcontainer > .mx-layoutcontainer-top .mx-layoutgrid {
+      padding-bottom: 1em; }
+    .modal-dialog.DocumentPreviewLayout > .modal-content > .modal-body > .mx-layoutcontainer > .mx-layoutcontainer-middle {
+      margin: 0 -20px; }
+      .modal-dialog.DocumentPreviewLayout > .modal-content > .modal-body > .mx-layoutcontainer > .mx-layoutcontainer-middle > .mx-layoutcontainer-wrapper > .mx-placeholder > .mx-dataview > .mx-dataview-content {
+        overflow-x: hidden !important;
+        padding: 0 3em; }
+  .modal-dialog.DocumentPreviewLayout > .modal-content .doc-header-first {
+    text-align: center;
+    margin-bottom: 3em; }
+    .modal-dialog.DocumentPreviewLayout > .modal-content .doc-header-first img {
+      margin-top: 3em;
+      margin-bottom: 2em; }
+    .modal-dialog.DocumentPreviewLayout > .modal-content .doc-header-first h1 {
+      font-family: 'Open Sans';
+      font-weight: bold;
+      font-size: 3em;
+      color: #000000; }
+  .modal-dialog.DocumentPreviewLayout > .modal-content .doc-ul {
+    list-style-type: disc;
+    padding-left: 40px; }
+    .modal-dialog.DocumentPreviewLayout > .modal-content .doc-ul > .doc-li {
+      display: list-item; }
+  .modal-dialog.DocumentPreviewLayout > .modal-content h2 {
+    color: #00b288;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-size: 2em;
+    margin-top: 2em;
+    margin-bottom: 1em; }
+  .modal-dialog.DocumentPreviewLayout > .modal-content h3 {
+    color: #000000;
+    font-family: Georgia;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 1.6em;
+    margin-top: 1em;
+    margin-bottom: 0.5em; }
+  .modal-dialog.DocumentPreviewLayout > .modal-content .mx-table > tbody > tr:not(.thead) {
+    border-bottom: solid 1px #bfbfbf; }
+    .modal-dialog.DocumentPreviewLayout > .modal-content .mx-table > tbody > tr:not(.thead) > th {
+      text-align: right; }
+      .modal-dialog.DocumentPreviewLayout > .modal-content .mx-table > tbody > tr:not(.thead) > th::after {
+        content: ' :'; }
+      .modal-dialog.DocumentPreviewLayout > .modal-content .mx-table > tbody > tr:not(.thead) > th.IceHeading {
+        text-transform: uppercase;
+        color: #ff0000; }
+  .modal-dialog.DocumentPreviewLayout > .modal-content .preview-tooltip-context {
+    position: relative; }
+    .modal-dialog.DocumentPreviewLayout > .modal-content .preview-tooltip-context .preview-tooltip {
+      display: none;
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      height: 100%;
+      border: 1px red dashed; }
+    .modal-dialog.DocumentPreviewLayout > .modal-content .preview-tooltip-context:hover .preview-tooltip {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .modal-dialog.DocumentPreviewLayout > .modal-content .preview-tooltip-context:hover .preview-tooltip > div {
+        width: 30em;
+        border: 1px black solid;
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+        border-radius: 5px;
+        background: #ffffff;
+        text-align: center;
+        padding: 0.5em; }
+      .modal-dialog.DocumentPreviewLayout > .modal-content .preview-tooltip-context:hover .preview-tooltip.preview-tooltip-bottom > div {
+        top: 100%;
+        position: absolute;
+        width: auto;
+        min-width: 5em;
+        max-width: 25em;
+        z-index: 1; }
+        .modal-dialog.DocumentPreviewLayout > .modal-content .preview-tooltip-context:hover .preview-tooltip.preview-tooltip-bottom > div::before {
+          top: -1em;
+          left: calc( 50% - 0.5em );
+          content: '';
+          width: 1em;
+          height: 1em;
+          position: absolute;
+          border: solid transparent 0.5em;
+          border-top: none;
+          border-bottom: solid black 1em; }
+        .modal-dialog.DocumentPreviewLayout > .modal-content .preview-tooltip-context:hover .preview-tooltip.preview-tooltip-bottom > div > :first-child::before {
+          top: calc( -1em - -2px );
+          left: calc( 50% - 0.5em );
+          content: '';
+          width: 1em;
+          height: 1em;
+          position: absolute;
+          border: solid transparent 0.5em;
+          border-top: none;
+          border-bottom: solid white 1em; }
+  .modal-dialog.DocumentPreviewLayout > .modal-content [cssselectorhelper="SubGreen"] {
+    color: #004400;
+    font-weight: bold; }
+  .modal-dialog.DocumentPreviewLayout > .modal-content [cssselectorhelper="Green"] {
+    color: #008800;
+    font-weight: bold; }
+  .modal-dialog.DocumentPreviewLayout > .modal-content [cssselectorhelper="Amber"] {
+    color: #888800;
+    font-weight: bold; }
+  .modal-dialog.DocumentPreviewLayout > .modal-content [cssselectorhelper="Red"] {
+    color: #880000;
+    font-weight: bold; }
+  .modal-dialog.DocumentPreviewLayout > .modal-content [cssselectorhelper="SuperRed"] {
+    color: #ff0000;
+    font-weight: bold;
+    text-decoration: underline; }
+  .modal-dialog.DocumentPreviewLayout > .modal-content .listview_preview_validationmessages.mx-listview > .mx-list > .mx-listview-item {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    border: 2px solid red;
+    border-radius: 8px; }
+    .modal-dialog.DocumentPreviewLayout > .modal-content .listview_preview_validationmessages.mx-listview > .mx-list > .mx-listview-item div.p > img {
+      margin-right: 1em;
+      height: 1em;
+      padding-bottom: 2px; }
+  .modal-dialog.DocumentPreviewLayout > .modal-content .listview_preview_validationmessages.mx-listview > .mx-list .mx-listview-empty {
+    display: none; }
+
+/*# sourceMappingURL=document-preview.css.map */

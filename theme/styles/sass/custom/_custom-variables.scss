@@ -1,0 +1,87 @@
+//== Black Shades
+//The black-ish color used for the font in the groupbox
+$black-ish: 				#040404;
+
+//== Media breakpoints 
+//## Breakpoints set for device screen 'max-width'
+$laptop-width:                                      1480px;
+$page-width:                                        1300px;
+$tablet-width:                                      1000px;
+$phone-width:                                       500px;
+
+//== Gray Shades
+//## Different gray shades to be used for our variables and components
+$gray-darker:				#222222;
+$gray-dark:					#333333;
+$gray:						#555555;
+$gray-light:				#888888;
+$gray-primary:				#D7D7D7;
+$gray-lighter:				#EEEEEE;
+
+//== Step 1: Brand Colors					      //== Contrasting colours to provide text colour on a background (or the reverse)
+$brand-default:				#DDDDDD;			$brand-default-contrast:		    #FFFFFF;
+// $brand-primary:			    #0595DB;			$brand-default-contrast:			#FFFFFF;
+$brand-primary:			    #34B78F;			$brand-primary-contrast:            #FFFFFF;
+$brand-inverse:				#1b3149;			$brand-inverse-contrast:            #FFFFFF;
+// $brand-inverse:			    #252C36;			$brand-inverse-contrast:		    #FFFFFF;
+$brand-info:				#48B0F7;			$brand-info-contrast:               $gray;
+$brand-success:				#76CA02;			$brand-success-contrast:            $gray;
+$brand-warning:			    #F99B1D;			$brand-warning-contrast:            #FFFFFF;
+$brand-danger:				#ED1C24;			$brand-danger-contrast:			    #FFFFFF;
+
+// Used for other variables
+$default-border-color:		$gray-primary;
+
+// ShelterBox role colours
+$role-staff:                $brand-primary;       $role-staff-contrast:               $brand-primary-contrast;
+$role-volunteer:			#F9C91D;            $role-volunteer-contrast:		    $gray;
+$role-affiliate:			#F9C91D;			$role-affiliate-contrast:			$gray;
+$role-partner:				$gray;                $role-partner-contrast:			  #FFFFFF;
+
+
+//== Step 3: Typography
+$font-family-import:		"https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700";
+$font-family-base:			"Open Sans", sans-serif;
+$font-base-size:			14px;
+$font-base-color:			$gray;
+$link-color:				$brand-primary;
+$font-size-h1:				31px;
+$font-size-h2:				26px;
+$font-size-h3:				24px;
+$font-size-h4:				18px;
+$font-color-headers:		#17347B;
+
+//== Step 2: UI Customization
+
+// Topbar
+$topbar-bg:					#FFFFFF;
+$navtopbar-border-color:	$default-border-color;
+$topbar-border-color:		$navtopbar-border-color;
+$topbar-minimalheight:		60px;
+$navtopbar-color:			$font-base-color;
+$navbar-brand-name:		    $default-border-color;
+$brand-logo:				false;
+$brand-logo-height:			30px;
+$brand-logo-width:			30px;
+
+// Sidebar
+$sidebar-bg:				$brand-inverse;
+$navsidebar-color:			#FFFFFF;
+$navsidebar-color-hover:	$navsidebar-color;
+
+// Backgrounds
+$bg-color:					#FFFFFF;
+$bg-color-secondary:		#F5F8FD;
+
+// == Old variables used in theme customizer to the new lib variables
+$font-size-default:			$font-base-size;
+$font-color-default:		$font-base-color;
+$border-color-default:		$default-border-color;
+$font-color-header:			$font-color-headers;
+
+// Highlight color used in datagrids, listviewsmn & templateviews
+$grid-selected-color:       $brand-warning-contrast;
+$grid-bg-selected:          $brand-warning;
+$grid-bg:                   #FFF;
+$grid-border-color:         $border-color-default;
+$grid-bg-hover:             mix($grid-border-color, #FFF, 20%);
