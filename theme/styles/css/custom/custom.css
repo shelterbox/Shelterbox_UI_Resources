@@ -3,22 +3,49 @@
 
 ========================================================================== */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
-.sub-nav-wrapper {
-  background: #34b78f; }
-  .sub-nav-wrapper .nav-container {
-    display: flex;
-    max-width: 1480px;
-    height: 60px;
-    margin: 0px auto 0 auto; }
-    .sub-nav-wrapper .nav-container .project-nav {
-      background: #34b78f;
-      text-transform: uppercase;
-      color: #ffffff;
-      font-size: 21px;
-      font-weight: bold;
-      letter-spacing: 1.24px;
-      line-height: 28px;
-      padding: 0px 20px; }
+.layout-default > .mx-layoutcontainer-center > .mx-layoutcontainer-wrapper > .mx-layoutcontainer {
+  position: relative; }
+
+.layout-default.mx-scrollcontainer-open .topbar > .mx-scrollcontainer-wrapper > .topbar-right > button {
+  display: none; }
+
+.layout-default.mx-scrollcontainer-open .topbar > .mx-scrollcontainer-wrapper > .topbar-right .topbar-profile {
+  display: none; }
+
+.mx-placeholder {
+  overflow-x: visible !important; }
+
+body {
+  overflow-x: hidden !important; }
+
+.project-nav {
+  background: #34b78f;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: bold;
+  letter-spacing: 1.24px;
+  line-height: 28px;
+  padding: 0px 20px; }
+  .project-nav > ul > li > a {
+    height: 30px;
+    text-align: center;
+    text-transform: uppercase; }
+    .project-nav > ul > li > a:hover, .project-nav > ul > li > a:focus {
+      background: rgba(0, 0, 0, 0.2) !important; }
+    .project-nav > ul > li > a:active {
+      background: rgba(0, 0, 0, 0.2) !important; }
+  .project-nav > ul > li.open > a, .project-nav > ul > li.active > a {
+    height: 30px;
+    background: rgba(0, 0, 0, 0.2) !important;
+    text-align: center;
+    text-transform: uppercase; }
+    .project-nav > ul > li.open > a:hover, .project-nav > ul > li.active > a:hover {
+      background: rgba(0, 0, 0, 0.2) !important; }
+    .project-nav > ul > li.open > a:focus, .project-nav > ul > li.active > a:focus {
+      background: rgba(0, 0, 0, 0.2) !important; }
+    .project-nav > ul > li.open > a:active, .project-nav > ul > li.active > a:active {
+      background: rgba(0, 0, 0, 0.2) !important; }
 
 .topbar {
   background: #333333;
@@ -27,32 +54,32 @@
   right: 0;
   left: 0;
   width: 100%;
-  position: fixed;
   font-family: "Open Sans", sans-serif;
   z-index: 100; }
-  .topbar .topbar-wrapper {
+  .topbar.topbar-primary {
+    background: #34B78F; }
+  .topbar .topbar-container {
     display: flex;
     max-width: 1480px;
-    height: 70px;
-    margin: 30px auto 0 auto; }
-    .topbar .topbar-wrapper > .topbar-left {
+    margin: 0 auto 0 auto; }
+    .topbar .topbar-container > .topbar-left {
       display: flex;
       margin-top: 10px;
       flex-shrink: 0; }
-      .topbar .topbar-wrapper > .topbar-left > .topbar-left-logo {
+      .topbar .topbar-container > .topbar-left > .topbar-left-logo {
         height: 38px;
         width: auto;
         padding: 9px 20px;
         box-sizing: content-box;
         padding-bottom: 13px; }
-      .topbar .topbar-wrapper > .topbar-left > .topbar-left-menu-wrapper {
+      .topbar .topbar-container > .topbar-left > .topbar-left-menu-wrapper {
         display: flex;
         flex-direction: row; }
-        .topbar .topbar-wrapper > .topbar-left > .topbar-left-menu-wrapper .mx-navbar {
+        .topbar .topbar-container > .topbar-left > .topbar-left-menu-wrapper .mx-navbar {
           background: unset;
           background-color: unset; }
-          .topbar .topbar-wrapper > .topbar-left > .topbar-left-menu-wrapper .mx-navbar > ul > li > a,
-          .topbar .topbar-wrapper > .topbar-left > .topbar-left-menu-wrapper .mx-navbar > ul > li.active > a {
+          .topbar .topbar-container > .topbar-left > .topbar-left-menu-wrapper .mx-navbar > ul > li > a,
+          .topbar .topbar-container > .topbar-left > .topbar-left-menu-wrapper .mx-navbar > ul > li.active > a {
             height: 28px;
             color: #ffffff;
             font-size: 21px;
@@ -62,20 +89,22 @@
             text-transform: uppercase;
             padding: 5px 20px;
             background: unset; }
-            .topbar .topbar-wrapper > .topbar-left > .topbar-left-menu-wrapper .mx-navbar > ul > li > a:hover, .topbar .topbar-wrapper > .topbar-left > .topbar-left-menu-wrapper .mx-navbar > ul > li > a:focus,
-            .topbar .topbar-wrapper > .topbar-left > .topbar-left-menu-wrapper .mx-navbar > ul > li.active > a:hover,
-            .topbar .topbar-wrapper > .topbar-left > .topbar-left-menu-wrapper .mx-navbar > ul > li.active > a:focus {
+            .topbar .topbar-container > .topbar-left > .topbar-left-menu-wrapper .mx-navbar > ul > li > a:hover, .topbar .topbar-container > .topbar-left > .topbar-left-menu-wrapper .mx-navbar > ul > li > a:focus,
+            .topbar .topbar-container > .topbar-left > .topbar-left-menu-wrapper .mx-navbar > ul > li.active > a:hover,
+            .topbar .topbar-container > .topbar-left > .topbar-left-menu-wrapper .mx-navbar > ul > li.active > a:focus {
               background: rgba(0, 0, 0, 0.2); }
-            .topbar .topbar-wrapper > .topbar-left > .topbar-left-menu-wrapper .mx-navbar > ul > li > a:active,
-            .topbar .topbar-wrapper > .topbar-left > .topbar-left-menu-wrapper .mx-navbar > ul > li.active > a:active {
+            .topbar .topbar-container > .topbar-left > .topbar-left-menu-wrapper .mx-navbar > ul > li > a:active,
+            .topbar .topbar-container > .topbar-left > .topbar-left-menu-wrapper .mx-navbar > ul > li.active > a:active {
               background: rgba(0, 0, 0, 0.2) !important; }
-    .topbar .topbar-wrapper > .topbar-right {
+    .topbar .topbar-container > .topbar-right {
       margin-left: auto;
       display: flex; }
-      .topbar .topbar-wrapper > .topbar-right > .topbar-right-toggle {
+      .topbar .topbar-container > .topbar-right > .topbar-right-toggle {
         display: none; }
-      .topbar .topbar-wrapper > .topbar-right > .topbar-right-toggle-small {
+      .topbar .topbar-container > .topbar-right > .topbar-right-toggle-small {
         display: none; }
+    .topbar .topbar-container.topbar-container-main {
+      padding-top: 30px; }
 
 .topbar-right {
   margin-left: auto;
@@ -130,7 +159,8 @@
     min-width: 150px;
     max-width: 100%;
     background: unset;
-    font-weight: 300; }
+    font-weight: 300;
+    z-index: 1; }
     .topbar-profile ul.mx-navigationlist li,
     .topbar-profile ul.mx-navigationlist li.active {
       background: rgba(26, 26, 26, 0.8);
@@ -275,29 +305,29 @@
       right: 100%; }
 
 @media only screen and (max-width: 1480px) {
-  .topbar .topbar-wrapper {
-    margin-top: 0;
+  .topbar .topbar-container.topbar-container-main {
+    padding-top: 0;
     height: 100px; }
-    .topbar .topbar-wrapper > .topbar-right {
+    .topbar .topbar-container.topbar-container-main > .topbar-right {
       height: 70px;
       align-self: flex-end; }
-      .topbar .topbar-wrapper > .topbar-right > div.mx-dataview {
+      .topbar .topbar-container.topbar-container-main > .topbar-right > div.mx-dataview {
         display: block;
         height: 70px; }
-      .topbar .topbar-wrapper > .topbar-right .topbar-profile {
+      .topbar .topbar-container.topbar-container-main > .topbar-right .topbar-profile {
         padding: 10px;
         margin-right: 15px; }
-        .topbar .topbar-wrapper > .topbar-right .topbar-profile > .topbar-profile-username {
+        .topbar .topbar-container.topbar-container-main > .topbar-right .topbar-profile > .topbar-profile-username {
           display: none; }
-    .topbar .topbar-wrapper > .topbar-left {
+    .topbar .topbar-container.topbar-container-main > .topbar-left {
       flex-direction: column;
       margin-top: 0; }
-      .topbar .topbar-wrapper > .topbar-left > .topbar-left-logo {
+      .topbar .topbar-container.topbar-container-main > .topbar-left > .topbar-left-logo {
         padding-bottom: 9px;
         margin-left: 15px; }
-      .topbar .topbar-wrapper > .topbar-left > .topbar-left-menu-wrapper > .mx-navbar {
+      .topbar .topbar-container.topbar-container-main > .topbar-left > .topbar-left-menu-wrapper > .mx-navbar {
         margin-left: 15px; }
-      .topbar .topbar-wrapper > .topbar-left > .topbar-left-menu-wrapper .mx-navbar > ul.nav > li.mx-navbar-item > a {
+      .topbar .topbar-container.topbar-container-main > .topbar-left > .topbar-left-menu-wrapper .mx-navbar > ul.nav > li.mx-navbar-item > a {
         min-height: 44px; }
   .topbar-right {
     height: 70px;
@@ -325,13 +355,13 @@
   padding-top: 209px; }
 
 @media only screen and (max-width: 1000px) {
-  .topbar .topbar-wrapper {
+  .topbar .topbar-container.topbar-container-main {
     height: 70px; }
-    .topbar .topbar-wrapper > .topbar-left {
+    .topbar .topbar-container.topbar-container-main > .topbar-left {
       margin-top: 7px; }
-      .topbar .topbar-wrapper > .topbar-left > .topbar-left-menu-wrapper {
+      .topbar .topbar-container.topbar-container-main > .topbar-left > .topbar-left-menu-wrapper {
         display: none; }
-    .topbar .topbar-wrapper > .topbar-right > .topbar-right-toggle {
+    .topbar .topbar-container.topbar-container-main > .topbar-right > .topbar-right-toggle {
       display: block; }
   .sidebar .sidebar-top {
     height: 70px;
@@ -350,14 +380,14 @@
     display: block; } }
 
 @media only screen and (max-width: 500px) {
-  .topbar .topbar-wrapper > .topbar-left > .topbar-left-logo {
+  .topbar .topbar-container.topbar-container-main > .topbar-left > .topbar-left-logo {
     overflow: hidden;
     width: 27px; }
-    .topbar .topbar-wrapper > .topbar-left > .topbar-left-logo > img {
+    .topbar .topbar-container.topbar-container-main > .topbar-left > .topbar-left-logo > img {
       max-width: unset; }
-  .topbar .topbar-wrapper > .topbar-right > .topbar-right-toggle-small {
+  .topbar .topbar-container.topbar-container-main > .topbar-right > .topbar-right-toggle-small {
     display: block; }
-  .topbar .topbar-wrapper > .topbar-right > .topbar-right-toggle {
+  .topbar .topbar-container.topbar-container-main > .topbar-right > .topbar-right-toggle {
     display: none; }
   .topbar-left > .topbar-left-logo {
     overflow: hidden;
@@ -2857,7 +2887,7 @@ Groupbox update (Instead of using JS to move the DOM around into the groupbox he
   color: #FFFFFF;
   border: 1px solid transparent;
   border-radius: 4px 4px 0 0;
-  background-color: #1b3149;
+  background-color: #1f8164;
   font-size: 15px; }
 
 .slideout-control {

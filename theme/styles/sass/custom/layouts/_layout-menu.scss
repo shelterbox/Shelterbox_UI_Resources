@@ -2,22 +2,70 @@
    Menu bar
 
 ========================================================================== */
-.sub-nav-wrapper {
+.layout-default
+  > .mx-layoutcontainer-center
+  > .mx-layoutcontainer-wrapper
+  > .mx-layoutcontainer {
+  position: relative;
+}
+
+.layout-default.mx-scrollcontainer-open
+  .topbar
+  > .mx-scrollcontainer-wrapper
+  > .topbar-right {
+  > button {
+    display: none;
+  }
+  .topbar-profile {
+    display: none;
+  }
+}
+
+// Enables sticky heading to work properly
+.mx-placeholder {
+  overflow-x: visible !important;
+}
+body {
+  overflow-x: hidden !important;
+}
+
+// SB green project navbar
+.project-nav {
   background: #34b78f;
-  .nav-container {
-    display: flex;
-    max-width: 1480px;
-    height: 60px;
-    margin: 0px auto 0 auto;
-    .project-nav {
-      background: #34b78f;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: bold;
+  letter-spacing: 1.24px;
+  line-height: 28px;
+  padding: 0px 20px;
+  > ul {
+    > li > a {
+      height: 30px;
+      text-align: center;
       text-transform: uppercase;
-      color: #ffffff;
-      font-size: 21px;
-      font-weight: bold;
-      letter-spacing: 1.24px;
-      line-height: 28px;
-      padding: 0px 20px;
+      &:hover,
+      &:focus {
+        background: rgba(#000000, 0.2) !important;
+      }
+      &:active {
+        background: rgba(#000000, 0.2) !important;
+      }
+    }
+    > li.open > a, > li.active > a {
+      height: 30px;
+      background: rgba(#000000, 0.2) !important;
+      text-align: center;
+      text-transform: uppercase;
+      &:hover {
+        background: rgba(#000000, 0.2) !important;
+      }
+      &:focus {
+        background: rgba(#000000, 0.2) !important;
+      }
+      &:active {
+        background: rgba(#000000, 0.2) !important;
+      }
     }
   }
 }
@@ -29,14 +77,15 @@
   right: 0;
   left: 0;
   width: 100%;
-  position: fixed;
   font-family: $font-family-base;
   z-index: 100;
-  .topbar-wrapper {
+  &.topbar-primary {
+    background: $brand-primary;
+  }
+  .topbar-container {
     display: flex;
     max-width: 1480px;
-    height: 70px;
-    margin: 30px auto 0 auto;
+    margin: 0 auto 0 auto;
     > .topbar-left {
       display: flex;
       margin-top: 10px;
@@ -87,6 +136,9 @@
       > .topbar-right-toggle-small {
         display: none;
       }
+    }
+    &.topbar-container-main {
+      padding-top: 30px;
     }
   }
 }
@@ -153,6 +205,7 @@
     max-width: 100%;
     background: unset;
     font-weight: 300;
+    z-index: 1;
     li,
     li.active {
       background: rgba(26, 26, 26, 0.8);
@@ -267,8 +320,8 @@
 
 // Laptop mode
 @media only screen and (max-width: $laptop-width) {
-  .topbar .topbar-wrapper {
-    margin-top: 0;
+  .topbar .topbar-container.topbar-container-main {
+    padding-top: 0;
     height: 100px;
     > .topbar-right {
       height: 70px;
@@ -347,7 +400,7 @@
 
 // Tablet toggle menu mode
 @media only screen and (max-width: $tablet-width) {
-  .topbar .topbar-wrapper {
+  .topbar .topbar-container.topbar-container-main {
     height: 70px;
     > .topbar-left {
       margin-top: 7px;
@@ -386,7 +439,7 @@
 }
 
 @media only screen and (max-width: $phone-width) {
-  .topbar .topbar-wrapper {
+  .topbar .topbar-container.topbar-container-main {
     > .topbar-left > .topbar-left-logo {
       overflow: hidden;
       width: 27px;
