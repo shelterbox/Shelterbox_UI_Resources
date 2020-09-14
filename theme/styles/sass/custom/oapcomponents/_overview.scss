@@ -93,7 +93,13 @@
 .OverviewPage {
     
 	background-color: #eff4f7;
-	.OverviewDataGrid {	margin: 3% 10% 0 10%; }//margin: 0.5em; margin-top: 55px;  }
+	.OverviewDataGrid {
+		// margin: 0.5em;
+		// margin-top: 55px;
+		// margin: 3% 10% 0 10%;
+		max-width: 1480px;
+    margin: 0 auto 0 auto;
+	}
 	&.bigscreen { position: absolute; top: 7%; left: 2.5%; }
 }
 
