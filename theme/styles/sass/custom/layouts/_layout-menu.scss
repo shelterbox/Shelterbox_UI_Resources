@@ -89,6 +89,7 @@ body {
     padding: 10px 0;
     font-size: 113%;
     .title {
+      text-transform: uppercase;
       &.mx-link, &.mx-link:hover {
         color: #555555 !important;
         > a {

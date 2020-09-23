@@ -67,13 +67,15 @@ body {
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15);
     padding: 10px 0;
     font-size: 113%; }
-    .topbar.topbar-title .title.mx-link, .topbar.topbar-title .title.mx-link:hover {
-      color: #555555 !important; }
-      .topbar.topbar-title .title.mx-link > a, .topbar.topbar-title .title.mx-link:hover > a {
+    .topbar.topbar-title .title {
+      text-transform: uppercase; }
+      .topbar.topbar-title .title.mx-link, .topbar.topbar-title .title.mx-link:hover {
+        color: #555555 !important; }
+        .topbar.topbar-title .title.mx-link > a, .topbar.topbar-title .title.mx-link:hover > a {
+          font-weight: bold; }
+      .topbar.topbar-title .title:not(.mx-link) {
+        color: #555555 !important;
         font-weight: bold; }
-    .topbar.topbar-title .title:not(.mx-link) {
-      color: #555555 !important;
-      font-weight: bold; }
   .topbar .topbar-container {
     display: flex;
     max-width: 1480px;
@@ -2363,7 +2365,8 @@ h1, h2, h3, h4, h5, h6,
 .OverviewPage {
   background-color: #eff4f7; }
   .OverviewPage .OverviewDataGrid {
-    margin: 3% 10% 0 10%; }
+    max-width: 1480px;
+    margin: 0 auto 0 auto; }
   .OverviewPage.bigscreen {
     position: absolute;
     top: 7%;
